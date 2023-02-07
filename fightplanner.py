@@ -30,7 +30,8 @@ if __name__ == '__main__':
 
 
 dataCreatures = open("creaturedict.txt", "wb")
-creatureDict = {'giantRat' : {'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 12, 'NOU' : 4, 'WIL' : 3},
-                'meleeSkeleton' : {'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7}}
+creatureDict = {'giantRat' : {'Name': 'Rat', 'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 12, 'NOU' : 4, 'WIL' : 3},
+                'meleeSkeleton' : {'Name' : 'Melee Skeleton', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7}}
+creatureDict.append
 pickle.dump(creatureDict, dataCreatures)
 dataCreatures.close()
