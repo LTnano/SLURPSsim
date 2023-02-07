@@ -3,21 +3,6 @@ import random
 import wx
 
 
-class MyFrame(wx.Frame):    
-    def __init__(self):
-        super().__init__(parent=None, title='Hello World')
-        panel = wx.Panel(self)
-
-        self.text_ctrl = wx.TextCtrl(panel, pos=(5, 5))
-        my_btn = wx.Button(panel, label='Press Me', pos=(5, 55))
-
-        self.Show()
-
-if __name__ == '__main__':
-    app = wx.App()
-    frame = MyFrame()
-    app.MainLoop()
-
 #class for monster (self, stats, name)
 
     #member function generate rest of stats
@@ -29,18 +14,8 @@ if __name__ == '__main__':
     #apply debuffs
 
 
-
-dataCreatures = open("creaturedict.txt", "wb")
-creatureDict = {'giantRat' : {'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 12, 'NOU' : 4, 'WIL' : 3},
-                'meleeSkeleton' : {'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7}}
-pickle.dump(creatureDict, dataCreatures)
-dataCreatures.close()
-
-abilityDict = dict()
-
-
-# dataCreatures = open("creaturedict.txt", "rb")
-# creatureDict = pickle.load(dataCreatures)
+dataCreatures = open("creaturedict.txt", "rb")
+creatureDict = pickle.load(dataCreatures)
 
 class SimChar():
     def __init__(self, name):
