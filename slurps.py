@@ -8,11 +8,7 @@ import operator
 
     #member function generate rest of stats
 
-#function monsterattack
-    #get target
-    #roll attack
-    #deal damage
-    #apply debuffs
+
 
 # dataFight = open("fightdict.txt", "rb") #IMPORTANT FOR LATER
 # fightDict = pickle.load(dataFight)
@@ -45,9 +41,19 @@ class SimChar():
         #bools
         self.isAlive = True
 
-        #weapon generation
-        self.WEA = random.randint(1,4)
+        #weapon assignment
+        self.WEA = creatureDict[type]['WEA']
+
+        #ability logic
+
+
         
+
+class Ability():
+    def __init__(self, stat):
+        self.stat = 'STR'
+
+
 def constructFighters():
     for i in chosenList:
         primedList.append(SimChar(i))
@@ -58,9 +64,18 @@ def rollInitiative():
         monster.INIT = monster.COR + random.randint(1,20)
     primedList.sort(key=operator.attrgetter('INIT'))
 
+def findTar():
+    return primedList['meleeSkeleton']
 
 
+def attack(cr1, cr2, ability):
+    random.randint(1,20) + ability.stat
 
+#function monsterattack
+    #get target
+    #roll attack
+    #deal damage
+    #apply debuffs
 
 # def executeCombat():
     
