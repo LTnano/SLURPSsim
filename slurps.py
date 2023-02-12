@@ -14,15 +14,22 @@ import operator
 # fightDict = pickle.load(dataFight)
 
 dataCreatures = open("creaturedict.txt", "rb")
+dataHasAbility = open("creaturhasabilitydict.txt", "rb")
+hasAbilityDict = pickle.load(dataHasAbility)
 creatureDict = pickle.load(dataCreatures)
 
-chosenList = ['meleeSkeleton', 'giantRat']
+chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rangedSkeletonH', 'giantRat']
+teamList = [1, 1, 2, 1, 2, 2]
 primedList = []
+
 class SimChar():
     def __init__(self, callsign):
-
+        
         #build
         type = callsign
+
+        #name for logs
+        self.printName = creatureDict[type]['Name']
 
         #variables
         self.INIT = 0
@@ -37,7 +44,7 @@ class SimChar():
         self.INT = creatureDict[type]['INT']
         self.NOU = creatureDict[type]['NOU']
         self.WIL = creatureDict[type]['WIL']
-
+        
         #bools
         self.isAlive = True
 
@@ -45,14 +52,21 @@ class SimChar():
         self.WEA = creatureDict[type]['WEA']
 
         #ability logic
-
-
-        
-
+        self.AP = creatureDict[type]['AP']
+        self.abilities = hasAbilityDict[type]
+   
 class Ability():
-    def __init__(self, stat):
+    def __init__(self, abilityname):
+        type = abilityname
         self.stat = 'STR'
+        self.average = 2
+        self.ranged = True
 
+        #STAT + average damage = damage
+
+def constructAbilties():
+    for monster in primedList:
+        primedList.abilities = hasAbilityDict[i]
 
 def constructFighters():
     for i in chosenList:
@@ -60,22 +74,41 @@ def constructFighters():
 
 
 def rollInitiative():
-    for monster in primedList:
+    for monster, team in zip(primedList, teamList):
         monster.INIT = monster.COR + random.randint(1,20)
-    primedList.sort(key=operator.attrgetter('INIT'))
+        monster.TEAM = team
+    primedList.sort(key=operator.attrgetter('INIT'),reverse=True)
+
+def beginCombatLoop(monList):
+    for monster in monList:
+        monster.moved = False
+        monster.attacked = False
+        findTar(monster, monList)
+
 
 def findTar():
-    return primedList['meleeSkeleton']
+    #find target
+    return 0
 
+def checkBuff():
+    #check buffs
+    return 0
 
-def attack(cr1, cr2, ability):
+def attackmove(cr1, cr2, ability):
     random.randint(1,20) + ability.stat
-
-#function monsterattack
-    #get target
+    #check range
+    #move if out of range
     #roll attack
     #deal damage
+    #move if havent moved
     #apply debuffs
+
+def bestAbil():
+    #pick ability
+    return 0
+
+#function monsterattack
+   
 
 # def executeCombat():
     
@@ -95,6 +128,16 @@ def attack(cr1, cr2, ability):
 if __name__ == '__main__':
     constructFighters()
     rollInitiative()
+    for monster in primedList:
+        print ('\n', monster.printName)
+        print ('Initiative:', monster.INIT)
+        print ('Team:', monster.TEAM)
+        print ('HP:', monster.curHP)
+        print ('AP', monster.AP)
+        print ('Abilities: ', monster.abilities)
+        
+
+        
 
 # def beginCombat(fightDict, ):
 #     Skeleton = SimChar("meleeSkeleton", "Skeleton")
@@ -103,14 +146,7 @@ if __name__ == '__main__':
 #         random.randint(1,20) + fightDict.
 
 
-# def beginCombat(combatantList):
-#     for pos in initList:
-#         moved = False
-#         attacked = False
-#         ranged = crea1.
-#         if (ranged)
-#             cfight(findTar())
-#             attacked = True
+
         
 
        

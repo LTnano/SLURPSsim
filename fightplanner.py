@@ -30,6 +30,8 @@ if __name__ == '__main__':
 
 
 dataCreatures = open("creaturedict.txt", "wb")
+dataHasAbility = open("creaturhasabilitydict.txt", "wb")
+# Name, Health | Strength, Endurance, Coordination, Dexterity, Intelligence, Nouse, Will | Weapon, Ranged Weapon | Armour, Ability Points
 creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 2, 'NOU' : 4, 'WIL' : 3, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
 
                 'meleeSkeleton' : {'Name' : 'Skeleton', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 2, 'AP' : 0},
@@ -57,5 +59,38 @@ creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' :
                 'thinBilly' : {'Name' : 'Thin Billy', 'HP' : 200, 'STR' : 13, 'END' : 20, 'COR' : 13, 'DEX' : 13, 'INT' : 13, 'NOU' : 17, 'WIL' : 13, 'WEA' : 8, 'RWEA' : 0, 'ARM' : 2, 'AP' : 10},
                 
                 'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12}}
+
+hasAbilityDict = {'giantRat' : {'STRIKE'},
+
+                'meleeSkeleton' : {'STRIKE'},
+
+                'meleeSkeletonH' : {'STRIKE', 'FEINT'},
+
+                'rangedSkeleton' : {'SHOOT'},
+
+                'rangedSkeletonH' : {'SHOOT'},
+
+                'wizardSkeleton' : {'FIREBALL 2'},
+
+                'meleeKobold' : {'STRIKE'},
+
+                'wizardKobold' : {'FIREBALL'},
+
+                'rangedKobold' : {'SHOOT'},
+
+                'priestKobold' : {'HEADACHE'},
+
+                'summonerKobold' : {'CONJURE RAT'},
+
+                'slowGolem' : {'STRIKE', 'SELF SLOW'},
+
+                'thinBilly' : {'STRIKE', 'HEAL'},
+                
+                'bossSkeleton' : {'STRIKE', 'FIREBALL', 'HEAL'}}
+
+abilityDefinitions = {}
+
+pickle.dump(hasAbilityDict, dataHasAbility)                
 pickle.dump(creatureDict, dataCreatures)
 dataCreatures.close()
+dataHasAbility.close()
