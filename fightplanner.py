@@ -29,8 +29,7 @@ if __name__ == '__main__':
     app.MainLoop()
 
 
-dataCreatures = open("creaturedict.txt", "wb")
-dataHasAbility = open("creaturhasabilitydict.txt", "wb")
+
 # Name, Health | Strength, Endurance, Coordination, Dexterity, Intelligence, Nouse, Will | Weapon, Ranged Weapon | Armour, Ability Points
 creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 2, 'NOU' : 4, 'WIL' : 3, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
 
@@ -88,9 +87,17 @@ hasAbilityDict = {'giantRat' : {'STRIKE'},
                 
                 'bossSkeleton' : {'STRIKE', 'FIREBALL', 'HEAL'}}
 
-abilityDefinitions = {}
+abilityDefinitions = {'BACKSTAB' : {'AP' : 1, 'hitSTAT' : 'COR', 'dmgSTAT' : 'COR', 'isRanged' : False, 'special' : 'Backstab'}}
 
-pickle.dump(hasAbilityDict, dataHasAbility)                
+
+dataCreatures = open("creaturedict.txt", "wb")
 pickle.dump(creatureDict, dataCreatures)
 dataCreatures.close()
+
+dataHasAbility = open("creaturhasabilitydict.txt", "wb")
+pickle.dump(hasAbilityDict, dataHasAbility)                
 dataHasAbility.close()
+
+dataAbilityDef = open("abilitydefdict.txt", "wb")
+pickle.dump(abilityDefinitions, dataAbilityDef)                
+dataAbilityDef.close()

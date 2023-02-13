@@ -14,13 +14,21 @@ import operator
 # fightDict = pickle.load(dataFight)
 
 dataCreatures = open("creaturedict.txt", "rb")
+creatureDict = pickle.load(dataCreatures)
+
 dataHasAbility = open("creaturhasabilitydict.txt", "rb")
 hasAbilityDict = pickle.load(dataHasAbility)
-creatureDict = pickle.load(dataCreatures)
+
+dataAbilityDef = open("abilitydefdict.txt", "rb")
+abilityDefinitions = pickle.load(dataAbilityDef)
+
+
 
 chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rangedSkeletonH', 'giantRat']
 teamList = [1, 1, 2, 1, 2, 2]
 primedList = []
+uniqueAbilityList = []
+abilityList = []
 
 class SimChar():
     def __init__(self, callsign):
@@ -53,20 +61,69 @@ class SimChar():
 
         #ability logic
         self.AP = creatureDict[type]['AP']
-        self.abilities = hasAbilityDict[type]
+        self.prioList = []
    
 class Ability():
     def __init__(self, abilityname):
-        type = abilityname
-        self.stat = 'STR'
-        self.average = 2
-        self.ranged = True
 
+        type = abilityname
+        self.apCost = uniqueAbilityList[type]['apCost']
+        self.hitstat = uniqueAbilityList[type]['hitSTAT']
+        self.dmgstat = uniqueAbilityList[type]['dmgSTAT']
+        self.average = uniqueAbilityList[type]['averageDamage']
+        self.ranged = uniqueAbilityList[type]['isRanged']
         #STAT + average damage = damage
+        #status effects
+        self.statusEffect = uniqueAbilityList[type]['special']
+
+class StatusEffects():
+    def __init__(self, special):
+        type = special
+
+        def blocking():
+            return
+
+        def charmed():
+            return
+
+        def clumsy():
+            return
+
+        def disarmed():
+            return
+
+        def doppel():
+            return
+
+        def encourage():
+            return
+
+        def immobilise():
+            return
+
+        def levitate():
+            return
+
+        def panick():
+            return
+
+        def petrify():
+            return
+
+        def prone():
+            return
+
+        def scared():
+            return
+            
+        def stunned():
+            return
+
 
 def constructAbilties():
-    for monster in primedList:
-        primedList.abilities = hasAbilityDict[i]
+    for ability in abilityList:
+        if ability not in uniqueAbilityList:
+            uniqueAbilityList.append(Ability[ability])
 
 def constructFighters():
     for i in chosenList:
