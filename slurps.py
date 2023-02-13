@@ -62,6 +62,10 @@ class SimChar():
         #ability logic
         self.AP = creatureDict[type]['AP']
         self.prioList = []
+
+        #put abilities as methods
+        def STRIKE
+
    
 class Ability():
     def __init__(self, abilityname):
@@ -140,12 +144,16 @@ def beginCombatLoop(monList):
     for monster in monList:
         monster.moved = False
         monster.attacked = False
-        findTar(monster, monList)
+        if (!monster.target):
+            findTar(monster, monList)
+        
+            
 
 
-def findTar():
-    #find target
-    return 0
+def findTar(monster, list):
+    monster.target = random.choice(list)
+    while (monster.target.charmed)
+        monster.target = random.choice(list)
 
 def checkBuff():
     #check buffs
@@ -185,6 +193,7 @@ def bestAbil():
 if __name__ == '__main__':
     constructFighters()
     rollInitiative()
+    beginCombatLoop(primedList)
     for monster in primedList:
         print ('\n', monster.printName)
         print ('Initiative:', monster.INIT)
