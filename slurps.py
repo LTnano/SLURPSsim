@@ -259,7 +259,7 @@ def constructFighters():
 
 def rollInitiative():
     for monster, team in zip(primedList, teamList):
-        monster.INIT = monster.COR + random.randint(1,20)
+        monster.INIT = monster._COR + D20
         monster.TEAM = team
     primedList.sort(key=operator.attrgetter('INIT'),reverse=True)
 
@@ -280,7 +280,7 @@ def beginCombatLoop(monList):
 
 
 def attackmove(cr1, cr2, ability):
-    random.randint(1,20) + ability.stat
+    D20 + ability.stat
     #check range
     #move if out of range
     #roll attack
