@@ -87,13 +87,14 @@ hasAbilityDict = {'giantRat' : {'STRIKE'},
                 
                 'bossSkeleton' : {'STRIKE', 'FIREBALL', 'HEAL'}}
 
-abilityDefinitions = {'BACKSTAB' : {'isAttack' : True, 'AP' : 1, 'hitSTAT' : 'COR', 'dmgSTAT' : 'COR', 'isRanged' : False, 'special' : 'Backstab'},
+# abilityDefinitions = {'BACKSTAB' : {'isAttack' : True, 'AP' : 1, 'hitSTAT' : 'COR', 'dmgSTAT' : 'COR', 'isRanged' : False, 'special' : 'Backstab'},
 
-                    'BLOCK' : {'isAttack' : False, 'AP' : 1, 'special' : 'BLOCK', 'specialDur' : 4, 'DC' : 20, 'TAR' : 'self'},
+#                     'BLOCK' : {'isAttack' : False, 'AP' : 1, 'special' : 'BLOCK', 'specialDur' : 4, 'DC' : 20, 'TAR' : 'self'},
 
-                    'BLOCK 2' : {'isAttack' : False, 'AP' : 2, 'special' : 'BLOCK', 'specialDur' : 8, 'DC' : 25, 'TAR' : 'self'}
+#                     'BLOCK 2' : {'isAttack' : False, 'AP' : 2, 'special' : 'BLOCK', 'specialDur' : 8, 'DC' : 25, 'TAR' : 'self'},
 
-                    'CHARM' : {'isAttack' : True, 'AP' : 3, 'hitSTAT' : 'WIL', 'dmgSTAT' : 'WIL', 'isRanged' : False, 'special' : 'CHARM', 'specialDur' : 0}}
+#                     'CHARM' : {'isAttack' : True, 'AP' : 3, 'hitSTAT' : 'WIL', 'dmgSTAT' : 'WIL', 'isRanged' : False, 'special' : 'CHARM', 'specialDur' : 0}}
+
 
 
 dataCreatures = open("creaturedict.txt", "wb")
@@ -104,6 +105,6 @@ dataHasAbility = open("creaturhasabilitydict.txt", "wb")
 pickle.dump(hasAbilityDict, dataHasAbility)                
 dataHasAbility.close()
 
-dataAbilityDef = open("abilitydefdict.txt", "wb")
-pickle.dump(abilityDefinitions, dataAbilityDef)                
-dataAbilityDef.close()
+# dataAbilityDef = open("abilitydefdict.txt", "wb")
+# pickle.dump(abilityDefinitions, dataAbilityDef)                
+# dataAbilityDef.close()
