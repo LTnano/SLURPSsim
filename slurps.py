@@ -39,10 +39,12 @@ class Creature():
         #variables
         self.INIT = 0
         self._curHP = creatureDict[type]['HP']
+        self._tempHP = 0
         self.isAlive = True
 
         #stats
-        self._HP = creatureDict[type]['HP']
+        self._HP = creatureDict[type]['HP'] #creature default max
+        self._maxHP = creatureDict[type]['HP'] #flexible max
         self._STR = creatureDict[type]['STR']
         self._END = creatureDict[type]['END']
         self._COR = creatureDict[type]['COR']
@@ -68,6 +70,7 @@ class Creature():
         self.isDisarmed = 0
         self.isDoppelgangered = 0
         self.isEncouraged = 0
+        self.isFortified = 0
         self.isImmobilised = 0
         self.isLevitated = 0
         self.isPanicked = 0
@@ -91,7 +94,7 @@ class Creature():
 
     #put abilities as methods
     def takeDamage(self, damage):
-        self.HP = self.HP - damage
+        self._curHP = self._curHP - damage
         return
     
     def useAbility(self, name):
@@ -173,6 +176,17 @@ def statusTicker(monster):
             monster.tempNOU -= 1
             monster.tempWIL -= 1
 
+    if (monster.isFortified):
+        monster.isFortified -= 1
+        if not(monster.isFortified):
+            monster._maxHP = monster._HP
+            monster._curHP = monster._curHP - monster._tempHP
+            monster._tempHP = 0
+            if (monster._curHP > monster._maxHP):
+                monster._curHP = monster._maxHP
+            if (monster._curHP <= 0):
+                monster.isAlive = False
+
     if (monster.isDoppelgangered):
         monster.isDoppelgangered -= 1
 
@@ -196,6 +210,7 @@ def statusTicker(monster):
 class Die():
     def __init__(self, sides):
         self.sides = sides
+    
     def roll(self):
         return random.randint(1,self.sides)
 
@@ -210,28 +225,48 @@ class Ability():
         self.success = success
         self.contest = contest
 
-class BuffAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest, duration, effect):
+class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelganger, encourage, extra action 1 2, extra shot, heal 1 2 3, levitate, play dead 1 2, sharpen, tighten, turn, vault, weighten
+    def __init__(self, name, AP, target, range, success, contest):
       super().__init__(name, AP, target, range, success, contest)
-      self.duration = duration
-      self.effect = effect
+      self.effect = name
 
     def onSuccess(self, monster):
         match self.effect:
             case 'BLOCK':
                 monster.armour *= 2
-                monster.blocking = D4+1
+                monster.isBlocking = D4.roll()+1
             case 'BLOCK 2':
                 monster.armour *= 2
-                monster.blocking = D8+1
+                monster.isBlocking = D8.roll()+1
+            case 'DEAD MAN WALKING':
+                monster._tempHP += 20
+                monster._curHP += 20
+                monster._maxHP += 20
+                monster.isFortified = D4.roll()+1
+            case 'DEAD MAN WALKING 2':
+                monster._tempHP += 30
+                monster._curHP += 30
+                monster._maxHP += 30
+                monster.isFortified = D8.roll()+1
+            case 'DODGE':
+                return True
+            case 'DOPPELGANGER':
+                monster.isDoppelgangered = D8.roll()+1
+            case 'ENCOURAGE':
+            case 'EXTRA ACTION':
+
+    
+    def use(self, monster):
+        monster.AP -= self.AP
+        if (D20.roll() + monster.endurance() >= self.contest):
+            self.onSuccess(monster)
 
 
-# the code speaks for itself
+block = BuffAbility('BLOCK', 1, 'self', 0, 'END', 20)
+block2 = BuffAbility('BLOCK 2', 2, 'self', 0, 'END', 25)
+deadManWalking = BuffAbility('DEAD MAN WALKING', 2, 'self', 0, 'END', 20)
+deadManWalking2 = BuffAbility('DEAD MAN WALKING 2', 3, 'self', 0, 'END', 25)
 
-
-
-
-Block2 = BuffAbility('BLOCK 2', 2, 'self', 0, 'END', 25, 8, 'BLOCK')
 
 
 class DebuffAbility(Ability):
@@ -259,7 +294,7 @@ def constructFighters():
 
 def rollInitiative():
     for monster, team in zip(primedList, teamList):
-        monster.INIT = monster._COR + D20
+        monster.INIT = monster._COR + D20.roll()
         monster.TEAM = team
     primedList.sort(key=operator.attrgetter('INIT'),reverse=True)
 
@@ -280,7 +315,7 @@ def beginCombatLoop(monList):
 
 
 def attackmove(cr1, cr2, ability):
-    D20 + ability.stat
+    D20.roll() + ability.stat
     #check range
     #move if out of range
     #roll attack
