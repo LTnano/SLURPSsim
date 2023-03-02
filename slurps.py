@@ -28,7 +28,7 @@ chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rang
 teamList = [1, 1, 2, 1, 2, 2]
 primedList = []
 uniqueAbilityList = []
-abilityList = []
+allAbilities = []
 
 class Creature():
     def __init__(self, type):
@@ -78,27 +78,49 @@ class Creature():
         self.isProne = 0
         self.isScared = 0
         self.isStunned = 0
-        
+        self.isSharpened = 0
+        self.isTightened = 0        
         
 
         #equip assignment
         self._WEA = creatureDict[type]['WEA']
+        self.modWEA = 0
         self._RWEA = creatureDict[type]['RWEA']
+        self.modRWEA = 0
         self.ARM = creatureDict[type]['ARM']
         self.baseARM = creatureDict[type]['ARM']
 
         #ability logic
         self.AP = creatureDict[type]['AP']
+        self._maxAP = creatureDict[type]['AP']
         self.abilities = hasAbilityDict[type]
         self.prioList = []
 
-    #put abilities as methods
+    
     def takeDamage(self, damage):
         self._curHP = self._curHP - damage
         return
     
-    def useAbility(self, name):
-        return self.ability[name]
+    def takeHealing(self, healing):
+        if (self._curHP + healing < self._maxHP):
+            self._curHP = self._curHP + healing
+            return
+        self._curHP = self._maxHP
+        return
+
+    def chooseAbility(self):
+        return random.choice(self.abilities)
+
+    def chooseTarget(self):
+        self.target = random.choice(primedList)
+        while (self.target.TEAM == self.TEAM):
+            self.target = random.choice(primedList)
+        #print (self.target.printName, self.target.TEAM, ' - ', self.printName, self.TEAM)
+
+    def useAbility(self, ability):
+        for option in allAbilities:
+            if option.name == ability:
+                option.use(self, self.target)
     
     def strength(self):
         return self._STR + self.tempSTR
@@ -120,6 +142,7 @@ class Creature():
     
     def will(self):
         return self._WIL + self.tempWIL
+
 
 def statusTicker(monster):
 
@@ -224,48 +247,132 @@ class Ability():
         self.range = range
         self.success = success
         self.contest = contest
+        self.canCast = False
+    
+          
+    def statSuccess(self, success, caster):
+        match success:
+            case 'STR':
+                return caster.strength()
+            case 'END':
+                return caster.endurance()
+            case 'COR':
+                return caster.coordination()
+            case 'DEX':
+                return caster.dexterity()
+            case 'INT':
+                return caster.intelligence()
+            case 'NOU':
+                return caster.nouse()
+            case 'WIL':
+                return caster.will()
+            case _:
+                return 0
+    
+    def use(self, caster, target):
+        caster.AP -= self.AP
+        successBonus = self.statSuccess(self.success, caster)
+        if (D20.roll() + successBonus >= self.contest):
+            self.onSuccess(caster, target)
+             
 
+        
 class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelganger, encourage, extra action 1 2, extra shot, heal 1 2 3, levitate, play dead 1 2, sharpen, tighten, turn, vault, weighten
     def __init__(self, name, AP, target, range, success, contest):
       super().__init__(name, AP, target, range, success, contest)
       self.effect = name
 
-    def onSuccess(self, monster):
+    def onSuccess(self, caster, target):
         match self.effect:
             case 'BLOCK':
-                monster.armour *= 2
-                monster.isBlocking = D4.roll()+1
+                caster.armour *= 2
+                caster.isBlocking = D4.roll()+1
             case 'BLOCK 2':
-                monster.armour *= 2
-                monster.isBlocking = D8.roll()+1
+                caster.armour *= 2
+                caster.isBlocking = D8.roll()+1
             case 'DEAD MAN WALKING':
-                monster._tempHP += 20
-                monster._curHP += 20
-                monster._maxHP += 20
-                monster.isFortified = D4.roll()+1
+                caster._tempHP += 20
+                caster._curHP += 20
+                caster._maxHP += 20
+                caster.isFortified = D4.roll()+1
             case 'DEAD MAN WALKING 2':
-                monster._tempHP += 30
-                monster._curHP += 30
-                monster._maxHP += 30
-                monster.isFortified = D8.roll()+1
-            case 'DODGE':
-                return True
+                caster._tempHP += 30
+                caster._curHP += 30
+                caster._maxHP += 30
+                caster.isFortified = D8.roll()+1
             case 'DOPPELGANGER':
-                monster.isDoppelgangered = D8.roll()+1
+                caster.isDoppelgangered = D8.roll()+1
             case 'ENCOURAGE':
+                target.tempSTR += 1
+                target.tempEND += 1
+                target.tempCOR += 1
+                target.tempDEX += 1
+                target.tempINT += 1
+                target.tempNOU += 1
+                target.tempWIL += 1
+                target.isEncouraged = D4.roll()+1
             case 'EXTRA ACTION':
+                pass
+            case 'EXTRA ACTION 2':
+                pass
+            case 'EXTRA SHOT':
+                pass
+            case 'HEAL':
+                healval = caster.dexterity() * D6.roll()
+                target.takeHealing(healval)
+            case 'HEAL 2':
+                healval = caster.dexterity() * (D6.roll() + 4)
+                target.takeHealing(healval)
+            case 'HEAL 3':
+                healval = caster.dexterity() * (D12.roll() + 4)
+                target.takeHealing(healval)
+            case 'PLAY DEAD':
+                pass
+            case 'PLAY DEAD 2':
+                pass
+            case 'ROUSING SHOUT':
+                for ally in primedList:
+                    if caster.team == ally.team:
+                        ally.tempSTR += 1
+                        ally.tempEND += 1
+                        ally.tempCOR += 1
+                        ally.tempDEX += 1
+                        ally.tempINT += 1
+                        ally.tempNOU += 1
+                        ally.tempWIL += 1
+                        ally.isEncouraged = D4.roll()+1
+            case 'ROUSING SONG':
+                for ally in primedList:
+                    if caster.team == ally.team:
+                        ally.AP = ally._maxAP
+            case 'SHARPEN':
+                caster.isSharpened = 1
+                caster.modWEA += 1
+            case 'TIGHTEN':
+                caster.isTightened = 1
+                caster.modRWEA += 1
 
-    
-    def use(self, monster):
-        monster.AP -= self.AP
-        if (D20.roll() + monster.endurance() >= self.contest):
-            self.onSuccess(monster)
 
 
-block = BuffAbility('BLOCK', 1, 'self', 0, 'END', 20)
-block2 = BuffAbility('BLOCK 2', 2, 'self', 0, 'END', 25)
-deadManWalking = BuffAbility('DEAD MAN WALKING', 2, 'self', 0, 'END', 20)
-deadManWalking2 = BuffAbility('DEAD MAN WALKING 2', 3, 'self', 0, 'END', 25)
+
+#BUFF ABILITIES
+allAbilities.append(BuffAbility('BLOCK', 1, 'self', 0, 'END', 20))
+allAbilities.append(BuffAbility('BLOCK 2', 2, 'self', 0, 'END', 25))
+allAbilities.append(BuffAbility('DEAD MAN WALKING', 2, 'self', 0, 'END', 20))
+allAbilities.append(BuffAbility('DEAD MAN WALKING 2', 3, 'self', 0, 'END', 25))
+#doppelganger*
+allAbilities.append(BuffAbility('ENCOURAGE', 1, 'ally', 0, 'END', 0))
+#extraaction*
+#extraction2*
+#extrashot*
+allAbilities.append(BuffAbility('HEAL', 1, 'ally', 1, 'NOU', 20))
+allAbilities.append(BuffAbility('HEAL 2', 2, 'ally', 1, 'NOU', 22))
+allAbilities.append(BuffAbility('HEAL 3', 4, 'ally', 1, 'NOU', 24))
+allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
+allAbilities.append(BuffAbility('TIGHTEN', 1, 'ally', 0, 'END', 0))
+allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
+
+#*needs implementation
 
 
 
@@ -277,18 +384,16 @@ class MeleeAbility(Ability):
     def __init__(self, name, AP, target, range, success, contest):
         super().__init__(name, AP, target, range, success, contest)
 
+    def onSuccess(self, caster, target):
+        return
+
 class RangedAbility(Ability):
     def __init__(self, name, AP, target, range, success, contest):
         super().__init__(name, AP, target, range, success, contest)
 
 
-
-# def constructAbilties():
-#     for ability in abilityList:
-#         if ability not in uniqueAbilityList:
-#             uniqueAbilityList.append(Ability(ability))
-
 def constructFighters():
+    primedList.clear()
     for i in chosenList:
         primedList.append(Creature(i))
 
@@ -302,11 +407,17 @@ def beginCombatLoop(monList):
     for monster in monList:
         monster.moved = False
         monster.attacked = False
+        monster.chooseTarget()
+        monster.useAbility(monster.chooseAbility())
        # if (!monster.target):
           #  findTar(monster, monList)
         
             
+#turns within rounds
+#rounds
+#deicions making
 
+#target priority list
 
 # def findTar(monster, list):
 #     monster.target = random.choice(list)
@@ -314,8 +425,8 @@ def beginCombatLoop(monList):
 #         monster.target = random.choice(list)
 
 
-def attackmove(cr1, cr2, ability):
-    D20.roll() + ability.stat
+#def attackmove(cr1, cr2, ability):
+    #D20.roll() + ability.stat
     #check range
     #move if out of range
     #roll attack
@@ -323,9 +434,9 @@ def attackmove(cr1, cr2, ability):
     #move if havent moved
     #apply debuffs
 
-def bestAbil():
+#def bestAbil():
     #pick ability
-    return 0
+    #return 0
 
 #function monsterattack
    
@@ -353,16 +464,22 @@ if __name__ == '__main__':
     D8 = Die(8)
     D6 = Die(6)
     D4 = Die(4)
+    
+    
+    varianceMinimizer = 500
+    cycleloop = 0
 
-    constructFighters()
-    rollInitiative()
-    beginCombatLoop(primedList)
+    while cycleloop < varianceMinimizer:
+        constructFighters()
+        rollInitiative()
+        beginCombatLoop(primedList)
+        cycleloop += 1
 
     for monster in primedList:
         print ('\n', monster.printName)
         print ('Initiative:', monster.INIT)
         print ('Team:', monster.TEAM)
-        print ('HP:', monster.curHP)
+        print ('HP:', monster._curHP)
         print ('AP', monster.AP)
         print ('Abilities: ', monster.abilities)
         

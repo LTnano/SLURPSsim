@@ -35,11 +35,11 @@ creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' :
 
                 'meleeSkeleton' : {'Name' : 'Skeleton', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 2, 'AP' : 0},
 
-                'meleeSkeletonH' : {'Name' : 'Skeleton (Hard)', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 6},
+                'meleeSkeletonH' : {'Name' : 'Skeleton (Hard)', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 9},
 
-                'rangedSkeleton' : {'Name': 'Skeleton Archer', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 4, 'ARM' : 0, 'AP' : 0},
+                'rangedSkeleton' : {'Name': 'Skeleton Archer', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 4, 'ARM' : 0, 'AP' : 9},
 
-                'rangedSkeletonH' : {'Name' : 'Skeleton Archer(Hard)', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 6, 'ARM' : 0, 'AP' : 0},
+                'rangedSkeletonH' : {'Name' : 'Skeleton Archer(Hard)', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 6, 'ARM' : 0, 'AP' : 7},
 
                 'wizardSkeleton' : {'Name': 'Skeleton Wizard', 'HP' : 100, 'STR' : 7, 'END' : 8, 'COR' : 8, 'DEX' : 7, 'INT' : 11, 'NOU' : 6, 'WIL' : 2, 'WEA' : 0, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
 
@@ -59,33 +59,33 @@ creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' :
                 
                 'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12}}
 
-hasAbilityDict = {'giantRat' : {'STRIKE'},
+hasAbilityDict = {'giantRat' : ['STRIKE'],
 
-                'meleeSkeleton' : {'STRIKE'},
+                'meleeSkeleton' : ['STRIKE'],
 
-                'meleeSkeletonH' : {'STRIKE', 'FEINT'},
+                'meleeSkeletonH' : ['STRIKE', 'FEINT'],
 
-                'rangedSkeleton' : {'SHOOT'},
+                'rangedSkeleton' : ['SHOOT'],
 
-                'rangedSkeletonH' : {'SHOOT'},
+                'rangedSkeletonH' : ['SHOOT'],
 
-                'wizardSkeleton' : {'FIREBALL 2'},
+                'wizardSkeleton' : ['FIREBALL 2'],
 
-                'meleeKobold' : {'STRIKE'},
+                'meleeKobold' : ['STRIKE'],
 
-                'wizardKobold' : {'FIREBALL'},
+                'wizardKobold' : ['FIREBALL'],
 
-                'rangedKobold' : {'SHOOT'},
+                'rangedKobold' : ['SHOOT'],
 
-                'priestKobold' : {'HEADACHE'},
+                'priestKobold' : ['HEADACHE'],
 
-                'summonerKobold' : {'CONJURE RAT'},
+                'summonerKobold' : ['CONJURE RAT'],
 
-                'slowGolem' : {'STRIKE', 'SELF SLOW'},
+                'slowGolem' : ['STRIKE', 'SELF SLOW'],
 
-                'thinBilly' : {'STRIKE', 'HEAL'},
+                'thinBilly' : ['STRIKE', 'HEAL'],
                 
-                'bossSkeleton' : {'STRIKE', 'FIREBALL', 'HEAL'}}
+                'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL']}
 
 # abilityDefinitions = {'BACKSTAB' : {'isAttack' : True, 'AP' : 1, 'hitSTAT' : 'COR', 'dmgSTAT' : 'COR', 'isRanged' : False, 'special' : 'Backstab'},
 
