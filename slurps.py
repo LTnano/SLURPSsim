@@ -24,9 +24,13 @@ hasAbilityDict = pickle.load(dataHasAbility)
 
 
 
-chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rangedSkeletonH', 'giantRat']
-teamList = [1, 1, 2, 1, 2, 2]
+# chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rangedSkeletonH', 'giantRat']
+# teamList = [1, 1, 2, 1, 2, 2]
+chosenList = ['giantRat', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton']
+teamList = [1, 2, 2, 1, 2, 2, 1, 1, 1]
 primedList = []
+aliveList = []
+deadList = []
 uniqueAbilityList = []
 allAbilities = []
 
@@ -41,6 +45,7 @@ class Creature():
         self._curHP = creatureDict[type]['HP']
         self._tempHP = 0
         self.isAlive = True
+        self.target = None
 
         #stats
         self._HP = creatureDict[type]['HP'] #creature default max
@@ -83,9 +88,37 @@ class Creature():
         
 
         #equip assignment
-        self._WEA = creatureDict[type]['WEA']
+        match creatureDict[type]['WEA']:
+            case 20:
+                self._WEA = D20
+            case 12:
+                self._WEA = D12
+            case 10:
+                self._WEA = D10
+            case 8:
+                self._WEA = D8
+            case 6:
+                self._WEA = D6
+            case 4:
+                self._WEA = D4
+            case _:
+                self._WEA = 0
         self.modWEA = 0
-        self._RWEA = creatureDict[type]['RWEA']
+        match creatureDict[type]['RWEA']:
+            case 20:
+                self._RWEA = D20
+            case 12:
+                self._RWEA = D12
+            case 10:
+                self._RWEA = D10
+            case 8:
+                self._RWEA = D8
+            case 6:
+                self._RWEA = D6
+            case 4:
+                self._RWEA = D4
+            case _:
+                self._RWEA = 0
         self.modRWEA = 0
         self.ARM = creatureDict[type]['ARM']
         self.baseARM = creatureDict[type]['ARM']
@@ -96,7 +129,10 @@ class Creature():
         self.abilities = hasAbilityDict[type]
         self.prioList = []
 
-    
+    def kill(self):
+        self.isAlive = False
+        print (f"{self.printName} died!")
+
     def takeDamage(self, damage):
         self._curHP = self._curHP - damage
         return
@@ -111,16 +147,27 @@ class Creature():
     def chooseAbility(self):
         return random.choice(self.abilities)
 
-    def chooseTarget(self):
-        self.target = random.choice(primedList)
-        while (self.target.TEAM == self.TEAM):
+    def chooseTarget(self, aliveList):
+        if self.TEAM == 1:
+            opposition = 2
+        else:
+            opposition = 1
+        if self.target is None:
             self.target = random.choice(primedList)
+            return
+        if opposition in aliveList:
+            while ((opposition == self.TEAM) or (self.target.isAlive == False)):
+                print (f"target {self.target} : team {self.TEAM} : opposition {opposition}")
+                self.target = random.choice(primedList)
+        else:
+            return
         #print (self.target.printName, self.target.TEAM, ' - ', self.printName, self.TEAM)
 
     def useAbility(self, ability):
         for option in allAbilities:
             if option.name == ability:
                 option.use(self, self.target)
+                print (f"{self.printName} used {option.name}")
     
     def strength(self):
         return self._STR + self.tempSTR
@@ -250,30 +297,40 @@ class Ability():
         self.canCast = False
     
           
-    def statSuccess(self, success, caster):
+    def statSuccess(self, success, monster):
         match success:
             case 'STR':
-                return caster.strength()
+                return monster.strength()
             case 'END':
-                return caster.endurance()
+                return monster.endurance()
             case 'COR':
-                return caster.coordination()
+                return monster.coordination()
             case 'DEX':
-                return caster.dexterity()
+                return monster.dexterity()
             case 'INT':
-                return caster.intelligence()
+                return monster.intelligence()
             case 'NOU':
-                return caster.nouse()
+                return monster.nouse()
             case 'WIL':
-                return caster.will()
+                return monster.will()
             case _:
                 return 0
     
     def use(self, caster, target):
         caster.AP -= self.AP
         successBonus = self.statSuccess(self.success, caster)
-        if (D20.roll() + successBonus >= self.contest):
-            self.onSuccess(caster, target)
+        match self.target:
+            case 'ally' | 'self':
+                if (D20.roll() + successBonus >= self.contest):
+                    self.onSuccess(caster, target)
+            case 'enemy':
+                successContest = self.statSuccess(self.contest, target)
+                if (D20.roll() + successBonus >= D20.roll() + successContest):
+                    self.onSuccess(caster, target)
+                else:
+                    print (f"{caster.printName} missed {target.printName}")
+        
+        
              
 
         
@@ -352,8 +409,82 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 caster.isTightened = 1
                 caster.modRWEA += 1
 
+class DebuffAbility(Ability):
+    def __init__(self, name, AP, target, range, success, contest, duration, effect):
+      super().__init__(name, AP, target, range, success, contest)
 
+class MeleeAbility(Ability):
+    def __init__(self, name, AP, target, range, success, contest, damstat):
+        super().__init__(name, AP, target, range, success, contest)
+        self.damStat = damstat
+    def onSuccess(self, caster, target):
+        match self.name:
+            case 'BACKSTAB':
+                pass
+            case 'DEATH THROES':
+                pass
+            case 'DISARM':
+                pass
+            case 'FEINT':
+                pass
+            case 'FEINT 2':
+                pass
+            case 'FEINT 3':
+                pass
+            case 'FLATTEN':
+                pass
+            case 'GAROTTE':
+                pass
+            case 'KNOCK BACK':
+                pass
+            case 'KNOCK BACK 2':
+                pass
+            case 'KNOCK BACK 3':
+                pass
+            case 'KNOCK OVER':
+                pass
+            case 'OFF-HAND ATTACK':
+                pass
+            case 'PIERCING THRUST':
+                pass
+            case 'SPLITT ATTACK':
+                pass
+            case 'STRIKE':
+                dieroll = caster._WEA.roll()
+                totaldamage = dieroll * self.damageStat(caster, self.damStat)
+                target.takeDamage(totaldamage)
+                print (f"{caster.printName} hit for {totaldamage} ({dieroll} dice roll * {self.damageStat(caster, self.damStat)} {self.damStat}), Enemy {target.printName}: HP = {target._curHP}")
+            case 'STUN':
+                pass
+            case 'STUN 2':
+                pass
+            case 'STUN 3':
+                pass
+            case _:
+                pass
+        return
+    def damageStat(self, monster, damStat):
+        match damStat:
+            case 'STR':
+                return monster.strength()
+            case 'END':
+                return monster.endurance()
+            case 'COR':
+                return monster.coordination()
+            case 'DEX':
+                return monster.dexterity()
+            case 'INT':
+                return monster.intelligence()
+            case 'NOU':
+                return monster.nouse()
+            case 'WIL':
+                return monster.will()
+            case _:
+                return 1
 
+class RangedAbility(Ability):
+    def __init__(self, name, AP, target, range, success, contest):
+        super().__init__(name, AP, target, range, success, contest)
 
 #BUFF ABILITIES
 allAbilities.append(BuffAbility('BLOCK', 1, 'self', 0, 'END', 20))
@@ -372,28 +503,33 @@ allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
 allAbilities.append(BuffAbility('TIGHTEN', 1, 'ally', 0, 'END', 0))
 allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
 
+#MELEE ABILITIES
+#backstab
+#death throes
+#disarm
+#feint
+#feint2
+#feint3
+#flatten
+#garotte
+#knock back
+#knock back 2
+#knock back 3
+#knock over
+#off-hand attack
+#piercing thrust
+#split attack
+allAbilities.append(MeleeAbility('STRIKE', 0, 'enemy', 1, 'COR', 'COR', 'STR'))
+#stun
+#stun 2
+#stun 3
+
 #*needs implementation
-
-
-
-class DebuffAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest, duration, effect):
-      super().__init__(name, AP, target, range, success, contest)
-
-class MeleeAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest):
-        super().__init__(name, AP, target, range, success, contest)
-
-    def onSuccess(self, caster, target):
-        return
-
-class RangedAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest):
-        super().__init__(name, AP, target, range, success, contest)
-
 
 def constructFighters():
     primedList.clear()
+    aliveList.clear()
+    deadList.clear()
     for i in chosenList:
         primedList.append(Creature(i))
 
@@ -404,13 +540,25 @@ def rollInitiative():
     primedList.sort(key=operator.attrgetter('INIT'),reverse=True)
 
 def beginCombatLoop(monList):
-    for monster in monList:
-        monster.moved = False
-        monster.attacked = False
-        monster.chooseTarget()
-        monster.useAbility(monster.chooseAbility())
-       # if (!monster.target):
-          #  findTar(monster, monList)
+    aliveList = teamList.copy()
+    print (f"{aliveList} : {teamList}")
+    combatRound = 1
+    while (aliveList.count(1) > 0 and aliveList.count(2) > 0):
+        print (f"Round {combatRound} Alive List:{aliveList}")
+        for monster in monList:
+            if (monster.isAlive):
+                monster.chooseTarget(aliveList)
+                monster.useAbility(monster.chooseAbility())
+                if (monster.target._curHP <= 0):
+                    deadList.insert(-1, monster.target.printName)
+                    aliveList.remove(monster.target.TEAM)
+                    monster.target.kill()
+            if (aliveList.count(1) == 0 or aliveList.count(2) == 0):
+                break
+        combatRound += 1
+    print (f"Combat Ended! Team {aliveList} won!") 
+        # if (!monster.target):
+            #  findTar(monster, monList)
         
             
 #turns within rounds
@@ -466,7 +614,7 @@ if __name__ == '__main__':
     D4 = Die(4)
     
     
-    varianceMinimizer = 500
+    varianceMinimizer = 10
     cycleloop = 0
 
     while cycleloop < varianceMinimizer:
