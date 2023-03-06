@@ -137,6 +137,7 @@ class Creature():
 
     def takeDamage(self, damage):
         self._curHP = self._curHP - damage
+        self.isStunned = 0
         return
     
     def takeHealing(self, healing):
@@ -384,6 +385,10 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 caster._curHP += 30
                 caster._maxHP += 30
                 caster.isFortified = D8.roll()+1
+            case 'DEATH THROES': # need to be worked in to death
+                #for monster in primedList:
+                   # if monster.TEAM != caster.TEAM:
+                pass
             case 'DOPPELGANGER':
                 caster.isDoppelgangered = D8.roll()+1
             case 'ENCOURAGE':
@@ -435,6 +440,7 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
             case 'TIGHTEN':
                 caster.isTightened = 1
                 caster.modRWEA += 1
+                        
 
 class DebuffAbility(Ability):
     def __init__(self, name, AP, target, range, success, contest, duration, effect):
@@ -447,47 +453,83 @@ class MeleeAbility(Ability):
         self.ignoreARM = ignoreARM
     def onSuccess(self, caster, target):
         match self.name:
-            case 'BACKSTAB':
-                pass
-            case 'DEATH THROES':
-                pass
-            case 'DISARM':
-                pass
-            case 'FEINT':
-                pass
-            case 'FEINT 2':
-                pass
-            case 'FEINT 3':
-                pass
-            case 'FLATTEN':
-                pass
-            case 'GAROTTE':
-                pass
-            case 'KNOCK BACK':
-                pass
-            case 'KNOCK BACK 2':
-                pass
-            case 'KNOCK BACK 3':
-                pass
-            case 'KNOCK OVER':
-                pass
-            case 'OFF-HAND ATTACK':
-                pass
-            case 'PIERCING THRUST':
-                pass
-            case 'SPLITT ATTACK':
-                pass
-            case 'STRIKE':
-                target.isStunned = D4.roll() + 1
-                print (f"{caster.printName} hit and stunned {target.printName} for")
-            case 'STUN':
+            case 'BACKSTAB':#behind implementation might not ever exist (even more OP)
                 dieroll = caster._WEA.roll()
                 totaldamage = dieroll * self.damageStat(caster, self.damStat)
                 target.takeDamage(totaldamage)
+                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+            case 'DISARM':
+                disarmDuration = D4.roll() + 1
+                if target.isDisarmed < disarmDuration:
+                    target.isDisarmed = disarmDuration
+                print (f"{caster.printName} hit and disarmed {target.printName} for {target.isDisarmed} rounds")
+            case 'FEINT':
+                dieroll = caster._WEA.roll()
+                totaldamage = (dieroll + 1) * self.damageStat(caster, self.damStat)
+                target.takeDamage(totaldamage)
+                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+            case 'FEINT 2':
+                dieroll = caster._WEA.roll()
+                totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
+                target.takeDamage(totaldamage)
+                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+            case 'FEINT 3':
+                dieroll = caster._WEA.roll()
+                totaldamage = (dieroll + 3) * self.damageStat(caster, self.damStat)
+                target.takeDamage(totaldamage)
+                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+            case 'FLATTEN':
+                effectDuration = D6.roll() + 4
+                if target.isProne < effectDuration:
+                    target.isProne = effectDuration
+                if target.isStunned < effectDuration:
+                    target.isStunned = effectDuration
+                print (f"{caster.printName} flattened {target.printName} for {target.isProne} rounds")
+            case 'GAROTTE': #garotte weapon?? (status effect) maybe)
+                pass
+            case 'KNOCK BACK': # needs movement implementation
+                print (f"{caster.printName} hit {target.printName} and knocked them back!")
+            case 'KNOCK BACK 2': # needs movement implementation
+                target.takeDamage(20)
+                print (f"{caster.printName} hit {target.printName} for {20} damage and knocked them back far!")
+            case 'KNOCK BACK 3': # needs movement implementation
+                target.takeDamage(60)
+                print (f"{caster.printName} hit {target.printName} for {60} damage and knocked them back very far!")
+            case 'KNOCK OVER':
+                proneDuration = D4.roll() + 1
+                if target.isProne < proneDuration:
+                    target.isProne = proneDuration
+                print (f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
+                pass
+            case 'OFF-HAND ATTACK': # needs multiple weapon implementation
+                pass
+            case 'PIERCING THRUST':
+                dieroll = caster._WEA.roll()
+                totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
+                target.takeDamage(totaldamage)
+                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+            case 'SPLIT ATTACK': # needs multiple weapon implementation
+                pass
+            case 'STRIKE':
+                dieroll = caster._WEA.roll()
+                totaldamage = dieroll * self.damageStat(caster, self.damStat)
+                target.takeDamage(totaldamage)
+                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+            case 'STUN':
+                stunDuration = D4.roll() + 1
+                if target.isStunned < stunDuration:
+                    target.isStunned = stunDuration
+                print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
             case 'STUN 2':
-                pass
+                stunDuration = D4.roll() + 3
+                if target.isStunned < stunDuration:
+                    target.isStunned = stunDuration
+                print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
             case 'STUN 3':
-                pass
+                stunDuration = D6.roll() + 6
+                if target.isStunned < stunDuration:
+                    target.isStunned = stunDuration
+                print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
             case _:
                 pass
         return
@@ -515,10 +557,12 @@ class RangedAbility(Ability):
         super().__init__(name, AP, target, range, success, contest)
 
 #BUFF ABILITIES
+
 allAbilities.append(BuffAbility('BLOCK', 1, 'self', 0, 'END', 20))
 allAbilities.append(BuffAbility('BLOCK 2', 2, 'self', 0, 'END', 25))
 allAbilities.append(BuffAbility('DEAD MAN WALKING', 2, 'self', 0, 'END', 20))
 allAbilities.append(BuffAbility('DEAD MAN WALKING 2', 3, 'self', 0, 'END', 25))
+#death throes
 #doppelganger*
 allAbilities.append(BuffAbility('ENCOURAGE', 1, 'ally', 0, 'END', 0))
 #extraaction*
@@ -531,28 +575,27 @@ allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
 allAbilities.append(BuffAbility('TIGHTEN', 1, 'ally', 0, 'END', 0))
 allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
 
-#MELEE ABILITIES
-#backstab
-#death throes
-#disarm
-#feint
-#feint2
-#feint3
-#flatten
-#garotte
-#knock back
-#knock back 2
-#knock back 3
-#knock over
-#off-hand attack
-#piercing thrust
-#split attack
-allAbilities.append(MeleeAbility('STRIKE', 0, 'enemy', 1, 'COR', 'COR', 'STR', False))
-#stun
-#stun 2
-#stun 3
 
-#*needs implementation
+#MELEE ABILITIES
+
+allAbilities.append(MeleeAbility('BACKSTAB', 1, 'enemy', 1, 'COR', 'NA', 'COR', False))
+allAbilities.append(MeleeAbility('DISARM', 3, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('FEINT', 1, 'enemy', 1, 'COR', 'NOU', 'STR', False))
+allAbilities.append(MeleeAbility('FEINT', 2, 'enemy', 1, 'COR', 'NOU', 'STR', False))
+allAbilities.append(MeleeAbility('FEINT', 3, 'enemy', 1, 'COR', 'NOU', 'STR', False))
+allAbilities.append(MeleeAbility('FLATTEN', 4, 'enemy', 1, 'STR', 'COR', 'NA', False))
+#garotte
+allAbilities.append(MeleeAbility('KNOCK BACK', 1, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('KNOCK BACK 2', 2, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('KNOCK BACK 3', 3, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('KNOCK OVER', 2, 'enemy', 1, 'STR', 'COR', 'NA', True))
+#off-hand attack
+allAbilities.append(MeleeAbility('PIERCING THRUST', 2, 'enemy', 1, 'STR', 'NA', 'STR', False))
+#split attack
+allAbilities.append(MeleeAbility('STUN', 1, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('STUN 2', 2, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('STUN 3', 3, 'enemy', 1, 'STR', 'COR', 'NA', True))
+
 
 def constructFighters():
     primedList.clear()
@@ -587,51 +630,7 @@ def beginCombatLoop(monList):
                 break
         combatRound += 1
     print (f"Combat Ended! Team {aliveList} won!") 
-        # if (!monster.target):
-            #  findTar(monster, monList)
-        
-            
-#turns within rounds
-#rounds
-#deicions making
 
-#target priority list
-
-# def findTar(monster, list):
-#     monster.target = random.choice(list)
-#     while (monster.target.charmed)
-#         monster.target = random.choice(list)
-
-
-#def attackmove(cr1, cr2, ability):
-    #D20.roll() + ability.stat
-    #check range
-    #move if out of range
-    #roll attack
-    #deal damage
-    #move if havent moved
-    #apply debuffs
-
-#def bestAbil():
-    #pick ability
-    #return 0
-
-#function monsterattack
-   
-
-# def executeCombat():
-    
-
-# in order of initiative
-#     check if alive
-#     if ranged target selection (choose ranged attack) monster attacks (bool has attacked)
-#     otherwise move unless near enemy (bool has moved)
-#     target selection attack (choose melee attack)
-#     move   
-
-
-# def cfight(crea1, damage):
-#         crea1.curHP = crea1.curHP - damage
 
 
 if __name__ == '__main__':
@@ -662,17 +661,3 @@ if __name__ == '__main__':
         print ('Abilities: ', monster.abilities)
         
 
-        
-
-# def beginCombat(fightDict, ):
-#     Skeleton = Creature("meleeSkeleton", "Skeleton")
-#     #roll initiative
-#     for each in fightDict:
-#         random.randint(1,20) + fightDict.
-
-
-# print(Skeleton.curHP)
-
-# takeDam(Skeleton, 45)
-
-# print(Skeleton.curHP)
