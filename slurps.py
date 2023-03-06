@@ -71,7 +71,6 @@ class Creature():
                
         #status effects
         self.isBlocking = 0
-        self.isCharmed = 0
         self.isClumsy = 0
         self.isDisarmed = 0
         self.isDoppelgangered = 0
@@ -289,10 +288,6 @@ def statusTicker(monster):
         if not(monster.isClumsy):
             monster.tempCOR += (monster._COR/2)
 
-    if (monster.isCharmed):
-        monster.isCharmed -= 1
-
-
     if (monster.isBlocking):
         monster.isBlocking -= 1
         if not(monster.isBlocking):
@@ -399,7 +394,9 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 target.tempINT += 1
                 target.tempNOU += 1
                 target.tempWIL += 1
-                target.isEncouraged = D4.roll()+1
+                encourageDuration = D4.roll()+1
+                if target.isEncouraged < encourageDuration:
+                    target.isEncouraged = encourageDuration
             case 'EXTRA ACTION':
                 pass
             case 'EXTRA ACTION 2':
@@ -429,7 +426,9 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                         ally.tempINT += 1
                         ally.tempNOU += 1
                         ally.tempWIL += 1
-                        ally.isEncouraged = D4.roll()+1
+                        encourageDuration = D4.roll()+1
+                        if ally.isEncouraged < encourageDuration:
+                            ally.isEncouraged = encourageDuration
             case 'ROUSING SONG':
                 for ally in primedList:
                     if caster.team == ally.team:
@@ -574,6 +573,8 @@ allAbilities.append(BuffAbility('HEAL 3', 4, 'ally', 1, 'NOU', 24))
 allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
 allAbilities.append(BuffAbility('TIGHTEN', 1, 'ally', 0, 'END', 0))
 allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
+allAbilities.append(BuffAbility('ROUSING SHOUT', 2, 'ally', 10, 'NA', 0))
+allAbilities.append(BuffAbility('ROUSING SONG', 0, 'ally', 10, 'NA', 0))
 
 
 #MELEE ABILITIES
@@ -592,6 +593,7 @@ allAbilities.append(MeleeAbility('KNOCK OVER', 2, 'enemy', 1, 'STR', 'COR', 'NA'
 #off-hand attack
 allAbilities.append(MeleeAbility('PIERCING THRUST', 2, 'enemy', 1, 'STR', 'NA', 'STR', False))
 #split attack
+allAbilities.append(MeleeAbility('STRIKE', 0, 'enemy', 1, 'COR', 'COR' , 'STR', False))
 allAbilities.append(MeleeAbility('STUN', 1, 'enemy', 1, 'STR', 'COR', 'NA', True))
 allAbilities.append(MeleeAbility('STUN 2', 2, 'enemy', 1, 'STR', 'COR', 'NA', True))
 allAbilities.append(MeleeAbility('STUN 3', 3, 'enemy', 1, 'STR', 'COR', 'NA', True))
@@ -630,8 +632,6 @@ def beginCombatLoop(monList):
                 break
         combatRound += 1
     print (f"Combat Ended! Team {aliveList} won!") 
-
-
 
 if __name__ == '__main__':
 
