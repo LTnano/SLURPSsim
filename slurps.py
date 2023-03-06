@@ -26,7 +26,7 @@ hasAbilityDict = pickle.load(dataHasAbility)
 
 # chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rangedSkeletonH', 'giantRat']
 # teamList = [1, 1, 2, 1, 2, 2]
-chosenList = ['giantRat', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton']
+chosenList = ['thinBilly', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton']
 teamList = [1, 2, 2, 1, 2, 2, 1, 1, 1]
 primedList = []
 aliveList = []
@@ -46,6 +46,7 @@ class Creature():
         self._tempHP = 0
         self.isAlive = True
         self.target = None
+        self.targetAlly = None
 
         #stats
         self._HP = creatureDict[type]['HP'] #creature default max
@@ -83,6 +84,7 @@ class Creature():
         self.isProne = 0
         self.isScared = 0
         self.isStunned = 0
+        #notick status effects
         self.isSharpened = 0
         self.isTightened = 0        
         
@@ -144,9 +146,11 @@ class Creature():
         self._curHP = self._maxHP
         return
 
+    #randomly select an ability
     def chooseAbility(self):
         return random.choice(self.abilities)
-
+    
+    #choose an enemy 
     def chooseTarget(self, aliveList):
         if self.TEAM == 1:
             opposition = 2
@@ -157,18 +161,34 @@ class Creature():
             return
         if opposition in aliveList:
             while ((opposition == self.TEAM) or (self.target.isAlive == False)):
-                print (f"target {self.target} : team {self.TEAM} : opposition {opposition}")
                 self.target = random.choice(primedList)
         else:
             return
         #print (self.target.printName, self.target.TEAM, ' - ', self.printName, self.TEAM)
 
+    #chooses an ally from own team
+    def chooseAlly(self, aliveList):
+        if self.TEAM == 1:
+            allies = 1
+        else:
+            allies = 2
+        if self.targetAlly is None:
+            self.targetAlly = random.choice(primedList)
+            return
+        if allies in aliveList:
+            while ((allies != self.TEAM) or (self.targetAlly.isAlive == False)):
+                self.targetAlly = random.choice(primedList)
+        else:
+            return
+        
+    #uses selected ability  
     def useAbility(self, ability):
         for option in allAbilities:
             if option.name == ability:
-                option.use(self, self.target)
+                option.use(self, self.target, self.targetAlly)
                 print (f"{self.printName} used {option.name}")
-    
+
+    #stat methods, returns stat + temp stat
     def strength(self):
         return self._STR + self.tempSTR
     
@@ -278,8 +298,9 @@ def statusTicker(monster):
             monster.ARM -= monster.baseARM
 
 class Die():
-    def __init__(self, sides):
+    def __init__(self, sides, name):
         self.sides = sides
+        self.name = name
     
     def roll(self):
         return random.randint(1,self.sides)
@@ -316,16 +337,22 @@ class Ability():
             case _:
                 return 0
     
-    def use(self, caster, target):
+    def use(self, caster, target, targetAlly):
         caster.AP -= self.AP
+        armour = 0
+        ignoreARM = False
+        if hasattr(self, 'ignoreARM'):
+            ignoreARM = self.ignoreARM
         successBonus = self.statSuccess(self.success, caster)
         match self.target:
-            case 'ally' | 'self':
+            case 'ally'| 'self':
                 if (D20.roll() + successBonus >= self.contest):
-                    self.onSuccess(caster, target)
+                    self.onSuccess(caster, targetAlly)
             case 'enemy':
                 successContest = self.statSuccess(self.contest, target)
-                if (D20.roll() + successBonus >= D20.roll() + successContest):
+                if not (ignoreARM):
+                    armour = target.ARM
+                if (D20.roll() + successBonus >= D20.roll() + successContest + armour):
                     self.onSuccess(caster, target)
                 else:
                     print (f"{caster.printName} missed {target.printName}")
@@ -342,10 +369,10 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
     def onSuccess(self, caster, target):
         match self.effect:
             case 'BLOCK':
-                caster.armour *= 2
+                caster.ARM *= 2
                 caster.isBlocking = D4.roll()+1
             case 'BLOCK 2':
-                caster.armour *= 2
+                caster.ARM *= 2
                 caster.isBlocking = D8.roll()+1
             case 'DEAD MAN WALKING':
                 caster._tempHP += 20
@@ -414,9 +441,10 @@ class DebuffAbility(Ability):
       super().__init__(name, AP, target, range, success, contest)
 
 class MeleeAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest, damstat):
+    def __init__(self, name, AP, target, range, success, contest, damstat, ignoreARM):
         super().__init__(name, AP, target, range, success, contest)
         self.damStat = damstat
+        self.ignoreARM = ignoreARM
     def onSuccess(self, caster, target):
         match self.name:
             case 'BACKSTAB':
@@ -450,12 +478,12 @@ class MeleeAbility(Ability):
             case 'SPLITT ATTACK':
                 pass
             case 'STRIKE':
+                target.isStunned = D4.roll() + 1
+                print (f"{caster.printName} hit and stunned {target.printName} for")
+            case 'STUN':
                 dieroll = caster._WEA.roll()
                 totaldamage = dieroll * self.damageStat(caster, self.damStat)
                 target.takeDamage(totaldamage)
-                print (f"{caster.printName} hit for {totaldamage} ({dieroll} dice roll * {self.damageStat(caster, self.damStat)} {self.damStat}), Enemy {target.printName}: HP = {target._curHP}")
-            case 'STUN':
-                pass
             case 'STUN 2':
                 pass
             case 'STUN 3':
@@ -519,7 +547,7 @@ allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
 #off-hand attack
 #piercing thrust
 #split attack
-allAbilities.append(MeleeAbility('STRIKE', 0, 'enemy', 1, 'COR', 'COR', 'STR'))
+allAbilities.append(MeleeAbility('STRIKE', 0, 'enemy', 1, 'COR', 'COR', 'STR', False))
 #stun
 #stun 2
 #stun 3
@@ -547,7 +575,9 @@ def beginCombatLoop(monList):
         print (f"Round {combatRound} Alive List:{aliveList}")
         for monster in monList:
             if (monster.isAlive):
+                statusTicker(monster)
                 monster.chooseTarget(aliveList)
+                monster.chooseAlly(aliveList)
                 monster.useAbility(monster.chooseAbility())
                 if (monster.target._curHP <= 0):
                     deadList.insert(-1, monster.target.printName)
@@ -606,12 +636,12 @@ def beginCombatLoop(monList):
 
 if __name__ == '__main__':
 
-    D20 = Die(20)
-    D12 = Die(12)
-    D10 = Die(10)
-    D8 = Die(8)
-    D6 = Die(6)
-    D4 = Die(4)
+    D20 = Die(20, 'D20')
+    D12 = Die(12, 'D12')
+    D10 = Die(10, 'D10')
+    D8 = Die(8, 'D8')
+    D6 = Die(6, 'D6')
+    D4 = Die(4, 'D4')
     
     
     varianceMinimizer = 10
