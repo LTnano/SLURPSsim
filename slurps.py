@@ -103,7 +103,7 @@ class Creature():
             case 4:
                 self._WEA = D4
             case _:
-                self._WEA = 0
+                self._WEA = D0
         self.modWEA = 0
         match creatureDict[type]['RWEA']:
             case 20:
@@ -119,7 +119,7 @@ class Creature():
             case 4:
                 self._RWEA = D4
             case _:
-                self._RWEA = 0
+                self._RWEA = D0
         self.modRWEA = 0
         self.ARM = creatureDict[type]['ARM']
         self.baseARM = creatureDict[type]['ARM']
@@ -300,6 +300,9 @@ class Die():
     
     def roll(self):
         return random.randint(1,self.sides)
+    
+    def average(self):
+        return (self.sides+1)/2
 
 
 class Ability():
@@ -641,6 +644,7 @@ if __name__ == '__main__':
     D8 = Die(8, 'D8')
     D6 = Die(6, 'D6')
     D4 = Die(4, 'D4')
+    D0 = Die(0, 'D0')
     
     
     varianceMinimizer = 10
@@ -653,11 +657,11 @@ if __name__ == '__main__':
         cycleloop += 1
 
     for monster in primedList:
-        print ('\n', monster.printName)
-        print ('Initiative:', monster.INIT)
-        print ('Team:', monster.TEAM)
-        print ('HP:', monster._curHP)
-        print ('AP', monster.AP)
-        print ('Abilities: ', monster.abilities)
+        print (f"\n{monster.printName}")
+        print (f"Initiative: {monster.INIT}")
+        print (f"Team: {monster.TEAM}")
+        print (f"HP: {monster._curHP}")
+        print (f"AP: {monster.AP}")
+        print (f"Abilities: {monster.abilities}")
         
 
