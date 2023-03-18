@@ -33,6 +33,11 @@ aliveList = []
 deadList = []
 uniqueAbilityList = []
 allAbilities = []
+combatRoundList = []
+avgCombatdur = 3.5
+
+def takeSecond(elem):
+    return elem[1]
 
 class Creature():
     def __init__(self, type):
@@ -146,10 +151,51 @@ class Creature():
         self._curHP = self._maxHP
         return
 
-    #randomly select an ability
-    def chooseAbility(self):
-        return random.choice(self.abilities)
+    def healWeighting(self, healing):
+        return self._maxHP/(self._curHP + healing)
     
+    def checkAbility(self):
+        weightingList = []
+        for ability in self.abilities:
+            for realability in allAbilities:
+                weighting = self.setPriority(realability, ability)
+                if not weighting == None:
+                    weightingList.append(int(weighting))
+        self.prioList = list(zip(self.abilities, weightingList))
+        print (f"{self.prioList}")
+        self.prioList.sort(key=takeSecond)
+        print (f"{self.prioList}")
+
+
+    def hitChance(self, successBonus, successContest):
+        roll = 1
+        while roll <= 20:
+            if (successBonus+roll >= successContest):
+                return (1 - ((roll-1)/20))
+            roll +=1
+
+    def setPriority(self, realability, ability):
+        if realability.name == ability:
+            match realability.target:
+                case 'enemy':
+                    successBonus = realability.statSuccess(realability.success, self)
+                    successContest = realability.statSuccess(realability.contest, self.target) + D20.average()
+                    weighting = self.hitChance(successBonus, successContest) * realability.onSuccess(self, self.target, True)
+                case 'ally'|'self':
+                    successBonus = realability.statSuccess(realability.success, self) + D20.average()
+                    successContest = realability.statSuccess(realability.contest, self.target) + D20.average()
+                    weighting = self.hitChance(successBonus, successContest) * realability.onSuccess(self, self.target, True)
+            return weighting
+
+    
+
+        #check the damage of the ability based on monsters stats
+        #check the health of allies and increase
+
+    def chooseAbility(self):
+        #return random.choice(self.abilities)
+        return self.prioList[-1][0]    
+            
     #choose an enemy 
     def chooseTarget(self, aliveList):
         if self.TEAM == 1:
@@ -160,7 +206,7 @@ class Creature():
             self.target = random.choice(primedList)
             return
         if opposition in aliveList:
-            while ((opposition == self.TEAM) or (self.target.isAlive == False)):
+            while ((opposition == self.TEAM) and (self.target.isAlive == False)):
                 self.target = random.choice(primedList)
         else:
             return
@@ -210,6 +256,8 @@ class Creature():
     def will(self):
         return self._WIL + self.tempWIL
 
+    def statAverage(self):
+        return (self.strength() + self.coordination() + self.endurance() + self.intelligence() + self.nouse() + self.will())/7
 
 def statusTicker(monster):
 
@@ -226,6 +274,7 @@ def statusTicker(monster):
             monster.tempINT += 1
             monster.tempNOU += 1
             monster.tempWIL += 1
+            monster._maxHP += 10
 
     if (monster.isProne):
         monster.isProne -= 1
@@ -242,6 +291,7 @@ def statusTicker(monster):
             monster.tempINT += 2
             monster.tempNOU += 2
             monster.tempWIL += 2
+            monster._maxHP += 20
 
     if (monster.isPanicked):
         monster.isPanicked -= 1
@@ -265,6 +315,7 @@ def statusTicker(monster):
             monster.tempINT -= 1
             monster.tempNOU -= 1
             monster.tempWIL -= 1
+            monster._maxHP -= 10
 
     if (monster.isFortified):
         monster.isFortified -= 1
@@ -272,11 +323,7 @@ def statusTicker(monster):
             monster._maxHP = monster._HP
             monster._curHP = monster._curHP - monster._tempHP
             monster._tempHP = 0
-            if (monster._curHP > monster._maxHP):
-                monster._curHP = monster._maxHP
-            if (monster._curHP <= 0):
-                monster.isAlive = False
-
+            
     if (monster.isDoppelgangered):
         monster.isDoppelgangered -= 1
 
@@ -292,6 +339,12 @@ def statusTicker(monster):
         monster.isBlocking -= 1
         if not(monster.isBlocking):
             monster.ARM -= monster.baseARM
+    
+    if (monster._curHP > monster._maxHP):
+        monster._curHP = monster._maxHP
+
+    if (monster._curHP <= 0):
+        monster.isAlive = False
 
 class Die():
     def __init__(self, sides, name):
@@ -306,17 +359,23 @@ class Die():
 
 
 class Ability():
-    def __init__(self, name, AP, target, range, success, contest):
+    def __init__(self, name, AP, target, success, contest):
         
         self.name = name
         self.AP = AP
         self.target = target
-        self.range = range
+        #self.range = range
         self.success = success
         self.contest = contest
-        self.canCast = False
+
+    def combatDurWeighting(self, effectdur):
+        return effectdur/avgCombatdur  
+
+    def canCast(self, caster):
+        if caster.AP >= self.AP:
+            return True
+        return False
     
-          
     def statSuccess(self, success, monster):
         match success:
             case 'STR':
@@ -346,13 +405,13 @@ class Ability():
         match self.target:
             case 'ally'| 'self':
                 if (D20.roll() + successBonus >= self.contest):
-                    self.onSuccess(caster, targetAlly)
+                    self.onSuccess(caster, targetAlly, False)
             case 'enemy':
                 successContest = self.statSuccess(self.contest, target)
                 if not (ignoreARM):
                     armour = target.ARM
                 if (D20.roll() + successBonus >= D20.roll() + successContest + armour):
-                    self.onSuccess(caster, target)
+                    target.takeDamage(self.onSuccess(caster, target, False))
                 else:
                     print (f"{caster.printName} missed {target.printName}")
         
@@ -361,45 +420,101 @@ class Ability():
 
         
 class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelganger, encourage, extra action 1 2, extra shot, heal 1 2 3, levitate, play dead 1 2, sharpen, tighten, turn, vault, weighten
-    def __init__(self, name, AP, target, range, success, contest):
-      super().__init__(name, AP, target, range, success, contest)
+    def __init__(self, name, AP, target, success, contest):
+      super().__init__(name, AP, target, success, contest)
       self.effect = name
 
-    def onSuccess(self, caster, target):
+    def onSuccess(self, caster, target, test):
+        abilityweight = 0
         match self.effect:
             case 'BLOCK':
-                caster.ARM *= 2
-                caster.isBlocking = D4.roll()+1
+                if not test:
+                    caster.ARM *= 2
+                    caster.isBlocking = D4.roll()+1
+                if test:
+                    if self.canCast(caster):
+                        if not caster.isBlocking:
+                            abilityweight =  (caster.ARM * 2 * D4.average()) / self.combatDurWeighting(D4.average()+1)
+                        else:
+                            abilityweight = 0
+                    else:
+                        abilityweight = 0
             case 'BLOCK 2':
-                caster.ARM *= 2
-                caster.isBlocking = D8.roll()+1
+                if not test:
+                    caster.ARM *= 2
+                    caster.isBlocking = D8.roll()+1
+                if test:
+                    if self.canCast(caster):
+                        if not (caster.isBlocking):
+                            abilityweight =  (caster.ARM * 2 * D8.average()) / self.combatDurWeighting(D8.average()+1)
+                        else:
+                            abilityweight = 0
+                    else:
+                        abilityweight = 0
             case 'DEAD MAN WALKING':
-                caster._tempHP += 20
-                caster._curHP += 20
-                caster._maxHP += 20
-                caster.isFortified = D4.roll()+1
+                if not test:
+                    caster._tempHP += 20
+                    caster._curHP += 20
+                    caster._maxHP += 20
+                    caster.isFortified = D4.roll()+1
+                if test:
+                    if self.canCast(caster):
+                        if not (caster.isFortified):
+                            abilityweight = (15 * D4.average()+1) / self.combatDurWeighting(D4.average()+1) * caster.healWeighting(20)
+                            #half of current HP + quarter of maxHP increase * average rounds of effect
+                            #divided by the combat duration weighting
+                            #multiplied by the heal weighting    
+                        else:
+                            abilityweight = 0
+                    else:
+                        abilityweight = 0
             case 'DEAD MAN WALKING 2':
-                caster._tempHP += 30
-                caster._curHP += 30
-                caster._maxHP += 30
-                caster.isFortified = D8.roll()+1
+                if not test:
+                    caster._tempHP += 30
+                    caster._curHP += 30
+                    caster._maxHP += 30
+                    caster.isFortified = D8.roll()+1
+                if test:
+                    if self.canCast(caster):
+                        if not (caster.isFortified):
+                            abilityweight = (25 * D8.average()+1) / self.combatDurWeighting(D8.average()+1) * caster.healWeighting(30)  
+                        else:
+                            abilityweight = 0
+                    else:
+                        abilityweight = 0
             case 'DEATH THROES': # need to be worked in to death
                 #for monster in primedList:
                    # if monster.TEAM != caster.TEAM:
                 pass
             case 'DOPPELGANGER':
-                caster.isDoppelgangered = D8.roll()+1
+                if not test:
+                    caster.isDoppelgangered = D8.roll()+1
+                if test:
+                    abilityweight = 0
             case 'ENCOURAGE':
-                target.tempSTR += 1
-                target.tempEND += 1
-                target.tempCOR += 1
-                target.tempDEX += 1
-                target.tempINT += 1
-                target.tempNOU += 1
-                target.tempWIL += 1
-                encourageDuration = D4.roll()+1
-                if target.isEncouraged < encourageDuration:
-                    target.isEncouraged = encourageDuration
+                if not test:
+                    target.tempSTR += 1
+                    target.tempEND += 1
+                    target.tempCOR += 1
+                    target.tempDEX += 1
+                    target.tempINT += 1
+                    target.tempNOU += 1
+                    target.tempWIL += 1
+                    target._maxHP += 10
+                    encourageDuration = D4.roll()+1
+                    if target.isEncouraged < encourageDuration:
+                        target.isEncouraged = encourageDuration
+                if test:
+                    if self.canCast(target):
+                        if not (target.isEncouraged):
+                            abilityweight = (20 * D4.average()+1) / self.combatDurWeighting(D4.average()+1) * target.healWeighting(20)
+                            #half of current HP + quarter of maxHP increase + (temp stats * 10 / 2) * average rounds of effect
+                            #divided by the combat duration weighting
+                            #multiplied by the heal weighting    
+                        else:
+                            abilityweight = 0
+                    else:
+                        abilityweight = 0
             case 'EXTRA ACTION':
                 pass
             case 'EXTRA ACTION 2':
@@ -407,134 +522,217 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
             case 'EXTRA SHOT':
                 pass
             case 'HEAL':
-                healval = caster.dexterity() * D6.roll()
-                target.takeHealing(healval)
+                if not test:
+                    healval = caster.dexterity() * D6.roll()
+                    target.takeHealing(healval)
+                if test:
+                    if self.canCast(target):
+                        healval = caster.dexterity() * (D6.average())
+                        abilityweight = (healval / 2) * target.healWeighting(healval)  
+                    else:
+                        abilityweight = 0
             case 'HEAL 2':
-                healval = caster.dexterity() * (D6.roll() + 4)
-                target.takeHealing(healval)
+                if not test:
+                    healval = caster.dexterity() * (D6.roll() + 4)
+                    target.takeHealing(healval)
+                if test:
+                    if self.canCast(target):
+                        healval = caster.dexterity() * (D6.average() + 4)
+                        abilityweight = (healval / 2) * target.healWeighting(healval)  
+                    else:
+                        abilityweight = 0
             case 'HEAL 3':
-                healval = caster.dexterity() * (D12.roll() + 4)
-                target.takeHealing(healval)
+                if not test:
+                    healval = caster.dexterity() * (D12.roll() + 4)
+                    target.takeHealing(healval)
+                if test:
+                    if self.canCast(target):
+                        healval = caster.dexterity() * (D12.average() + 4)
+                        abilityweight = (healval / 2) * target.healWeighting(healval)  
+                    else:
+                        abilityweight = 0
             case 'PLAY DEAD':
                 pass
             case 'PLAY DEAD 2':
                 pass
             case 'ROUSING SHOUT':
-                for ally in primedList:
-                    if caster.team == ally.team:
-                        ally.tempSTR += 1
-                        ally.tempEND += 1
-                        ally.tempCOR += 1
-                        ally.tempDEX += 1
-                        ally.tempINT += 1
-                        ally.tempNOU += 1
-                        ally.tempWIL += 1
-                        encourageDuration = D4.roll()+1
-                        if ally.isEncouraged < encourageDuration:
-                            ally.isEncouraged = encourageDuration
+                if not test:
+                    encourageDuration = D4.roll()+1
+                    for ally in primedList:
+                        if caster.team == ally.team:
+                            if not ally.isEncouraged:
+                                ally.tempSTR += 1
+                                ally.tempEND += 1
+                                ally.tempCOR += 1
+                                ally.tempDEX += 1
+                                ally.tempINT += 1
+                                ally.tempNOU += 1
+                                ally.tempWIL += 1
+                                ally._maxHP += 10
+                            if ally.isEncouraged < encourageDuration:
+                                ally.isEncouraged = encourageDuration
+                if test:
+                    if self.canCast(target):
+                        for ally in primedList:
+                            if caster.team == ally.team:
+                                if not ally.isEncouraged:
+                                    abilityweight = abilityweight + (20 * D4.average()+1) / self.combatDurWeighting(D4.average()+1) * ally.healWeighting(20)
+                            #half of current HP + quarter of maxHP increase * average rounds of effect
+                            #divided by the combat duration weighting
+                            #multiplied by the heal weighting    
+                    else:
+                        abilityweight = 0
             case 'ROUSING SONG':
-                for ally in primedList:
-                    if caster.team == ally.team:
-                        ally.AP = ally._maxAP
+                if not test:
+                    for ally in primedList:
+                        if caster.team == ally.team:
+                            ally.AP = ally._maxAP
+                if test:
+                    for ally in primedList:
+                        if caster.team == ally.team:
+                            abilityweight = (ally._maxAP/(ally.AP+1)) * (ally.statAverage())
+                    
             case 'SHARPEN':
-                caster.isSharpened = 1
-                caster.modWEA += 1
+                if not test:
+                    caster.isSharpened = 1
+                    caster.modWEA += 1
+                if test:
+                    abilityweight = avgCombatdur*self.damageStat(caster, self.damStat)
             case 'TIGHTEN':
-                caster.isTightened = 1
-                caster.modRWEA += 1
-                        
+                if not test:
+                    caster.isTightened = 1
+                    caster.modRWEA += 1
+                if test:
+                    abilityweight = avgCombatdur*self.damageStat(caster, self.damStat)
+        return abilityweight        
 
 class DebuffAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest, duration, effect):
-      super().__init__(name, AP, target, range, success, contest)
+    def __init__(self, name, AP, target, success, contest, duration, effect):
+      super().__init__(name, AP, target, success, contest)
 
 class MeleeAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest, damstat, ignoreARM):
-        super().__init__(name, AP, target, range, success, contest)
+    def __init__(self, name, AP, target, success, contest, damstat, ignoreARM):
+        super().__init__(name, AP, target, success, contest)
         self.damStat = damstat
         self.ignoreARM = ignoreARM
-    def onSuccess(self, caster, target):
+    def onSuccess(self, caster, target, test):
+        totaldamage = 0
         match self.name:
             case 'BACKSTAB':#behind implementation might not ever exist (even more OP)
-                dieroll = caster._WEA.roll()
-                totaldamage = dieroll * self.damageStat(caster, self.damStat)
-                target.takeDamage(totaldamage)
-                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if not test:
+                    dieroll = caster._WEA.roll()
+                    totaldamage = dieroll * self.damageStat(caster, self.damStat)
+                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if test:
+                    dieroll = caster._WEA.average()
+                    totaldamage = dieroll * self.damageStat(caster, self.damStat)
             case 'DISARM':
-                disarmDuration = D4.roll() + 1
-                if target.isDisarmed < disarmDuration:
-                    target.isDisarmed = disarmDuration
+                if not test:
+                    disarmDuration = D4.roll() + 1
+                    if target.isDisarmed < disarmDuration:
+                        target.isDisarmed = disarmDuration
+                if test:
+                    totaldamage = 0
                 print (f"{caster.printName} hit and disarmed {target.printName} for {target.isDisarmed} rounds")
             case 'FEINT':
-                dieroll = caster._WEA.roll()
-                totaldamage = (dieroll + 1) * self.damageStat(caster, self.damStat)
-                target.takeDamage(totaldamage)
-                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if not test:
+                    dieroll = caster._WEA.roll()
+                    totaldamage = (dieroll + 1) * self.damageStat(caster, self.damStat)
+                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if test:
+                    dieroll = caster._WEA.average()
+                    totaldamage = (dieroll + 1) * self.damageStat(caster, self.damStat)
             case 'FEINT 2':
-                dieroll = caster._WEA.roll()
-                totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
-                target.takeDamage(totaldamage)
-                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if not test:
+                    dieroll = caster._WEA.roll()
+                    totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
+                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if test:
+                    dieroll = caster._WEA.average()
+                    totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
             case 'FEINT 3':
-                dieroll = caster._WEA.roll()
-                totaldamage = (dieroll + 3) * self.damageStat(caster, self.damStat)
-                target.takeDamage(totaldamage)
-                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if not test:
+                    dieroll = caster._WEA.roll()
+                    totaldamage = (dieroll + 3) * self.damageStat(caster, self.damStat)
+                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if test:
+                    dieroll = caster._WEA.average()
+                    totaldamage = (dieroll + 3) * self.damageStat(caster, self.damStat)
             case 'FLATTEN':
-                effectDuration = D6.roll() + 4
-                if target.isProne < effectDuration:
-                    target.isProne = effectDuration
-                if target.isStunned < effectDuration:
-                    target.isStunned = effectDuration
-                print (f"{caster.printName} flattened {target.printName} for {target.isProne} rounds")
+                if not test:
+                    effectDuration = D6.roll() + 4
+                    if target.isProne < effectDuration:
+                        target.isProne = effectDuration
+                    if target.isStunned < effectDuration:
+                        target.isStunned = effectDuration
+                    print (f"{caster.printName} flattened {target.printName} for {target.isProne} rounds")
+                if test:
+                    totaldamage = 0 + 0
             case 'GAROTTE': #garotte weapon?? (status effect) maybe)
                 pass
-            case 'KNOCK BACK': # needs movement implementation
-                print (f"{caster.printName} hit {target.printName} and knocked them back!")
-            case 'KNOCK BACK 2': # needs movement implementation
-                target.takeDamage(20)
-                print (f"{caster.printName} hit {target.printName} for {20} damage and knocked them back far!")
-            case 'KNOCK BACK 3': # needs movement implementation
-                target.takeDamage(60)
-                print (f"{caster.printName} hit {target.printName} for {60} damage and knocked them back very far!")
+            #case 'KNOCK BACK': # needs movement implementation
+                #print (f"{caster.printName} hit {target.printName} and knocked them back!")
+            #case 'KNOCK BACK 2': # needs movement implementation
+                #totaldamage = 20
+                #print (f"{caster.printName} hit {target.printName} for {20} damage and knocked them back far!")
+            #case 'KNOCK BACK 3': # needs movement implementation
+               # totaldamage = 60
+                #print (f"{caster.printName} hit {target.printName} for {60} damage and knocked them back very far!")
             case 'KNOCK OVER':
-                proneDuration = D4.roll() + 1
-                if target.isProne < proneDuration:
-                    target.isProne = proneDuration
-                print (f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
-                pass
+                if not test:
+                    proneDuration = D4.roll() + 1
+                    if target.isProne < proneDuration:
+                        target.isProne = proneDuration
+                    print (f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
+                if test:
+                    totaldamage = 0
             case 'OFF-HAND ATTACK': # needs multiple weapon implementation
                 pass
             case 'PIERCING THRUST':
-                dieroll = caster._WEA.roll()
-                totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
-                target.takeDamage(totaldamage)
-                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if not test:
+                    dieroll = caster._WEA.roll()
+                    totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
+                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if test:
+                    dieroll = caster._WEA.average()
+                    totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
             case 'SPLIT ATTACK': # needs multiple weapon implementation
                 pass
             case 'STRIKE':
-                dieroll = caster._WEA.roll()
-                totaldamage = dieroll * self.damageStat(caster, self.damStat)
-                target.takeDamage(totaldamage)
-                print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if not test:
+                    dieroll = caster._WEA.roll()
+                    totaldamage = dieroll * self.damageStat(caster, self.damStat)
+                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                if test:
+                    dieroll = caster._WEA.average()
+                    totaldamage = dieroll * self.damageStat(caster, self.damStat)
             case 'STUN':
-                stunDuration = D4.roll() + 1
-                if target.isStunned < stunDuration:
-                    target.isStunned = stunDuration
-                print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                if not test:
+                    stunDuration = D4.roll() + 1
+                    if target.isStunned < stunDuration:
+                        target.isStunned = stunDuration
+                    print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                if test:
+                    totaldamage = 0
             case 'STUN 2':
-                stunDuration = D4.roll() + 3
-                if target.isStunned < stunDuration:
-                    target.isStunned = stunDuration
-                print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                if not test:
+                    stunDuration = D4.roll() + 3
+                    if target.isStunned < stunDuration:
+                        target.isStunned = stunDuration
+                    print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                if test:
+                    totaldamage = 0
             case 'STUN 3':
-                stunDuration = D6.roll() + 6
-                if target.isStunned < stunDuration:
-                    target.isStunned = stunDuration
-                print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                if not test:
+                    stunDuration = D6.roll() + 6
+                    if target.isStunned < stunDuration:
+                        target.isStunned = stunDuration
+                    print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                if test:
+                    totaldamage = 0
             case _:
                 pass
-        return
+        return totaldamage
     def damageStat(self, monster, damStat):
         match damStat:
             case 'STR':
@@ -555,51 +753,51 @@ class MeleeAbility(Ability):
                 return 1
 
 class RangedAbility(Ability):
-    def __init__(self, name, AP, target, range, success, contest):
-        super().__init__(name, AP, target, range, success, contest)
+    def __init__(self, name, AP, target, success, contest):
+        super().__init__(name, AP, target, success, contest)
 
 #BUFF ABILITIES
 
-allAbilities.append(BuffAbility('BLOCK', 1, 'self', 0, 'END', 20))
-allAbilities.append(BuffAbility('BLOCK 2', 2, 'self', 0, 'END', 25))
-allAbilities.append(BuffAbility('DEAD MAN WALKING', 2, 'self', 0, 'END', 20))
-allAbilities.append(BuffAbility('DEAD MAN WALKING 2', 3, 'self', 0, 'END', 25))
+allAbilities.append(BuffAbility('BLOCK', 1, 'self', 'END', 20))
+allAbilities.append(BuffAbility('BLOCK 2', 2, 'self', 'END', 25))
+allAbilities.append(BuffAbility('DEAD MAN WALKING', 2, 'self', 'END', 20))
+allAbilities.append(BuffAbility('DEAD MAN WALKING 2', 3, 'self', 'END', 25))
 #death throes
 #doppelganger*
-allAbilities.append(BuffAbility('ENCOURAGE', 1, 'ally', 0, 'END', 0))
+allAbilities.append(BuffAbility('ENCOURAGE', 1, 'ally', 'END', 0))
 #extraaction*
 #extraction2*
 #extrashot*
-allAbilities.append(BuffAbility('HEAL', 1, 'ally', 1, 'NOU', 20))
-allAbilities.append(BuffAbility('HEAL 2', 2, 'ally', 1, 'NOU', 22))
-allAbilities.append(BuffAbility('HEAL 3', 4, 'ally', 1, 'NOU', 24))
-allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
-allAbilities.append(BuffAbility('TIGHTEN', 1, 'ally', 0, 'END', 0))
-allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 0, 'END', 0))
-allAbilities.append(BuffAbility('ROUSING SHOUT', 2, 'ally', 10, 'NA', 0))
-allAbilities.append(BuffAbility('ROUSING SONG', 0, 'ally', 10, 'NA', 0))
+allAbilities.append(BuffAbility('HEAL', 1, 'ally', 'NOU', 20))
+allAbilities.append(BuffAbility('HEAL 2', 2, 'ally', 'NOU', 22))
+allAbilities.append(BuffAbility('HEAL 3', 4, 'ally', 'NOU', 24))
+allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 'END', 0))
+allAbilities.append(BuffAbility('TIGHTEN', 1, 'ally', 'END', 0))
+allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 'END', 0))
+allAbilities.append(BuffAbility('ROUSING SHOUT', 2, 'ally', 'NA', 0))
+allAbilities.append(BuffAbility('ROUSING SONG', 0, 'ally', 'NA', 0))
 
 
 #MELEE ABILITIES
 
-allAbilities.append(MeleeAbility('BACKSTAB', 1, 'enemy', 1, 'COR', 'NA', 'COR', False))
-allAbilities.append(MeleeAbility('DISARM', 3, 'enemy', 1, 'STR', 'COR', 'NA', True))
-allAbilities.append(MeleeAbility('FEINT', 1, 'enemy', 1, 'COR', 'NOU', 'STR', False))
-allAbilities.append(MeleeAbility('FEINT', 2, 'enemy', 1, 'COR', 'NOU', 'STR', False))
-allAbilities.append(MeleeAbility('FEINT', 3, 'enemy', 1, 'COR', 'NOU', 'STR', False))
-allAbilities.append(MeleeAbility('FLATTEN', 4, 'enemy', 1, 'STR', 'COR', 'NA', False))
+allAbilities.append(MeleeAbility('BACKSTAB', 1, 'enemy', 'COR', 'NA', 'COR', False))
+allAbilities.append(MeleeAbility('DISARM', 3, 'enemy', 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('FEINT', 1, 'enemy', 'COR', 'NOU', 'STR', False))
+allAbilities.append(MeleeAbility('FEINT 2', 2, 'enemy', 'COR', 'NOU', 'STR', False))
+allAbilities.append(MeleeAbility('FEINT 3', 3, 'enemy', 'COR', 'NOU', 'STR', False))
+allAbilities.append(MeleeAbility('FLATTEN', 4, 'enemy', 'STR', 'COR', 'NA', False))
 #garotte
-allAbilities.append(MeleeAbility('KNOCK BACK', 1, 'enemy', 1, 'STR', 'COR', 'NA', True))
-allAbilities.append(MeleeAbility('KNOCK BACK 2', 2, 'enemy', 1, 'STR', 'COR', 'NA', True))
-allAbilities.append(MeleeAbility('KNOCK BACK 3', 3, 'enemy', 1, 'STR', 'COR', 'NA', True))
-allAbilities.append(MeleeAbility('KNOCK OVER', 2, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('KNOCK BACK', 1, 'enemy', 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('KNOCK BACK 2', 2, 'enemy', 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('KNOCK BACK 3', 3, 'enemy', 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('KNOCK OVER', 2, 'enemy', 'STR', 'COR', 'NA', True))
 #off-hand attack
-allAbilities.append(MeleeAbility('PIERCING THRUST', 2, 'enemy', 1, 'STR', 'NA', 'STR', False))
+allAbilities.append(MeleeAbility('PIERCING THRUST', 2, 'enemy', 'STR', 'NA', 'STR', False))
 #split attack
-allAbilities.append(MeleeAbility('STRIKE', 0, 'enemy', 1, 'COR', 'COR' , 'STR', False))
-allAbilities.append(MeleeAbility('STUN', 1, 'enemy', 1, 'STR', 'COR', 'NA', True))
-allAbilities.append(MeleeAbility('STUN 2', 2, 'enemy', 1, 'STR', 'COR', 'NA', True))
-allAbilities.append(MeleeAbility('STUN 3', 3, 'enemy', 1, 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('STRIKE', 0, 'enemy', 'COR', 'COR' , 'STR', False))
+allAbilities.append(MeleeAbility('STUN', 1, 'enemy', 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('STUN 2', 2, 'enemy', 'STR', 'COR', 'NA', True))
+allAbilities.append(MeleeAbility('STUN 3', 3, 'enemy', 'STR', 'COR', 'NA', True))
 
 
 def constructFighters():
@@ -626,6 +824,7 @@ def beginCombatLoop(monList):
                 statusTicker(monster)
                 monster.chooseTarget(aliveList)
                 monster.chooseAlly(aliveList)
+                monster.checkAbility()
                 monster.useAbility(monster.chooseAbility())
                 if (monster.target._curHP <= 0):
                     deadList.insert(-1, monster.target.printName)
@@ -634,7 +833,9 @@ def beginCombatLoop(monList):
             if (aliveList.count(1) == 0 or aliveList.count(2) == 0):
                 break
         combatRound += 1
-    print (f"Combat Ended! Team {aliveList} won!") 
+    print (f"Combat Ended! Team {aliveList} won!")
+    combatRoundList.append(combatRound)
+    return sum(combatRoundList) / len(combatRoundList)
 
 if __name__ == '__main__':
 
@@ -653,7 +854,8 @@ if __name__ == '__main__':
     while cycleloop < varianceMinimizer:
         constructFighters()
         rollInitiative()
-        beginCombatLoop(primedList)
+        avgCombatdur = beginCombatLoop(primedList)
+        print (f"{combatRoundList}, Average = {avgCombatdur}")
         cycleloop += 1
 
     for monster in primedList:
