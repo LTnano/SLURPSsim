@@ -2,11 +2,8 @@ import pickle
 import random
 import wx
 import operator
-
-
-#class for monster (self, stats, name)
-
-    #member function generate rest of stats
+import os
+import time
 
 
 
@@ -26,7 +23,7 @@ hasAbilityDict = pickle.load(dataHasAbility)
 
 # chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rangedSkeletonH', 'giantRat']
 # teamList = [1, 1, 2, 1, 2, 2]
-chosenList = ['thinBilly', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton']
+chosenList = ['thinBilly', 'thinBilly', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton', 'giantRat', 'giantRat', 'meleeSkeleton']
 teamList = [1, 2, 2, 1, 2, 2, 1, 1, 1]
 primedList = []
 aliveList = []
@@ -34,10 +31,40 @@ deadList = []
 uniqueAbilityList = []
 allAbilities = []
 combatRoundList = []
+winrateList = []
 avgCombatdur = 3.5
 
 def takeSecond(elem):
     return elem[1]
+
+def numberDuplicates(monsterlist):
+    seen = {}
+    for monster in monsterlist:
+        key = str(monster.printName)
+        if key in seen:
+            seen[key] += 1
+            monster.printName += " " + str(seen[key]+1)
+        else:
+            seen[key] = 0
+
+class CombatLog:
+    def __init__(self, filename, logdir):
+        self.filename = filename
+        self.log = []
+        self.logdir = logdir
+        if not os.path.exists(logdir):
+            os.mkdir(logdir)
+    
+    def record(self, event):
+        fevent = event + "\n"
+        self.log.append(fevent)
+        
+    def writeFile(self):
+        filename = time.strftime('%Y%m%d%H%M%S_combat_log.txt')
+        filepath = os.path.join(self.logdir, filename)
+        with open(filepath, 'w') as f:
+            for event in self.log:
+                f.write(event)
 
 class Creature():
     def __init__(self, type):
@@ -138,6 +165,8 @@ class Creature():
     def kill(self):
         self.isAlive = False
         print (f"{self.printName} died!")
+        if logEvents:
+            cLog.record(f"{self.printName} died!")
 
     def takeDamage(self, damage):
         self._curHP = self._curHP - damage
@@ -200,16 +229,22 @@ class Creature():
     def chooseTarget(self, aliveList):
         if self.TEAM == 1:
             opposition = 2
+            print (f"Opposition = {opposition}")
         else:
             opposition = 1
+            print (f"Opposition = {opposition}")
         if self.target is None:
             self.target = random.choice(primedList)
-            return
+            print (f"Choosing target because target should be None - Target = {self.target}")
         if opposition in aliveList:
-            while ((opposition == self.TEAM) and (self.target.isAlive == False)):
+            while ((self.target.TEAM == self.TEAM) or (self.target.isAlive == False)):
+                print (f"Choosing target because target is on my team {self.target.TEAM == self.TEAM} and/or target is dead {self.target.isAlive == False}")
                 self.target = random.choice(primedList)
+                print (f"{self.printName}(team {self.TEAM})'s target = {self.target.printName}(team {self.target.TEAM})")
         else:
+            print (f"No enemies remain")
             return
+        print (f"No change needed as target valid = {(self.target.TEAM != self.TEAM and self.target.isAlive == True)}")
         #print (self.target.printName, self.target.TEAM, ' - ', self.printName, self.TEAM)
 
     #chooses an ally from own team
@@ -220,9 +255,8 @@ class Creature():
             allies = 2
         if self.targetAlly is None:
             self.targetAlly = random.choice(primedList)
-            return
         if allies in aliveList:
-            while ((allies != self.TEAM) or (self.targetAlly.isAlive == False)):
+            while ((self.targetAlly.TEAM != self.TEAM) or (self.targetAlly.isAlive == False)):
                 self.targetAlly = random.choice(primedList)
         else:
             return
@@ -231,8 +265,11 @@ class Creature():
     def useAbility(self, ability):
         for option in allAbilities:
             if option.name == ability:
-                option.use(self, self.target, self.targetAlly)
                 print (f"{self.printName} used {option.name}")
+                if logEvents:
+                    cLog.record(f"{self.printName} used {option.name}")
+                option.use(self, self.target, self.targetAlly)
+                
 
     #stat methods, returns stat + temp stat
     def strength(self):
@@ -329,6 +366,7 @@ def statusTicker(monster):
 
     if (monster.isDisarmed):
         monster.isDisarmed -= 1
+        #set dice back to original weapon die (need to add to creature class)
 
     if (monster.isClumsy):
         monster.isClumsy -= 1
@@ -414,6 +452,8 @@ class Ability():
                     target.takeDamage(self.onSuccess(caster, target, False))
                 else:
                     print (f"{caster.printName} missed {target.printName}")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} missed {target.printName}")
         
         
              
@@ -431,6 +471,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 if not test:
                     caster.ARM *= 2
                     caster.isBlocking = D4.roll()+1
+                    if logEvents:
+                        cLog.record(f"{caster.printName} starts blocking for {caster.isBlocking} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not caster.isBlocking:
@@ -447,6 +489,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                     if self.canCast(caster):
                         if not (caster.isBlocking):
                             abilityweight =  (caster.ARM * 2 * D8.average()) / self.combatDurWeighting(D8.average()+1)
+                            if logEvents:
+                                cLog.record(f"{caster.printName} starts extra blocking for {caster.isBlocking} rounds!")
                         else:
                             abilityweight = 0
                     else:
@@ -457,6 +501,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                     caster._curHP += 20
                     caster._maxHP += 20
                     caster.isFortified = D4.roll()+1
+                    if logEvents:
+                        cLog.record(f"{caster.printName} is a dead man walking for {caster.isFortified} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not (caster.isFortified):
@@ -474,6 +520,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                     caster._curHP += 30
                     caster._maxHP += 30
                     caster.isFortified = D8.roll()+1
+                    if logEvents:
+                        cLog.record(f"{caster.printName} is a very dead man walking for {caster.isFortified} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not (caster.isFortified):
@@ -504,6 +552,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                     encourageDuration = D4.roll()+1
                     if target.isEncouraged < encourageDuration:
                         target.isEncouraged = encourageDuration
+                    if logEvents:
+                        cLog.record(f"{caster.printName} is a encouraged for {caster.isEncouraged} rounds!")
                 if test:
                     if self.canCast(target):
                         if not (target.isEncouraged):
@@ -525,6 +575,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 if not test:
                     healval = caster.dexterity() * D6.roll()
                     target.takeHealing(healval)
+                    if logEvents:
+                        cLog.record(f"{caster.printName} uses heal on {caster.targetAlly.printName} for {healval}!")
                 if test:
                     if self.canCast(target):
                         healval = caster.dexterity() * (D6.average())
@@ -535,6 +587,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 if not test:
                     healval = caster.dexterity() * (D6.roll() + 4)
                     target.takeHealing(healval)
+                    if logEvents:
+                        cLog.record(f"{caster.printName} uses heal 2 on {caster.targetAlly.printName} for {healval}!")
                 if test:
                     if self.canCast(target):
                         healval = caster.dexterity() * (D6.average() + 4)
@@ -545,6 +599,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 if not test:
                     healval = caster.dexterity() * (D12.roll() + 4)
                     target.takeHealing(healval)
+                    if logEvents:
+                        cLog.record(f"{caster.printName} uses heal 2 on {caster.targetAlly.printName} for {healval}!")
                 if test:
                     if self.canCast(target):
                         healval = caster.dexterity() * (D12.average() + 4)
@@ -571,6 +627,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                                 ally._maxHP += 10
                             if ally.isEncouraged < encourageDuration:
                                 ally.isEncouraged = encourageDuration
+                    if logEvents:
+                        cLog.record(f"{caster.printName} encourages their whole team for {encourageDuration} rounds!")
                 if test:
                     if self.canCast(target):
                         for ally in primedList:
@@ -587,6 +645,8 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                     for ally in primedList:
                         if caster.team == ally.team:
                             ally.AP = ally._maxAP
+                    if logEvents:
+                        cLog.record(f"{caster.printName} rouses their team with a song, resoring all AP!")
                 if test:
                     for ally in primedList:
                         if caster.team == ally.team:
@@ -596,12 +656,16 @@ class BuffAbility(Ability): #block 1 2, dead man walking 1 2, dodge, doppelgange
                 if not test:
                     caster.isSharpened = 1
                     caster.modWEA += 1
+                if logEvents:
+                        cLog.record(f"{caster.printName} enhances their weapon!")
                 if test:
                     abilityweight = avgCombatdur*self.damageStat(caster, self.damStat)
             case 'TIGHTEN':
                 if not test:
                     caster.isTightened = 1
                     caster.modRWEA += 1
+                if logEvents:
+                        cLog.record(f"{caster.printName} enhances their weapon!")
                 if test:
                     abilityweight = avgCombatdur*self.damageStat(caster, self.damStat)
         return abilityweight        
@@ -623,6 +687,8 @@ class MeleeAbility(Ability):
                     dieroll = caster._WEA.roll()
                     totaldamage = dieroll * self.damageStat(caster, self.damStat)
                     print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
                 if test:
                     dieroll = caster._WEA.average()
                     totaldamage = dieroll * self.damageStat(caster, self.damStat)
@@ -631,14 +697,20 @@ class MeleeAbility(Ability):
                     disarmDuration = D4.roll() + 1
                     if target.isDisarmed < disarmDuration:
                         target.isDisarmed = disarmDuration
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit {target.printName} for and disarmed them for {disarmDuration} rounds!")
+                    #need to set weapon die to D0
                 if test:
                     totaldamage = 0
+                #calculate the potential damage halved (basically healing)
                 print (f"{caster.printName} hit and disarmed {target.printName} for {target.isDisarmed} rounds")
             case 'FEINT':
                 if not test:
                     dieroll = caster._WEA.roll()
                     totaldamage = (dieroll + 1) * self.damageStat(caster, self.damStat)
                     print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
                 if test:
                     dieroll = caster._WEA.average()
                     totaldamage = (dieroll + 1) * self.damageStat(caster, self.damStat)
@@ -647,6 +719,8 @@ class MeleeAbility(Ability):
                     dieroll = caster._WEA.roll()
                     totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
                     print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
                 if test:
                     dieroll = caster._WEA.average()
                     totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
@@ -655,6 +729,8 @@ class MeleeAbility(Ability):
                     dieroll = caster._WEA.roll()
                     totaldamage = (dieroll + 3) * self.damageStat(caster, self.damStat)
                     print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
                 if test:
                     dieroll = caster._WEA.average()
                     totaldamage = (dieroll + 3) * self.damageStat(caster, self.damStat)
@@ -666,6 +742,8 @@ class MeleeAbility(Ability):
                     if target.isStunned < effectDuration:
                         target.isStunned = effectDuration
                     print (f"{caster.printName} flattened {target.printName} for {target.isProne} rounds")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} flattened {target.printName} for {target.isProne} rounds")
                 if test:
                     totaldamage = 0 + 0
             case 'GAROTTE': #garotte weapon?? (status effect) maybe)
@@ -684,6 +762,8 @@ class MeleeAbility(Ability):
                     if target.isProne < proneDuration:
                         target.isProne = proneDuration
                     print (f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
                 if test:
                     totaldamage = 0
             case 'OFF-HAND ATTACK': # needs multiple weapon implementation
@@ -693,6 +773,8 @@ class MeleeAbility(Ability):
                     dieroll = caster._WEA.roll()
                     totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
                     print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
                 if test:
                     dieroll = caster._WEA.average()
                     totaldamage = (dieroll + 2) * self.damageStat(caster, self.damStat)
@@ -702,6 +784,8 @@ class MeleeAbility(Ability):
                 if not test:
                     dieroll = caster._WEA.roll()
                     totaldamage = dieroll * self.damageStat(caster, self.damStat)
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
                     print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
                 if test:
                     dieroll = caster._WEA.average()
@@ -711,6 +795,8 @@ class MeleeAbility(Ability):
                     stunDuration = D4.roll() + 1
                     if target.isStunned < stunDuration:
                         target.isStunned = stunDuration
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                     print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                 if test:
                     totaldamage = 0
@@ -719,6 +805,8 @@ class MeleeAbility(Ability):
                     stunDuration = D4.roll() + 3
                     if target.isStunned < stunDuration:
                         target.isStunned = stunDuration
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                     print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                 if test:
                     totaldamage = 0
@@ -727,6 +815,8 @@ class MeleeAbility(Ability):
                     stunDuration = D6.roll() + 6
                     if target.isStunned < stunDuration:
                         target.isStunned = stunDuration
+                    if logEvents:
+                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                     print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                 if test:
                     totaldamage = 0
@@ -806,36 +896,59 @@ def constructFighters():
     deadList.clear()
     for i in chosenList:
         primedList.append(Creature(i))
+    numberDuplicates(primedList)
+    for monster in primedList:
+        
+        print (f"{monster.printName}")
+    
 
 def rollInitiative():
     for monster, team in zip(primedList, teamList):
         monster.INIT = monster._COR + D20.roll()
         monster.TEAM = team
     primedList.sort(key=operator.attrgetter('INIT'),reverse=True)
+    if logEvents:
+        loggingList = []
+        loggingList = sorted(primedList, key=operator.attrgetter('TEAM'),reverse=True)
+        cLog.record(f"Team 1:")
+        for monster in loggingList:
+            if (monster.TEAM == 1):
+                cLog.record(monster.printName)
+        cLog.record(f"\nTeam 2:")
+        for monster in loggingList:
+            if (monster.TEAM == 2):
+                cLog.record(monster.printName)
+        cLog.record("\n")
+
 
 def beginCombatLoop(monList):
     aliveList = teamList.copy()
     print (f"{aliveList} : {teamList}")
     combatRound = 1
     while (aliveList.count(1) > 0 and aliveList.count(2) > 0):
+        if logEvents:
+            cLog.record(f"\nRound {combatRound}\n")
         print (f"Round {combatRound} Alive List:{aliveList}")
         for monster in monList:
             if (monster.isAlive):
                 statusTicker(monster)
-                monster.chooseTarget(aliveList)
-                monster.chooseAlly(aliveList)
-                monster.checkAbility()
-                monster.useAbility(monster.chooseAbility())
-                if (monster.target._curHP <= 0):
-                    deadList.insert(-1, monster.target.printName)
-                    aliveList.remove(monster.target.TEAM)
-                    monster.target.kill()
+                if not monster.isStunned:
+                    monster.chooseTarget(aliveList)
+                    monster.chooseAlly(aliveList)
+                    monster.checkAbility()
+                    monster.useAbility(monster.chooseAbility())
+                    if (monster.target._curHP <= 0):
+                        deadList.insert(-1, monster.target.printName)
+                        aliveList.remove(monster.target.TEAM)
+                        monster.target.kill()
             if (aliveList.count(1) == 0 or aliveList.count(2) == 0):
                 break
         combatRound += 1
+    if logEvents:
+            cLog.record(f"\nCombat Ended! Team {aliveList[0]} won!")
     print (f"Combat Ended! Team {aliveList} won!")
     combatRoundList.append(combatRound)
-    return sum(combatRoundList) / len(combatRoundList)
+    return (sum(combatRoundList) / len(combatRoundList)), (aliveList[0]-1)
 
 if __name__ == '__main__':
 
@@ -848,16 +961,29 @@ if __name__ == '__main__':
     D0 = Die(0, 'D0')
     
     
-    varianceMinimizer = 10
+    varianceMinimizer = 400
     cycleloop = 0
-
+    logEvents = False
+    cLog = CombatLog("combat_log.txt", "./logs")
     while cycleloop < varianceMinimizer:
+        if cycleloop+1 == varianceMinimizer:
+            logEvents = True
         constructFighters()
         rollInitiative()
-        avgCombatdur = beginCombatLoop(primedList)
-        print (f"{combatRoundList}, Average = {avgCombatdur}")
+        avgCombatdur, combatVictor = beginCombatLoop(primedList)
+        winrateList.append(combatVictor)
+        if logEvents:
+            print (f"{combatRoundList}, Average = {avgCombatdur}\n Winning Team: {combatVictor+1}")
+        
         cycleloop += 1
-
+    winrate =  (sum(winrateList) / len(winrateList))
+    
+    cLog.record(f"\nOver {varianceMinimizer} rounds:\n")
+    cLog.record(f"Team 1 has {winrate*100}% winrate")
+    cLog.record(f"Team 2 has {(1-winrate)*100}% winrate")
+    cLog.record(f"The average number of rounds per combat was {avgCombatdur}")
+    print (f"Team 1 has {winrate*100}% winrate \n Team 2 has {(1-winrate)*100}% winrate")
+    print (f"\nFinal Round Outcome:")
     for monster in primedList:
         print (f"\n{monster.printName}")
         print (f"Initiative: {monster.INIT}")
@@ -865,5 +991,6 @@ if __name__ == '__main__':
         print (f"HP: {monster._curHP}")
         print (f"AP: {monster.AP}")
         print (f"Abilities: {monster.abilities}")
-        
+    cLog.writeFile()
+    
 
