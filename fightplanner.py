@@ -57,7 +57,9 @@ creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' :
 
                 'thinBilly' : {'Name' : 'Thin Billy', 'HP' : 200, 'STR' : 13, 'END' : 20, 'COR' : 13, 'DEX' : 13, 'INT' : 13, 'NOU' : 17, 'WIL' : 13, 'WEA' : 8, 'RWEA' : 0, 'ARM' : 2, 'AP' : 10},
                 
-                'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12}}
+                'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12},
+                
+                'testMonster' : {'Name' : 'Jack', 'HP' : 400, 'STR' : 20, 'END' : 30, 'COR' : 20, 'DEX' : 20, 'INT' : 20, 'NOU' : 20, 'WIL' : 20, 'WEA' : 8, 'RWEA' : 8, 'ARM' : 10, 'AP' : 25}}
 
 hasAbilityDict = {'giantRat' : ['STRIKE'],
 
@@ -81,11 +83,13 @@ hasAbilityDict = {'giantRat' : ['STRIKE'],
 
                 'summonerKobold' : ['CONJURE RAT'],
 
-                'slowGolem' : ['STRIKE', 'SELF SLOW'],
+                'slowGolem' : ['STRIKE'],
 
                 'thinBilly' : ['STRIKE', 'HEAL'],
                 
-                'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL']}
+                'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL'],
+                
+                'testMonster' : ['STRIKE', 'FIREBALL 2', 'FIREBALL 3', 'FIREBALL', 'FIRESTORM', 'HEAL', 'HEAL 2', 'ENCOURAGE', 'FLATTEN', 'STUN 2', 'BLOCK 2', 'DEAD MAN WALKING', 'ROUSING SHOUT', 'ROUSING SONG']}
 
 # abilityDefinitions = {'BACKSTAB' : {'isAttack' : True, 'AP' : 1, 'hitSTAT' : 'COR', 'dmgSTAT' : 'COR', 'isRanged' : False, 'special' : 'Backstab'},
 
