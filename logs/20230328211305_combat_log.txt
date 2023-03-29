@@ -1,0 +1,41 @@
+Team 1:
+Giant Rat 4
+Giant Rat 11
+Giant Rat 9
+Giant Rat
+Giant Rat 6
+Giant Rat 5
+Giant Rat 8
+Giant Rat 10
+Giant Rat 7
+Giant Rat 2
+Giant Rat 3
+
+Team 2:
+Giant Rat 12
+
+
+
+Round 1
+
+Giant Rat 4 used STRIKE
+Giant Rat 4 missed Giant Rat 12
+Giant Rat 12 used STRIKE
+Giant Rat 12 missed Giant Rat 3
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Giant Rat 12
+Giant Rat 9 used STRIKE
+Giant Rat 9 hit Giant Rat 12 for 32 damage
+Giant Rat used STRIKE
+Giant Rat missed Giant Rat 12
+Giant Rat 6 used STRIKE
+Giant Rat 6 hit Giant Rat 12 for 32 damage
+Giant Rat 12 died!
+
+Combat Ended! Team 1 won!
+
+Over 100 rounds:
+
+Team 1 has 0.0% winrate
+Team 2 has 100.0% winrate
+The average number of rounds per combat was 1.04

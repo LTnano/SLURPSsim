@@ -1,0 +1,162 @@
+Team 1:
+Skeleton Archer 3
+Skeleton Archer 4
+Skeleton Archer
+Skeleton Archer 2
+Giant Rat
+
+Team 2:
+Giant Rat 3
+Giant Rat 4
+Giant Rat 2
+Giant Rat 5
+
+
+
+Round 1
+
+Giant Rat 3 used STRIKE
+Giant Rat 3 hit Skeleton Archer 2 for 16 damage
+Skeleton Archer 3 used SHOOT
+Skeleton Archer 3 shot Giant Rat 5 for 8 damage
+Skeleton Archer 4 used SHOOT
+Skeleton Archer 4 missed Giant Rat 5
+Giant Rat 4 used STRIKE
+Giant Rat 4 missed Skeleton Archer
+Giant Rat 2 used STRIKE
+Giant Rat 2 hit Skeleton Archer 2 for 8 damage
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Skeleton Archer 2
+Skeleton Archer used SHOOT
+Skeleton Archer missed Giant Rat 2
+Skeleton Archer 2 used SHOOT
+Skeleton Archer 2 shot Giant Rat 2 for 8 damage
+Giant Rat used STRIKE
+Giant Rat hit Giant Rat 3 for 16 damage
+
+Round 2
+
+Giant Rat 3 used STRIKE
+Giant Rat 3 missed Skeleton Archer 2
+Skeleton Archer 3 used SHOOT
+Skeleton Archer 3 shot Giant Rat 5 for 32 damage
+Skeleton Archer 4 used SHOOT
+Skeleton Archer 4 missed Giant Rat 5
+Giant Rat 4 used STRIKE
+Giant Rat 4 missed Skeleton Archer
+Giant Rat 2 used STRIKE
+Giant Rat 2 missed Skeleton Archer 2
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Skeleton Archer 2
+Skeleton Archer used SHOOT
+Skeleton Archer shot Giant Rat 2 for 32 damage
+Skeleton Archer 2 used SHOOT
+Skeleton Archer 2 shot Giant Rat 2 for 8 damage
+Giant Rat used STRIKE
+Giant Rat missed Giant Rat 3
+
+Round 3
+
+Giant Rat 3 used STRIKE
+Giant Rat 3 missed Skeleton Archer 2
+Skeleton Archer 3 used SHOOT
+Skeleton Archer 3 shot Giant Rat 5 for 32 damage
+Giant Rat 5 died!
+Skeleton Archer 4 used SHOOT
+Skeleton Archer 4 shot Giant Rat 4 for 24 damage
+Giant Rat 4 used STRIKE
+Giant Rat 4 missed Skeleton Archer
+Giant Rat 2 used STRIKE
+Giant Rat 2 hit Skeleton Archer 2 for 8 damage
+Skeleton Archer used SHOOT
+Skeleton Archer shot Giant Rat 2 for 24 damage
+Giant Rat 2 died!
+Skeleton Archer 2 used SHOOT
+Skeleton Archer 2 shot Giant Rat 3 for 16 damage
+Giant Rat used STRIKE
+Giant Rat hit Giant Rat 3 for 16 damage
+
+Round 4
+
+Giant Rat 3 used STRIKE
+Giant Rat 3 missed Skeleton Archer 2
+Skeleton Archer 3 used SHOOT
+Skeleton Archer 3 shot Giant Rat 3 for 24 damage
+Giant Rat 3 died!
+Skeleton Archer 4 used SHOOT
+Skeleton Archer 4 shot Giant Rat 4 for 32 damage
+Giant Rat 4 died!
+
+Combat Ended! Team 1 won!
+
+
+Monster status after final round:
+
+Giant Rat 3
+Initiative: 28
+Team: 2
+HP: -22
+AP: 0
+Abilities: ['STRIKE']
+
+Skeleton Archer 3
+Initiative: 21
+Team: 1
+HP: 110
+AP: 5
+Abilities: ['SHOOT']
+
+Skeleton Archer 4
+Initiative: 19
+Team: 1
+HP: 110
+AP: 5
+Abilities: ['SHOOT']
+
+Giant Rat 4
+Initiative: 17
+Team: 2
+HP: -6
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 2
+Initiative: 16
+Team: 2
+HP: -22
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 5
+Initiative: 16
+Team: 2
+HP: -22
+AP: 0
+Abilities: ['STRIKE']
+
+Skeleton Archer
+Initiative: 14
+Team: 1
+HP: 110
+AP: 6
+Abilities: ['SHOOT']
+
+Skeleton Archer 2
+Initiative: 12
+Team: 1
+HP: 78
+AP: 6
+Abilities: ['SHOOT']
+
+Giant Rat
+Initiative: 11
+Team: 1
+HP: 50
+AP: 0
+Abilities: ['STRIKE']
+
+Over 100 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 4.51

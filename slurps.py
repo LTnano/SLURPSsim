@@ -1,31 +1,16 @@
 import pickle
 import random
-import wx
 import operator
 import os
 import time
-#import math
 
+with open('fightplannerinfo.pkl', 'rb') as f:
+    data = pickle.load(f)
 
-
-# dataFight = open("fightdict.txt", "rb") #IMPORTANT FOR LATER
-# fightDict = pickle.load(dataFight)
-
-dataCreatures = open("creaturedict.txt", "rb")
-creatureDict = pickle.load(dataCreatures)
-
-dataHasAbility = open("creaturhasabilitydict.txt", "rb")
-hasAbilityDict = pickle.load(dataHasAbility)
-
-# dataAbilityDef = open("abilitydefdict.txt", "rb")
-# abilityDefinitions = pickle.load(dataAbilityDef)
-
-
-
-# chosenList = ['thinBilly', 'bossSkeleton', 'wizardKobold', 'wizardKobold', 'rangedSkeletonH', 'giantRat']
-# teamList = [1, 1, 2, 1, 2, 2]
-chosenList = ['testMonster', 'giantRat', 'giantRat','giantRat', 'giantRat', 'giantRat', 'giantRat','giantRat', 'giantRat', 'giantRat', 'giantRat','giantRat', 'giantRat', 'giantRat', 'giantRat','giantRat', 'giantRat', 'giantRat', 'giantRat','giantRat', 'giantRat', 'giantRat', 'giantRat','giantRat', 'giantRat', 'giantRat', 'giantRat','giantRat', 'giantRat', 'giantRat', 'giantRat','giantRat', 'giantRat']
-teamList = [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+creatureDict = data['creatureDict']
+hasAbilityDict = data['hasAbilityDict']
+chosenList = data['chosenList']
+teamList = data['teamList']
 primedList = []
 uniqueAbilityList = []
 allAbilities = []
@@ -117,6 +102,7 @@ class Creature():
         self.isStunned = 0
         self.hasHeadache = 0
         self.headacheSeverity = 0
+        self.headacheSeverityPrintName = ''
         #notick status effects
         self.isSharpened = 0
         self.isTightened = 0        
@@ -138,6 +124,7 @@ class Creature():
                 self._WEA = D4
             case _:
                 self._WEA = D0
+        self.defWEA = self._WEA
         self.modWEA = 0
         match creatureDict[type]['RWEA']:
             case 20:
@@ -155,6 +142,7 @@ class Creature():
             case _:
                 self._RWEA = D0
         self.modRWEA = 0
+        self.defRWEA = self._RWEA
         self.ARM = creatureDict[type]['ARM']
         self.baseARM = creatureDict[type]['ARM']
 
@@ -207,7 +195,7 @@ class Creature():
         roll = 1
         while roll <= 100:
             if (successBonus+roll >= successContest):
-                return (1 - ((roll-1)/20))
+                return (1 - ((roll-1)/20)) 
             roll +=1
 
     def setPriority(self, realability, ability):
@@ -244,10 +232,20 @@ class Creature():
             self.target = random.choice(primedList)
             print (f"Choosing target because target should be None - Target = {self.target}")
         if opposition in simState.aliveList:
-            while ((self.target.TEAM == self.TEAM) or (self.target.isAlive == False)):
-                print (f"Choosing target because target is on my team {self.target.TEAM == self.TEAM} and/or target is dead {self.target.isAlive == False}")
+            while ((self.target.TEAM == self.TEAM) or (self.target.isAlive == False) or (self.target.isStunned == True)):
+                if self.target.isStunned:
+                    print(f"Target {self.target.printName} is stunned")
+                else:
+                    print(f"Choosing target because target is on my team {self.target.TEAM == self.TEAM} and/or target is dead {self.target.isAlive == False}")
                 self.target = random.choice(primedList)
                 print (f"{self.printName}(team {self.TEAM})'s target = {self.target.printName}(team {self.target.TEAM})")
+            if all(tar.isStunned for tar in primedList if tar.TEAM == opposition):
+                stunnedTargets = [tar for tar in primedList if tar.isStunned and tar.TEAM == opposition]
+                if stunnedTargets:
+                    self.target = random.choice(stunnedTargets)
+                    print(f"All targets are stunned, selecting a random stunned target {self.target.printName}")
+                else:
+                    print(f"All targets are stunned, but there are no stunned targets available")
         else:
             print (f"No enemies remain")
             return
@@ -385,6 +383,8 @@ def statusTicker(monster):
 
     if (monster.isDisarmed):
         monster.isDisarmed -= 1
+        if not(monster.isDisarmed):
+            monster._WEA, monster._RWEA = monster.defWEA, monster.defRWEA
         #set dice back to original weapon die (need to add to creature class)
 
     if (monster.isClumsy):
@@ -397,6 +397,13 @@ def statusTicker(monster):
         if not(monster.isBlocking):
             monster.ARM -= monster.baseARM
     
+    if (monster.hasHeadache):
+        monster.hasHeadache -= 1
+        monster.takeDamage(monster.headacheSeverity)
+        print (f"{monster.printName} takes {monster.headacheSeverity} damage from a {monster.headacheSeverityPrintName}")
+        if logEvents:
+            cLog.record(f"{monster.printName} takes {monster.heacacheSeverity} damage from a {monster.headacheSeverityPrintName}")
+    
     if (monster._curHP > monster._maxHP):
         monster._curHP = monster._maxHP
 
@@ -408,7 +415,9 @@ class Die():
         self.name = name
     
     def roll(self):
-        return random.randint(1,self.sides)
+        if self.sides > 0: 
+            return random.randint(1,self.sides)
+        return 0
     
     def average(self):
         return (self.sides+1)/2
@@ -738,10 +747,11 @@ class MeleeAbility(Ability):
             case 'DISARM':
                 if not test:
                     disarmDuration = D4.roll() + 1
+                    target._WEA, target._RWEA = D0
                     if target.isDisarmed < disarmDuration:
                         target.isDisarmed = disarmDuration
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit {target.printName} for and disarmed them for {disarmDuration} rounds!")
+                        cLog.record(f"{caster.printName} hit {target.printName} and disarmed them for {disarmDuration} rounds!")
                     #need to set weapon die to D0
                 if test:
                     if self.canCast(caster):
@@ -1022,92 +1032,76 @@ class RangedAbility(Ability):
                             totaldamage = totaldamage * 0
                         print (totaldamage)
 
-            
-            case 'GAROTTE': #garotte weapon?? (status effect) maybe)
-                pass
-            #case 'KNOCK BACK': # needs movement implementation
-                #print (f"{caster.printName} hit {target.printName} and knocked them back!")
-            #case 'KNOCK BACK 2': # needs movement implementation
-                #totaldamage = 20
-                #print (f"{caster.printName} hit {target.printName} for {20} damage and knocked them back far!")
-            #case 'KNOCK BACK 3': # needs movement implementation
-               # totaldamage = 60
-                #print (f"{caster.printName} hit {target.printName} for {60} damage and knocked them back very far!")
-            
-            case 'KNOCK OVER':
+            case 'HEADACHE':
                 if not test:
-                    proneDuration = D4.roll() + 1
-                    if target.isProne < proneDuration:
-                        target.isProne = proneDuration
-                    print (f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
-                    if logEvents:
-                        cLog.record(f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
+                    if not (target.hasHeadache):
+                        target.headacheSeverity = 10
+                        target.hasHeadache = 3
+                        target.headacheSeverityPrintName = 'HEADACHE'
+                        totaldamage = target.headacheSeverity
+                        print (f"{caster.printName} inflicted {target.printName} with a painful {target.headacheSeverityPrintName}, causing {target.headacheSeverity} damage")
+                        if logEvents:
+                            cLog.record(f"{caster.printName} inflicted {target.printName} with a painful {target.headacheSeverityPrintName}, causing {target.headacheSeverity} damage")
                 if test:
                     if self.canCast(caster):
-                        totaldamage = 0
+                        if not (target.hasHeadache):
+                            totaldamage = (10 * 3 / self.combatDurWeighting(3))   
+                        else:
+                            totaldamage = 0
             
-            case 'OFF-HAND ATTACK': # needs multiple weapon implementation
-                pass
-            
-            case 'PIERCING THRUST':
+            case 'HEADSHOT':
                 if not test:
-                    dieroll = caster._WEA.roll()
-                    totaldamage = (dieroll + 2) * self.statSuccess(self.damStat, caster)
-                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                    dieroll = caster._RWEA.roll()
+                    totaldamage = dieroll * self.statSuccess(self.damStat, caster) * 4
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                        cLog.record(f"{caster.printName} headshot {target.printName} for {totaldamage} damage")
+                    print (f"{caster.printName} headshot {target.printName} for {totaldamage} damage")
+                if test:
+                    dieroll = caster._RWEA.average()
+                    totaldamage = dieroll * self.statSuccess(self.damStat, caster) * 4
+                    
+            case 'MIGRAINE':
+                if not test:
+                    if not (target.hasHeadache or target.headacheSeverity == 10):
+                        target.headacheSeverity = 20
+                        target.hasHeadache = 5
+                        target.headacheSeverityPrintName = 'MIGRAINE'
+                        totaldamage = target.headacheSeverity
+                        print (f"{caster.printName} inflicted {target.printName} with a crippling {target.headacheSeverityPrintName}, causing {target.headacheSeverity} damage")
+                        if logEvents:
+                            cLog.record(f"{caster.printName} inflicted {target.printName} with a painful {target.headacheSeverityPrintName}, causing {target.headacheSeverity} damage")
                 if test:
                     if self.canCast(caster):
-                        dieroll = caster._WEA.average()
-                        totaldamage = (dieroll + 2) * self.statSuccess(self.damStat, caster)
+                        if not (target.hasHeadache):
+                            totaldamage = (20 * 5 / self.combatDurWeighting(5))  
+                        elif (target.headacheSeverity == 10):
+                            totaldamage = (10 * target.hasHeadache + 20 * (5-target.hasHeadache))/ self.combatDurWeighting(5)
+                        else:
+                            totaldamage = 0
             
-            case 'SPLIT ATTACK': # needs multiple weapon implementation
-                pass
-            
-            case 'STRIKE':
+            case 'SHOOT':
                 if not test:
-                    dieroll = caster._WEA.roll()
+                    dieroll = caster._RWEA.roll()
                     totaldamage = dieroll * self.statSuccess(self.damStat, caster)
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit {target.printName} for {totaldamage} damage")
-                    print (f"{caster.printName} hit {target.printName} for {totaldamage} damage")
+                        cLog.record(f"{caster.printName} shot {target.printName} for {totaldamage} damage")
+                    print (f"{caster.printName} shot {target.printName} for {totaldamage} damage")
                 if test:
-                    dieroll = caster._WEA.average()
+                    if self.canCast(caster):
+                        dieroll = caster._RWEA.average()
+                        totaldamage = dieroll * self.statSuccess(self.damStat, caster)
+            
+            case 'SHOOT 2':
+                if not test:
+                    dieroll = caster._RWEA.roll() + 2
                     totaldamage = dieroll * self.statSuccess(self.damStat, caster)
-            
-            case 'STUN':
-                if not test:
-                    stunDuration = D4.roll() + 1
-                    if target.isStunned < stunDuration:
-                        target.isStunned = stunDuration
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
-                    print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                        cLog.record(f"{caster.printName} shot {target.printName} for {totaldamage} damage")
+                    print (f"{caster.printName} shot {target.printName} for {totaldamage} damage")
                 if test:
-                    totaldamage = 0
-            
-            case 'STUN 2':
-                if not test:
-                    stunDuration = D4.roll() + 3
-                    if target.isStunned < stunDuration:
-                        target.isStunned = stunDuration
-                    if logEvents:
-                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
-                    print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
-                if test:
-                    totaldamage = 0
-            
-            case 'STUN 3':
-                if not test:
-                    stunDuration = D6.roll() + 6
-                    if target.isStunned < stunDuration:
-                        target.isStunned = stunDuration
-                    if logEvents:
-                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
-                    print (f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
-                if test:
-                    totaldamage = 0
-            
+                    if self.canCast(caster):
+                        dieroll = caster._RWEA.average() + 2
+                        totaldamage = dieroll * self.statSuccess(self.damStat, caster)
             case _:
                 pass
         return totaldamage
@@ -1234,7 +1228,7 @@ if __name__ == '__main__':
     D4 = Die(4, 'D4')
     D0 = Die(0, 'D0')
     simState = SimState()
-    varianceMinimizer = 1
+    varianceMinimizer = 100
     cycleloop = 0
     logEvents = False
     cLog = CombatLog("combat_log.txt", "./logs")
@@ -1252,19 +1246,20 @@ if __name__ == '__main__':
         cycleloop += 1
     winrate =  (sum(winrateList) / len(winrateList))
     
-    cLog.record(f"\nOver {varianceMinimizer} rounds:\n")
-    cLog.record(f"Team 1 has {winrate*100}% winrate")
-    cLog.record(f"Team 2 has {(1-winrate)*100}% winrate")
-    cLog.record(f"The average number of rounds per combat was {avgCombatdur}")
-    print (f"Team 1 has {winrate*100}% winrate \n Team 2 has {(1-winrate)*100}% winrate")
-    print (f"\nFinal Round Outcome:")
+    cLog.record (f"\n\nMonster status after final round:")
     for monster in primedList:
-        print (f"\n{monster.printName}")
-        print (f"Initiative: {monster.INIT}")
-        print (f"Team: {monster.TEAM}")
-        print (f"HP: {monster._curHP}")
-        print (f"AP: {monster.AP}")
-        print (f"Abilities: {monster.abilities}")
+        cLog.record (f"\n{monster.printName}")
+        cLog.record (f"Initiative: {monster.INIT}")
+        cLog.record (f"Team: {monster.TEAM}")
+        cLog.record (f"HP: {monster._curHP}")
+        cLog.record (f"AP: {monster.AP}")
+        cLog.record (f"Abilities: {monster.abilities}")
+    
+    cLog.record(f"\nOver {varianceMinimizer} rounds:\n")
+    cLog.record(f"Team 1 has {(1-winrate)*100}% winrate")
+    cLog.record(f"Team 2 has {(winrate)*100}% winrate")
+    cLog.record(f"The average number of rounds per combat was {avgCombatdur}")
+
     cLog.writeFile()
     
 
