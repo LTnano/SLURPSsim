@@ -1,18 +1,18 @@
 import pickle
+import webbrowser
+import os
 import tkinter as tk
-
-# Name, Health | Strength, Endurance, Coordination, Dexterity, Intelligence, Nouse, Will | Weapon, Ranged Weapon | Armour, Ability Points
-
-
+from tkinter import filedialog
+from tkinter import messagebox
+from tkinter import ttk
 
 class MonsterSelectGUI:
-    def __init__(self):
-        self.window = tk.Tk()
-        self.window.title("Monster Select")
+    def __init__(self, master):
         self.teamOne = []
         self.teamTwo = []
         self.chosenList = []
         self.teamList = []
+        # Name, Health | Strength, Endurance, Coordination, Dexterity, Intelligence, Nouse, Will | Weapon, Ranged Weapon | Armour, Ability Points
         self.creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 2, 'NOU' : 4, 'WIL' : 3, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
 
         'meleeSkeleton' : {'Name' : 'Skeleton', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 2, 'AP' : 0},
@@ -39,10 +39,8 @@ class MonsterSelectGUI:
 
         'thinBilly' : {'Name' : 'Thin Billy', 'HP' : 200, 'STR' : 13, 'END' : 20, 'COR' : 13, 'DEX' : 13, 'INT' : 13, 'NOU' : 17, 'WIL' : 13, 'WEA' : 8, 'RWEA' : 0, 'ARM' : 2, 'AP' : 10},
                 
-        'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12},
-                
-        'testMonster' : {'Name' : 'Jack', 'HP' : 400, 'STR' : 20, 'END' : 30, 'COR' : 20, 'DEX' : 20, 'INT' : 20, 'NOU' : 20, 'WIL' : 20, 'WEA' : 8, 'RWEA' : 8, 'ARM' : 10, 'AP' : 25}}
-
+        'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12}}
+        self.keyList = ['Name', 'HP', 'STR', 'END', 'COR', 'DEX', 'INT', 'NOU', 'WIL', 'WEA', 'RWEA', 'ARM', 'AP']
         self.hasAbilityDict = {'giantRat' : ['STRIKE'],
 
         'meleeSkeleton' : ['STRIKE'],
@@ -69,37 +67,80 @@ class MonsterSelectGUI:
 
         'thinBilly' : ['STRIKE', 'HEAL'],
                 
-        'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL'],
-                
-        'testMonster' : ['STRIKE', 'FIREBALL 2', 'FIREBALL 3', 'FIREBALL', 'FIRESTORM', 'HEAL', 'HEAL 2', 'ENCOURAGE', 'FLATTEN', 'STUN 2', 'BLOCK 2', 'DEAD MAN WALKING', 'ROUSING SHOUT', 'ROUSING SONG']}
+        'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL']}
+        self.fields = {}
+        self.possibleAbilities = ['BACKSTAB', 'BLOCK', 'BLOCK 2', 'CURSE OF CLUMSINESS', 
+                         'DEAD MAN WALKING', 'DEAD MAN WALKING 2', 'DISARM', 'DOUBLE SHOT', 
+                         'ENCOURAGE', 'FEINT', 'FEINT 2', 'FEINT 3', 'FIREBALL', 
+                         'FIREBALL 2', 'FIREBALL 3', 'FIRESTORM', 'FLATTEN', 'FOOT SHOT', 
+                         'HEAD SHOT', 'HEADACHE', 'HEAL', 'HEAL 2', 'HEAL 3', 
+                         'KNOCK BACK', 'KNOCK BACK 2', 'KNOCK BACK 3', 'KNOCK OVER', 
+                         'MIGRAINE', 'PIERCING THRUST', 'ROUSING SHOUT', 'ROUSING SONG', 
+                         'SHARPEN', 'SHARPEN', 'SHOOT', 'SHOOT 2', 'STRIKE', 
+                         'STUN', 'STUN 2', 'STUN 3', 'TIGHTEN']
+        self.creatureAbilities = []
+        self.window = master
+        self.window.title("Monster Manager")
 
+        self.mainFrame = tk.Frame(master)
+        self.monsterSelectionButton = tk.Button(self.mainFrame, text="Monster Selection", command=self.monsterSelection)
+        self.monsterSelectionButton.pack()
 
+        self.monsterEditorButton = tk.Button(self.mainFrame, text="Monster Editor", command=self.monsterEditor)
+        self.monsterEditorButton.pack()
+
+        self.helpButton = tk.Button(self.mainFrame, text="Help", command=self.help)
+        self.helpButton.pack()
+        self.mainFrame.pack()
+
+        #self.button2 = tk.Button(master, text="Function 2", command=self.function2)
+        #self.button2.pack()
+
+        #self.button3 = tk.Button(master, text="Function 3", command=self.function3)
+        #self.button3.pack()
+
+    def monsterSelection(self):
+        
+        # forget mainframe
+        self.mainFrame.pack_forget()
         # Create the monster listbox
-        self.monsterListBox = tk.Listbox(self.window, selectmode=tk.MULTIPLE)
+        self.selectionFrame = tk.Frame(self.window)
+        self.monsterListBox = tk.Listbox(self.selectionFrame, selectmode=tk.MULTIPLE)
         for name in self.creatureDict:
             self.monsterListBox.insert(tk.END, self.creatureDict[name]['Name'])
         self.monsterListBox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
+        # Create the return button
+        self.returnMenuButton = tk.Button(self.selectionFrame, text="Return to Menu", command=lambda: self.returnMenu(self.selectionFrame))
+        self.returnMenuButton.pack(side=tk.BOTTOM, padx=5, pady=5)
+
         # Create the add/remove buttons
-        self.addLeftButton = tk.Button(self.window, text="Add to Left Team", command=self.addLeft)
-        self.addRightButton = tk.Button(self.window, text="Add to Right Team", command=self.addRight)
-        self.removeLeftButton = tk.Button(self.window, text="Remove from Left Team", command=self.removeLeft)
-        self.removeRightButton = tk.Button(self.window, text="Remove from Right Team", command=self.removeRight)
+        self.addLeftButton = tk.Button(self.selectionFrame, text="Add to Left Team", command=self.addLeft)
+        self.addRightButton = tk.Button(self.selectionFrame, text="Add to Right Team", command=self.addRight)
+        self.iterationsLabel = tk.Label(self.selectionFrame, text="Number of Iterations")
+        self.numOfIterationsEntry = tk.Entry(self.selectionFrame)
+        self.removeLeftButton = tk.Button(self.selectionFrame, text="Remove from Left Team", command=self.removeLeft)
+        self.removeRightButton = tk.Button(self.selectionFrame, text="Remove from Right Team", command=self.removeRight)
         self.addLeftButton.pack(side=tk.TOP, padx=5, pady=5)
         self.addRightButton.pack(side=tk.TOP, padx=5, pady=5)
+        self.iterationsLabel.pack(side=tk.TOP)
+        self.numOfIterationsEntry.pack(side=tk.TOP, padx=5, pady=5)
         self.removeLeftButton.pack(side=tk.BOTTOM, padx=5, pady=5)
         self.removeRightButton.pack(side=tk.BOTTOM, padx=5, pady=5)
 
         # Create the export button
-        self.exportButton = tk.Button(self.window, text="Export Teams", command=self.exportTeams)
+        self.exportButton = tk.Button(self.selectionFrame, text="Export Teams", command=self.exportTeams)
         self.exportButton.pack(side=tk.BOTTOM, padx=5, pady=5)
 
         # Create the team listboxes
-        self.teamOneListBox = tk.Listbox(self.window)
-        self.teamTwoListBox = tk.Listbox(self.window)
+        self.teamOneListBox = tk.Listbox(self.selectionFrame)
+        self.teamTwoListBox = tk.Listbox(self.selectionFrame)
         self.teamOneListBox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         self.teamTwoListBox.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
 
+        #pack
+        self.selectionFrame.pack()
+        
     def addLeft(self):
         for index in self.monsterListBox.curselection():
             name = list(self.creatureDict.keys())[index]
@@ -132,11 +173,158 @@ class MonsterSelectGUI:
         for item in self.teamTwo:
             self.chosenList.append(item)
             self.teamList.append(2)
-        data = {'teamList': self.teamList, 'chosenList': self.chosenList, 'creatureDict': self.creatureDict, 'hasAbilityDict': self.hasAbilityDict}
-        with open('fightplannerinfo.pkl', 'wb') as f:
+        try:
+            numIterations = int(self.numOfIterationsEntry.get())
+        except ValueError:
+            # If the entry is empty or contains non-integer characters,
+            # display an error message and set num_iterations to a default value
+            messagebox.showerror("Error", "Iterations must be an integer, defaulting to 100")
+            numIterations = 100
+        data = {
+            'teamList': self.teamList, 'chosenList': self.chosenList,
+            'creatureDict': self.creatureDict, 'hasAbilityDict': self.hasAbilityDict,
+            'testIterations': numIterations
+            }
+        filePath = filedialog.asksaveasfilename(defaultextension='.pkl')
+        with open(filePath, 'wb') as f:
             pickle.dump(data, f)
 
+    def returnMenu(self, widget):
+        widget.destroy()
+        self.mainFrame.pack()
 
+    def monsterEditor(self):
+
+        # reset creature abilities
+        self.creatureAbilities = []
+
+        # forget mainframe
+        self.mainFrame.pack_forget()
+        
+        # create container
+        self.inputFramesContainer = tk.Frame(self.window)
+        self.inputFramesContainer.pack()
+
+        # Create sides
+        self.inputFramesRight = tk.Frame(self.inputFramesContainer)
+        self.inputFramesLeft = tk.Frame(self.inputFramesContainer)
+
+        # Create buttons to add, import and export monsters
+        self.addMonsterButton = tk.Button(self.inputFramesContainer, text="Add Monster", command=lambda: self.addMonster('add'))
+        self.addMonsterButton.pack(side=tk.BOTTOM, padx=5, pady=5)
+        self.importMonsterButton = tk.Button(self.inputFramesContainer, text="Import", command=self.importMon)
+        self.importMonsterButton.pack(side=tk.BOTTOM, padx=5, pady=5)
+        self.exportMonsterButton = tk.Button(self.inputFramesContainer, text="Export", command=lambda: self.addMonster('export'))
+        self.exportMonsterButton.pack(side=tk.BOTTOM, padx=5, pady=5)
+
+        # Create the return button
+        self.returnMenuButton = tk.Button(self.inputFramesContainer, text="Return to Menu", command=lambda: self.returnMenu(self.inputFramesContainer))
+        self.returnMenuButton.pack(side=tk.BOTTOM, padx=5, pady=5)
+
+        # Create the ability dropdown (right)
+        self.abilityLabel = tk.Label(self.inputFramesRight, text="Choose Abilities")
+        self.abilityLabel.pack()
+        self.abilityFieldVal = tk.StringVar(self.inputFramesRight)
+        self.abilityFieldVal.set(self.possibleAbilities[0])
+        self.abilityDropdown = tk.OptionMenu(self.inputFramesRight, self.abilityFieldVal, *self.possibleAbilities)
+        self.abilityDropdown.pack()
+
+        # Create add/remove ability buttons (right)
+        self.addAbilityButton = tk.Button(self.inputFramesRight, text="Add", command=self.addAbility)
+        self.removeAbilityButton = tk.Button(self.inputFramesRight, text="Remove", command=self.removeAbility)
+        self.addAbilityButton.pack(side=tk.RIGHT, padx=5, pady=5)
+        self.removeAbilityButton.pack(side=tk.LEFT, padx=5, pady=5)        
+        
+        # Create list for abilities
+        self.abilityListBox = tk.Listbox(self.inputFramesRight)
+        self.abilityListBox.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
+
+        # Create fields for stats
+        for key in self.keyList:
+            label = tk.Label(self.inputFramesLeft, text=key)
+            label.grid(row=self.keyList.index(key), column=0)
+            if key in ["WEA", "RWEA"]:
+                field = ttk.Combobox(self.inputFramesLeft, values=[0, 4, 6, 8, 10, 12, 20])
+            else:
+                field = tk.Entry(self.inputFramesLeft)
+            field.grid(row=self.keyList.index(key), column=1)
+            self.fields[key] = field
+            
+        # Pack right side
+        self.inputFramesRight.pack(side=tk.RIGHT)
+        self.inputFramesLeft.pack(side=tk.LEFT)
+
+    def addMonster(self, type):
+        if not self.creatureAbilities:
+            messagebox.showerror(f"Error: creature abilities list is empty")
+            return
+        name = self.fields['Name'].get()
+        if not isinstance(name, str):
+            messagebox.showerror(f"Error: Name field must be a string")
+            return
+        newMonster = {'Name': name}
+        for key in self.keyList:
+            if key != 'Name':
+                try:
+                    newMonster[key] = int(self.fields[key].get())
+                except ValueError:
+                    messagebox.showerror(f"Error: {key} field must be a float")
+                    return
+                if self.fields[key].get() == "":
+                    messagebox.showerror(f"Error: {key} field is empty")
+                    return
+        if type == 'add':
+            dickey = newMonster['Name']
+            self.creatureDict[dickey] = newMonster
+            self.hasAbilityDict[dickey] = self.creatureAbilities
+        if type == 'export':
+            monData = {'monster':newMonster, 'monsterAbilities':self.creatureAbilities}
+            filePath = filedialog.asksaveasfilename(defaultextension='.pkl')
+            with open(filePath, 'wb') as f:
+                pickle.dump(monData, f)
+
+    def importMon(self):
+        monData = {}
+        filePath = filedialog.askopenfilename()
+        if filePath:
+            with open(filePath, 'rb') as f:
+                monData = pickle.load(f)
+        self.creatureAbilities = monData['monsterAbilities']
+        newMonster = monData['monster']
+        dickey = newMonster['Name']
+        self.creatureDict[dickey] = newMonster
+        self.hasAbilityDict[dickey] = self.creatureAbilities
+    
+    def addAbility(self):
+        ability = self.abilityFieldVal.get()
+        if ability not in self.creatureAbilities:
+            self.creatureAbilities.append(ability)
+            self.abilityListBox.insert(tk.END, ability)
+        print(self.creatureAbilities)
+
+    def removeAbility(self):
+        selectedIndex = self.abilityListBox.curselection()
+        if selectedIndex:
+            selectedAbility = self.abilityListBox.get(selectedIndex[0])
+            self.abilityListBox.delete(selectedIndex[0])
+            if selectedAbility in self.creatureAbilities:
+                self.creatureAbilities.remove(selectedAbility)
+        print(self.creatureAbilities)
+
+
+    def help(self):
+        readme_file = "README.md"
+        if os.path.isfile(readme_file):
+            webbrowser.open(readme_file)
+        else:
+            messagebox.showerror(f"Error: {readme_file} not found")
+
+            return
+        
 if __name__ == '__main__':
-    MonsterSelectGUI().window.mainloop()
+    root = tk.Tk()
+    root.minsize(400, 300)
+    app = MonsterSelectGUI(root)
+    root.mainloop()
+
 

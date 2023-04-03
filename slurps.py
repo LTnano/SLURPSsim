@@ -3,14 +3,26 @@ import random
 import operator
 import os
 import time
+import tkinter as tk
+from tkinter import filedialog
 
-with open('fightplannerinfo.pkl', 'rb') as f:
-    data = pickle.load(f)
+# Ask user to select a file
+root = tk.Tk()
+root.withdraw()
+filePath = filedialog.askopenfilename()
+
+# Load data from file
+if filePath:
+    with open(filePath, 'rb') as f:
+        data = pickle.load(f)
+
+
 
 creatureDict = data['creatureDict']
 hasAbilityDict = data['hasAbilityDict']
 chosenList = data['chosenList']
 teamList = data['teamList']
+varianceMinimizer = data['testIterations']
 primedList = []
 uniqueAbilityList = []
 allAbilities = []
@@ -19,9 +31,11 @@ winrateList = []
 avgCombatdur = 3.5
 ffEnabled = True
 
+#sorting key function
 def takeSecond(elem):
     return elem[1]
 
+#concatenates string names of monsters to differentiate between duplicates
 def numberDuplicates(monsterlist):
     seen = {}
     for monster in monsterlist:
@@ -32,6 +46,7 @@ def numberDuplicates(monsterlist):
         else:
             seen[key] = 0
 
+#combat log class is called when logging is true
 class CombatLog:
     def __init__(self, filename, logdir):
         self.filename = filename
@@ -40,10 +55,12 @@ class CombatLog:
         if not os.path.exists(logdir):
             os.mkdir(logdir)
     
+    #appends the event to the log 
     def record(self, event):
         fevent = event + "\n"
         self.log.append(fevent)
-        
+    
+    #dumps the log as a file with a timestamp name
     def writeFile(self):
         filename = time.strftime('%Y%m%d%H%M%S_combat_log.txt')
         filepath = os.path.join(self.logdir, filename)
@@ -51,6 +68,7 @@ class CombatLog:
             for event in self.log:
                 f.write(event)
 
+#creature class builds from the creatureDict dictionary
 class Creature():
     def __init__(self, type):
         
@@ -108,7 +126,7 @@ class Creature():
         self.isTightened = 0        
         
 
-        #equip assignment
+        #equipment assignment
         match creatureDict[type]['WEA']:
             case 20:
                 self._WEA = D20
@@ -152,12 +170,14 @@ class Creature():
         self.abilities = hasAbilityDict[type]
         self.prioList = []
 
+    #when called sets monster to dead and appends the log with the event
     def kill(self):
         self.isAlive = False
         print (f"{self.printName} died!")
         if logEvents:
             cLog.record(f"{self.printName} died!")
 
+    #remove the stunned effect and damages the monster
     def takeDamage(self, damage):
         self._curHP = self._curHP - damage
         self.isStunned = 0
@@ -1228,7 +1248,6 @@ if __name__ == '__main__':
     D4 = Die(4, 'D4')
     D0 = Die(0, 'D0')
     simState = SimState()
-    varianceMinimizer = 100
     cycleloop = 0
     logEvents = False
     cLog = CombatLog("combat_log.txt", "./logs")
