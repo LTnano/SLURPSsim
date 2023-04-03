@@ -209,6 +209,10 @@ class MonsterSelectGUI:
         self.inputFramesRight = tk.Frame(self.inputFramesContainer)
         self.inputFramesLeft = tk.Frame(self.inputFramesContainer)
 
+        # Create the return button
+        self.returnMenuButton = tk.Button(self.inputFramesContainer, text="Return to Menu", command=lambda: self.returnMenu(self.inputFramesContainer))
+        self.returnMenuButton.pack(side=tk.BOTTOM, padx=5, pady=5)
+
         # Create buttons to add, import and export monsters
         self.addMonsterButton = tk.Button(self.inputFramesContainer, text="Add Monster", command=lambda: self.addMonster('add'))
         self.addMonsterButton.pack(side=tk.BOTTOM, padx=5, pady=5)
@@ -216,10 +220,6 @@ class MonsterSelectGUI:
         self.importMonsterButton.pack(side=tk.BOTTOM, padx=5, pady=5)
         self.exportMonsterButton = tk.Button(self.inputFramesContainer, text="Export", command=lambda: self.addMonster('export'))
         self.exportMonsterButton.pack(side=tk.BOTTOM, padx=5, pady=5)
-
-        # Create the return button
-        self.returnMenuButton = tk.Button(self.inputFramesContainer, text="Return to Menu", command=lambda: self.returnMenu(self.inputFramesContainer))
-        self.returnMenuButton.pack(side=tk.BOTTOM, padx=5, pady=5)
 
         # Create the ability dropdown (right)
         self.abilityLabel = tk.Label(self.inputFramesRight, text="Choose Abilities")
