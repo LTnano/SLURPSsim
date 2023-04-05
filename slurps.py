@@ -184,7 +184,8 @@ class Creature():
     # remove the stunned effect and damages the monster
     def takeDamage(self, damage):
         self._curHP = self._curHP - damage
-        self.isStunned = 0
+        if damage > 0:
+            self.isStunned = 0
         return
     
     def takeHealing(self, healing):
@@ -1334,6 +1335,9 @@ def beginCombatLoop(monList):
                     monster.checkAbility()
                     monster.useAbility(monster.chooseAbility())
                     checkDeath(monster.target)
+                else:
+                    if logEvents:
+                        cLog.record(f"{monster.printName} stumbles around stunned taking no actions.")
             if (simState.aliveList.count(1) == 0 or simState.aliveList.count(2) == 0):
                 break
         if combatRound > 100:

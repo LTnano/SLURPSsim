@@ -13,7 +13,8 @@ class MonsterSelectGUI:
         self.chosenList = []
         self.teamList = []
         # Name, Health | Strength, Endurance, Coordination, Dexterity, Intelligence, Nouse, Will | Weapon, Ranged Weapon | Armour, Ability Points
-        self.creatureDict = {'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 2, 'NOU' : 4, 'WIL' : 3, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
+        self.creatureDict = {
+        'giantRat' : {'Name': 'Giant Rat', 'HP' : 50, 'STR' : 8, 'END' : 5, 'COR' : 8, 'DEX' : 8, 'INT' : 2, 'NOU' : 4, 'WIL' : 3, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
 
         'meleeSkeleton' : {'Name' : 'Skeleton', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 2, 'AP' : 0},
 
@@ -39,9 +40,28 @@ class MonsterSelectGUI:
 
         'thinBilly' : {'Name' : 'Thin Billy', 'HP' : 200, 'STR' : 13, 'END' : 20, 'COR' : 13, 'DEX' : 13, 'INT' : 13, 'NOU' : 17, 'WIL' : 13, 'WEA' : 8, 'RWEA' : 0, 'ARM' : 2, 'AP' : 10},
                 
-        'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12}}
+        'bossSkeleton' : {'Name' : 'Captain Boney', 'HP' : 250, 'STR' : 15, 'END' : 25, 'COR' : 15, 'DEX' : 12, 'INT' : 17, 'NOU' : 12, 'WIL' : 13, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 12},
+        
+        'humanlvl1' : {'Name' : 'Human Novice Adventurer', 'HP' : 100, 'STR' : 10, 'END' : 10, 'COR' : 10, 'DEX' : 10, 'INT' : 10, 'NOU' : 10, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
+
+        'trolllvl1' : {'Name' : 'Troll Novice Adventurer', 'HP' : 100, 'STR' : 13, 'END' : 10, 'COR' : 10, 'DEX' : 7, 'INT' : 10, 'NOU' : 10, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
+
+        'dwarflvl1' : {'Name' : 'Dwarf Novice Adventurer', 'HP' : 130, 'STR' : 10, 'END' : 13, 'COR' : 10, 'DEX' : 10, 'INT' : 7, 'NOU' : 10, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
+
+        'ranilvl1' : {'Name' : 'Rani Novice Adventurer', 'HP' : 100, 'STR' : 7, 'END' : 10, 'COR' : 13, 'DEX' : 10, 'INT' : 10, 'NOU' : 10, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
+
+        'elflvl1' : {'Name' : 'Elf Novice Adventurer', 'HP' : 100, 'STR' : 10, 'END' : 10, 'COR' : 10, 'DEX' : 13, 'INT' : 10, 'NOU' : 7, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 4, 'ARM' : 0, 'AP' : 10},
+
+        'sagelvl1' : {'Name' : 'Sage Novice Adventurer', 'HP' : 100, 'STR' : 10, 'END' : 10, 'COR' : 10, 'DEX' : 10, 'INT' : 13, 'NOU' : 10, 'WIL' : 7, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 11},
+        
+        'goblinlvl1' : {'Name' : 'Goblin Novice Adventurer', 'HP' : 70, 'STR' : 10, 'END' : 7, 'COR' : 10, 'DEX' : 10, 'INT' : 10, 'NOU' : 13, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
+
+        'faylvl1' : {'Name' : 'Fay Novice Adventurer', 'HP' : 100, 'STR' : 10, 'END' : 10, 'COR' : 7, 'DEX' : 10, 'INT' : 10, 'NOU' : 10, 'WIL' : 13, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10}
+        }
+
         self.keyList = ['Name', 'HP', 'STR', 'END', 'COR', 'DEX', 'INT', 'NOU', 'WIL', 'WEA', 'RWEA', 'ARM', 'AP']
-        self.hasAbilityDict = {'giantRat' : ['STRIKE'],
+        self.hasAbilityDict = {
+        'giantRat' : ['STRIKE'],
 
         'meleeSkeleton' : ['STRIKE'],
 
@@ -67,7 +87,24 @@ class MonsterSelectGUI:
 
         'thinBilly' : ['STRIKE', 'HEAL'],
                 
-        'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL']}
+        'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL'],
+
+        'humanlvl1' : ['STRIKE', 'HEAL'],
+
+        'trolllvl1' : ['STRIKE', 'STUN'],
+
+        'dwarflvl1' : ['STRIKE', 'TAUNT'],
+
+        'ranilvl1' : ['STRIKE', 'FEINT'],
+
+        'elflvl1' : ['STRIKE', 'SHOOT'],
+
+        'sagelvl1' : ['STRIKE', 'FIREBALL'],
+
+        'goblinlvl1' : ['STRIKE', 'HEAL'],
+
+        'faylvl1' : ['STRIKE', 'SCARE']
+        }
         self.fields = {}
         self.possibleAbilities = ['BACKSTAB', 'BLOCK', 'BLOCK 2', 'CURSE OF CLUMSINESS',
                                   'DEAD MAN WALKING', 'DEAD MAN WALKING 2', 'DISARM', 'DOUBLE SHOT',
