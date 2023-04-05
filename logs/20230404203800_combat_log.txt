@@ -1,0 +1,265 @@
+Team 1:
+Kobold Warrior 2
+Kobold Mage
+Kobold Mage 2
+Kobold Healer
+Kobold Archer
+Kobold Warrior
+
+Team 2:
+Kobold Warrior 4
+Kobold Mage 4
+Kobold Archer 2
+Kobold Warrior 3
+Kobold Mage 3
+Kobold Healer 2
+
+
+
+Round 1
+
+Kobold Warrior 4 used STRIKE
+Kobold Warrior 4 hit Kobold Mage for 27 damage
+Kobold Warrior 2 used STRIKE
+Kobold Warrior 2 hit Kobold Mage 4 for 9 damage
+Kobold Mage used FIREBALL
+Kobold Mage hit Kobold Warrior 4 for 14 damage
+Kobold Mage 4 used FIREBALL
+Kobold Mage 4 missed Kobold Healer
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 missed Kobold Mage 3
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 missed Kobold Warrior 2
+Kobold Healer used HEADACHE
+Kobold Healer inflicted Kobold Warrior 4 with a painful HEADACHE, causing 10 damage
+Kobold Archer used SHOOT
+Kobold Archer missed Kobold Archer 2
+Kobold Warrior used STRIKE
+Kobold Warrior missed Kobold Warrior 3
+Kobold Warrior 3 used STRIKE
+Kobold Warrior 3 missed Kobold Mage
+Kobold Mage 3 used FIREBALL
+Kobold Mage 3 hit Kobold Warrior 2 for 21 damage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 missed Kobold Healer
+
+Round 2
+
+Kobold Warrior 4 takes 10 damage from a HEADACHE
+Kobold Warrior 4 used STRIKE
+Kobold Warrior 4 missed Kobold Mage
+Kobold Warrior 2 used STRIKE
+Kobold Warrior 2 missed Kobold Mage 4
+Kobold Mage used FIREBALL
+Kobold Mage hit Kobold Warrior 4 for 28 damage
+Kobold Warrior 4 died!
+Kobold Mage 4 used FIREBALL
+Kobold Mage 4 hit Kobold Healer for 7 damage
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 hit Kobold Mage 3 for 21 damage
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 shot Kobold Warrior 2 for 16 damage
+Kobold Healer used HEADACHE
+Kobold Healer missed Kobold Mage 4
+Kobold Archer used SHOOT
+Kobold Archer shot Kobold Archer 2 for 32 damage
+Kobold Warrior used STRIKE
+Kobold Warrior missed Kobold Warrior 3
+Kobold Warrior 3 used STRIKE
+Kobold Warrior 3 missed Kobold Mage
+Kobold Mage 3 used FIREBALL
+Kobold Mage 3 hit Kobold Warrior 2 for 21 damage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 missed Kobold Healer
+
+Round 3
+
+Kobold Warrior 4 takes 10 damage from a HEADACHE
+Kobold Warrior 2 used STRIKE
+Kobold Warrior 2 missed Kobold Mage 4
+Kobold Mage used FIREBALL
+Kobold Mage hit Kobold Archer 2 for 7 damage
+Kobold Mage 4 used FIREBALL
+Kobold Mage 4 hit Kobold Healer for 7 damage
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 hit Kobold Mage 3 for 21 damage
+Kobold Mage 3 died!
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 shot Kobold Warrior 2 for 16 damage
+Kobold Warrior 2 died!
+Kobold Healer used HEADACHE
+Kobold Healer inflicted Kobold Mage 4 with a painful HEADACHE, causing 10 damage
+Kobold Archer used SHOOT
+Kobold Archer shot Kobold Archer 2 for 16 damage
+Kobold Archer 2 died!
+Kobold Warrior used STRIKE
+Kobold Warrior missed Kobold Warrior 3
+Kobold Warrior 3 used STRIKE
+Kobold Warrior 3 missed Kobold Mage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 inflicted Kobold Healer with a painful HEADACHE, causing 10 damage
+
+Round 4
+
+Kobold Warrior 4 takes 10 damage from a HEADACHE
+Kobold Mage used FIREBALL
+Kobold Mage hit Kobold Healer 2 for 7 damage
+Kobold Mage 4 takes 10 damage from a HEADACHE
+Kobold Mage 4 used FIREBALL
+Kobold Mage 4 hit Kobold Healer for 21 damage
+Kobold Healer died!
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 missed Kobold Warrior 3
+Kobold Healer takes 10 damage from a HEADACHE
+Kobold Archer used SHOOT
+Kobold Archer missed Kobold Healer 2
+Kobold Warrior used STRIKE
+Kobold Warrior hit Kobold Warrior 3 for 9 damage
+Kobold Warrior 3 used STRIKE
+Kobold Warrior 3 missed Kobold Mage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 missed Kobold Mage 2
+
+Round 5
+
+Kobold Mage used FIREBALL
+Kobold Mage missed Kobold Healer 2
+Kobold Mage 4 takes 10 damage from a HEADACHE
+Kobold Mage 4 used FIREBALL
+Kobold Mage 4 hit Kobold Mage for 28 damage
+Kobold Mage died!
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 missed Kobold Warrior 3
+Kobold Healer takes 10 damage from a HEADACHE
+Kobold Archer used SHOOT
+Kobold Archer shot Kobold Healer 2 for 16 damage
+Kobold Warrior used STRIKE
+Kobold Warrior missed Kobold Warrior 3
+Kobold Warrior 3 used STRIKE
+Kobold Warrior 3 hit Kobold Archer for 27 damage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 inflicted Kobold Mage 2 with a painful HEADACHE, causing 10 damage
+
+Round 6
+
+Kobold Mage 4 takes 10 damage from a HEADACHE
+Kobold Mage 4 died!
+Kobold Mage 2 takes 10 damage from a HEADACHE
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 hit Kobold Warrior 3 for 7 damage
+Kobold Healer takes 10 damage from a HEADACHE
+Kobold Archer used SHOOT
+Kobold Archer shot Kobold Healer 2 for 32 damage
+Kobold Healer 2 died!
+Kobold Warrior used STRIKE
+Kobold Warrior hit Kobold Warrior 3 for 27 damage
+Kobold Warrior 3 used STRIKE
+Kobold Warrior 3 missed Kobold Archer
+
+Round 7
+
+Kobold Mage 2 takes 10 damage from a HEADACHE
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 hit Kobold Warrior 3 for 7 damage
+Kobold Archer cannot use SHOOT as they do not have enough AP!
+Kobold Warrior used STRIKE
+Kobold Warrior hit Kobold Warrior 3 for 36 damage
+Kobold Warrior 3 died!
+
+Combat Ended! Team 1 won!
+[8, 7, 6, 6, 7, 7, 8, 8, 7, 5, 9, 5, 4, 6, 6, 6, 9, 6, 7, 6, 7, 7, 5, 10, 6, 6, 8, 8, 6, 7, 10, 6, 8, 10, 6, 14, 7, 6, 6, 7, 9, 9, 6, 7, 7, 12, 8, 10, 7, 9, 9, 8, 7, 6, 7, 11, 8, 8, 7, 8, 7, 6, 7, 6, 6, 13, 7, 12, 6, 8, 6, 6, 7, 6, 6, 6, 7, 10, 9, 9, 9, 9, 6, 8, 10, 11, 7, 8, 7, 6, 8, 7, 7, 7, 11, 8, 6, 101, 6, 8], Average = 7.460000000000001
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Kobold Warrior 4
+Initiative: 28
+Team: 2
+HP: -22
+AP: 0
+Abilities: ['STRIKE']
+
+Kobold Warrior 2
+Initiative: 27
+Team: 1
+HP: -14
+AP: 0
+Abilities: ['STRIKE']
+
+Kobold Mage
+Initiative: 26
+Team: 1
+HP: -15
+AP: 2
+Abilities: ['FIREBALL']
+
+Kobold Mage 4
+Initiative: 25
+Team: 2
+HP: -9
+AP: 2
+Abilities: ['FIREBALL']
+
+Kobold Mage 2
+Initiative: 24
+Team: 1
+HP: 10
+AP: 0
+Abilities: ['FIREBALL']
+
+Kobold Archer 2
+Initiative: 24
+Team: 2
+HP: -15
+AP: 3
+Abilities: ['SHOOT']
+
+Kobold Healer
+Initiative: 22
+Team: 1
+HP: -45
+AP: 4
+Abilities: ['HEADACHE']
+
+Kobold Archer
+Initiative: 21
+Team: 1
+HP: 13
+AP: 0
+Abilities: ['SHOOT']
+
+Kobold Warrior
+Initiative: 16
+Team: 1
+HP: 60
+AP: 0
+Abilities: ['STRIKE']
+
+Kobold Warrior 3
+Initiative: 15
+Team: 2
+HP: -26
+AP: 0
+Abilities: ['STRIKE']
+
+Kobold Mage 3
+Initiative: 10
+Team: 2
+HP: -2
+AP: 5
+Abilities: ['FIREBALL']
+
+Kobold Healer 2
+Initiative: 10
+Team: 2
+HP: -25
+AP: 2
+Abilities: ['HEADACHE']
+
+Over 100 rounds:
+
+Team 1 has 49.0% winrate
+Team 2 has 51.0% winrate
+The average number of rounds per combat was 7.460000000000001
+Stalemates detected, winner and winrate may be inaccurate!!

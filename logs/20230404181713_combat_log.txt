@@ -1,0 +1,666 @@
+Team 1:
+Giant Rat 3
+Giant Rat 6
+Giant Rat 4
+Giant Rat 5
+Doubleshotman
+Giant Rat 2
+Skeleton (Hard)
+Giant Rat
+
+Team 2:
+Giant Rat 7
+Giant Rat 11
+Giant Rat 12
+Giant Rat 9
+Giant Rat 10
+Giant Rat 8
+Skeleton (Hard) 2
+Doubleshotman 2
+
+
+
+Round 1
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 hit Giant Rat 3 for 16 damage
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Giant Rat 5
+Giant Rat 3 used STRIKE
+Giant Rat 3 hit Giant Rat 7 for 24 damage
+Giant Rat 12 used STRIKE
+Giant Rat 12 hit Giant Rat 3 for 24 damage
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Giant Rat 10 used STRIKE
+Giant Rat 10 hit Giant Rat 2 for 24 damage
+Giant Rat 8 used STRIKE
+Giant Rat 8 hit Giant Rat 2 for 32 damage
+Giant Rat 2 died!
+Giant Rat 6 used STRIKE
+Giant Rat 6 missed Giant Rat 8
+Giant Rat 4 used STRIKE
+Giant Rat 4 missed Giant Rat 8
+Giant Rat 5 used STRIKE
+Giant Rat 5 hit Giant Rat 10 for 16 damage
+Skeleton (Hard) 2 used FEINT
+Skeleton (Hard) 2 missed Doubleshotman
+Doubleshotman 2 used DOUBLE SHOT
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 shot Giant Rat 4 for 80 damage
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 shot Giant Rat 4 for 50 damage
+Giant Rat 4 died!
+Doubleshotman used DOUBLE SHOT
+Doubleshotman missed Skeleton (Hard) 2
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Giant Rat 8 for 44 damage
+Giant Rat used STRIKE
+Giant Rat missed Doubleshotman 2
+
+Round 2
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 missed Giant Rat 3
+Giant Rat 11 used STRIKE
+Giant Rat 11 hit Giant Rat 5 for 8 damage
+Giant Rat 3 used STRIKE
+Giant Rat 3 hit Giant Rat 7 for 24 damage
+Giant Rat 12 used STRIKE
+Giant Rat 12 missed Giant Rat 3
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Giant Rat 10 used STRIKE
+Giant Rat 10 missed Doubleshotman
+Giant Rat 8 used STRIKE
+Giant Rat 8 missed Doubleshotman
+Giant Rat 6 used STRIKE
+Giant Rat 6 hit Giant Rat 8 for 16 damage
+Giant Rat 8 died!
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Giant Rat 10
+Skeleton (Hard) 2 used FEINT
+Skeleton (Hard) 2 missed Doubleshotman
+Doubleshotman 2 used DOUBLE SHOT
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 shot Giant Rat 6 for 60 damage
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 shot Giant Rat 6 for 30 damage
+Giant Rat 6 died!
+Doubleshotman used DOUBLE SHOT
+Doubleshotman missed Skeleton (Hard) 2
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Giant Rat 10 for 77 damage
+Giant Rat 10 died!
+Giant Rat used STRIKE
+Giant Rat hit Doubleshotman 2 for 8 damage
+
+Round 3
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 missed Giant Rat 3
+Giant Rat 11 used STRIKE
+Giant Rat 11 hit Giant Rat 5 for 24 damage
+Giant Rat 3 used STRIKE
+Giant Rat 3 missed Giant Rat 7
+Giant Rat 12 used STRIKE
+Giant Rat 12 missed Giant Rat 3
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Giant Rat 5 used STRIKE
+Giant Rat 5 hit Doubleshotman 2 for 16 damage
+Skeleton (Hard) 2 used FEINT
+Skeleton (Hard) 2 missed Doubleshotman
+Doubleshotman 2 used DOUBLE SHOT
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 shot Giant Rat for 20 damage
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 missed Giant Rat
+Doubleshotman used DOUBLE SHOT
+Doubleshotman missed Skeleton (Hard) 2
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Doubleshotman 2
+Giant Rat used STRIKE
+Giant Rat missed Doubleshotman 2
+
+Round 4
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 hit Giant Rat 3 for 24 damage
+Giant Rat 3 died!
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Giant Rat 5
+Giant Rat 12 used STRIKE
+Giant Rat 12 missed Doubleshotman
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Doubleshotman 2
+Skeleton (Hard) 2 used FEINT
+Skeleton (Hard) 2 missed Doubleshotman
+Doubleshotman 2 used DOUBLE SHOT
+Doubleshotman 2 missed Giant Rat
+Doubleshotman used DOUBLE SHOT
+Doubleshotman missed Skeleton (Hard) 2
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Doubleshotman 2
+Giant Rat used STRIKE
+Giant Rat missed Doubleshotman 2
+
+Round 5
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 hit Giant Rat for 16 damage
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Giant Rat 5
+Giant Rat 12 used STRIKE
+Giant Rat 12 missed Doubleshotman
+Giant Rat 9 used STRIKE
+Giant Rat 9 hit Skeleton (Hard) for 24 damage
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Doubleshotman 2
+Skeleton (Hard) 2 used FEINT
+Skeleton (Hard) 2 hit Doubleshotman for 33 damage
+Doubleshotman 2 used DOUBLE SHOT
+Doubleshotman 2 missed Giant Rat
+Doubleshotman used DOUBLE SHOT
+Doubleshotman used SHOOT
+Doubleshotman missed Skeleton (Hard) 2
+Doubleshotman used SHOOT
+Doubleshotman shot Skeleton (Hard) 2 for 60 damage
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Doubleshotman 2
+Giant Rat used STRIKE
+Giant Rat missed Doubleshotman 2
+
+Round 6
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 missed Giant Rat
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Giant Rat 5
+Giant Rat 12 used STRIKE
+Giant Rat 12 missed Doubleshotman
+Giant Rat 9 used STRIKE
+Giant Rat 9 hit Skeleton (Hard) for 24 damage
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Doubleshotman 2
+Skeleton (Hard) 2 used FEINT
+Skeleton (Hard) 2 missed Doubleshotman
+Doubleshotman 2 used DOUBLE SHOT
+Doubleshotman 2 missed Giant Rat
+Doubleshotman used DOUBLE SHOT
+Doubleshotman used SHOOT
+Doubleshotman shot Skeleton (Hard) 2 for 80 damage
+Doubleshotman used SHOOT
+Doubleshotman missed Skeleton (Hard) 2
+Skeleton (Hard) 2 died!
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Doubleshotman 2
+Giant Rat used STRIKE
+Giant Rat missed Doubleshotman 2
+
+Round 7
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 hit Giant Rat for 32 damage
+Giant Rat died!
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Giant Rat 5
+Giant Rat 12 used STRIKE
+Giant Rat 12 missed Doubleshotman
+Giant Rat 9 used STRIKE
+Giant Rat 9 hit Skeleton (Hard) for 8 damage
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Doubleshotman 2
+Doubleshotman 2 used DOUBLE SHOT
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 shot Skeleton (Hard) for 30 damage
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 missed Skeleton (Hard)
+Doubleshotman used DOUBLE SHOT
+Doubleshotman used SHOOT
+Doubleshotman shot Giant Rat 12 for 60 damage
+Doubleshotman used SHOOT
+Doubleshotman missed Giant Rat 12
+Giant Rat 12 died!
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Doubleshotman 2
+
+Round 8
+
+Giant Rat 7 used STRIKE
+Giant Rat 7 hit Doubleshotman for 16 damage
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Giant Rat 5
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Giant Rat 5 used STRIKE
+Giant Rat 5 missed Doubleshotman 2
+Doubleshotman 2 used SHOOT
+Doubleshotman 2 missed Skeleton (Hard)
+Doubleshotman used DOUBLE SHOT
+Doubleshotman used STRIKE
+Doubleshotman missed Giant Rat 7
+Doubleshotman used STRIKE
+Doubleshotman hit Giant Rat 7 for 50 damage
+Giant Rat 7 died!
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Doubleshotman 2 for 77 damage
+
+Round 9
+
+Giant Rat 11 used STRIKE
+Giant Rat 11 hit Giant Rat 5 for 24 damage
+Giant Rat 5 died!
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Skeleton (Hard)
+Doubleshotman used STRIKE
+Doubleshotman missed Giant Rat 11
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Doubleshotman 2
+
+Round 10
+
+Giant Rat 11 used STRIKE
+Giant Rat 11 missed Doubleshotman
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Skeleton (Hard)
+Doubleshotman used STRIKE
+Doubleshotman missed Giant Rat 11
+Skeleton (Hard) used STRIKE
+Skeleton (Hard) hit Doubleshotman 2 for 55 damage
+
+Round 11
+
+Giant Rat 11 used STRIKE
+Giant Rat 11 hit Doubleshotman for 8 damage
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Skeleton (Hard)
+Doubleshotman used STRIKE
+Doubleshotman hit Giant Rat 11 for 50 damage
+Giant Rat 11 died!
+Skeleton (Hard) used STRIKE
+Skeleton (Hard) hit Doubleshotman 2 for 33 damage
+
+Round 12
+
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Skeleton (Hard) for 10 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Giant Rat 9
+Skeleton (Hard) used STRIKE
+Skeleton (Hard) missed Doubleshotman 2
+
+Round 13
+
+Giant Rat 9 used STRIKE
+Giant Rat 9 missed Skeleton (Hard)
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Skeleton (Hard) for 50 damage
+Skeleton (Hard) died!
+Doubleshotman used STRIKE
+Doubleshotman hit Giant Rat 9 for 10 damage
+
+Round 14
+
+Giant Rat 9 used STRIKE
+Giant Rat 9 hit Doubleshotman for 8 damage
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Giant Rat 9 for 30 damage
+
+Round 15
+
+Giant Rat 9 used STRIKE
+Giant Rat 9 hit Doubleshotman for 16 damage
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Giant Rat 9 for 40 damage
+Giant Rat 9 died!
+
+Round 16
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 30 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 17
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 18
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 10 damage
+
+Round 19
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 50 damage
+
+Round 20
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 20 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 21
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 10 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 22
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 60 damage
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 20 damage
+
+Round 23
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 30 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 24
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 25
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 20 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 26
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 27
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 10 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 28
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 29
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 30
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 31
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 32
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 40 damage
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 33
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 10 damage
+
+Round 34
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 35
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 10 damage
+
+Round 36
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 37
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 50 damage
+
+Round 38
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 60 damage
+
+Round 39
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 40
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 30 damage
+
+Round 41
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 42
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 43
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 30 damage
+
+Round 44
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 missed Doubleshotman
+Doubleshotman used STRIKE
+Doubleshotman missed Doubleshotman 2
+
+Round 45
+
+Doubleshotman 2 used STRIKE
+Doubleshotman 2 hit Doubleshotman for 60 damage
+Doubleshotman used STRIKE
+Doubleshotman hit Doubleshotman 2 for 50 damage
+Doubleshotman 2 died!
+
+Combat Ended! Team 1 won!
+[32, 16, 20, 22, 33, 20, 25, 16, 54, 18, 31, 17, 14, 39, 21, 19, 23, 36, 26, 31, 24, 19, 19, 27, 23, 34, 26, 15, 22, 22, 19, 23, 19, 23, 25, 32, 14, 31, 29, 26, 27, 27, 22, 17, 21, 20, 37, 37, 19, 24, 20, 24, 35, 23, 57, 17, 24, 30, 13, 23, 32, 13, 30, 26, 30, 26, 24, 35, 29, 22, 25, 38, 25, 18, 36, 19, 32, 22, 31, 29, 25, 35, 41, 22, 27, 20, 33, 28, 33, 39, 18, 18, 34, 18, 24, 33, 32, 24, 33, 46], Average = 25.27
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Giant Rat 7
+Initiative: 28
+Team: 2
+HP: -48
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 11
+Initiative: 28
+Team: 2
+HP: 0
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 3
+Initiative: 27
+Team: 1
+HP: -14
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 12
+Initiative: 26
+Team: 2
+HP: -10
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 9
+Initiative: 25
+Team: 2
+HP: -30
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 10
+Initiative: 25
+Team: 2
+HP: -43
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 8
+Initiative: 23
+Team: 2
+HP: -10
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 6
+Initiative: 22
+Team: 1
+HP: -40
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 4
+Initiative: 19
+Team: 1
+HP: -80
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 5
+Initiative: 19
+Team: 1
+HP: -6
+AP: 0
+Abilities: ['STRIKE']
+
+Skeleton (Hard) 2
+Initiative: 17
+Team: 2
+HP: 0
+AP: 3
+Abilities: ['STRIKE', 'FEINT']
+
+Doubleshotman 2
+Initiative: 16
+Team: 2
+HP: -9
+AP: 0
+Abilities: ['DOUBLE SHOT', 'SHOOT', 'SHOOT 2', 'STRIKE']
+
+Doubleshotman
+Initiative: 14
+Team: 1
+HP: 139
+AP: 0
+Abilities: ['DOUBLE SHOT', 'SHOOT', 'SHOOT 2', 'STRIKE']
+
+Giant Rat 2
+Initiative: 13
+Team: 1
+HP: -6
+AP: 0
+Abilities: ['STRIKE']
+
+Skeleton (Hard)
+Initiative: 13
+Team: 1
+HP: -6
+AP: 0
+Abilities: ['STRIKE', 'FEINT']
+
+Giant Rat
+Initiative: 9
+Team: 1
+HP: -18
+AP: 0
+Abilities: ['STRIKE']
+
+Over 100 rounds:
+
+Team 1 has 61.0% winrate
+Team 2 has 39.0% winrate
+The average number of rounds per combat was 25.27

@@ -33,7 +33,7 @@ class MonsterSelectGUI:
 
         'priestKobold' : {'Name': 'Kobold Healer', 'HP' : 30, 'STR' : 3, 'END' : 5, 'COR' : 8, 'DEX' : 9, 'INT' : 7, 'NOU' : 6, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 0, 'ARM' : 0, 'AP' : 7},
 
-        'summonerKobold' : {'Name' : 'Kobold Summoner', 'HP' : 100, 'STR' : 5, 'END' : 5, 'COR' : 10, 'DEX' : 10, 'INT' : 10, 'NOU' : 9, 'WIL' : 10, 'WEA' : 0, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
+        # 'summonerKobold' : {'Name' : 'Kobold Summoner', 'HP' : 100, 'STR' : 5, 'END' : 5, 'COR' : 10, 'DEX' : 10, 'INT' : 10, 'NOU' : 9, 'WIL' : 10, 'WEA' : 0, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
 
         'slowGolem' : {'Name': 'Golem', 'HP' : 300, 'STR' : 14, 'END' : 30, 'COR' : 8, 'DEX' : 4, 'INT' : 2, 'NOU' : 2, 'WIL' : 2, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 0},
 
@@ -61,7 +61,7 @@ class MonsterSelectGUI:
 
         'priestKobold' : ['HEADACHE'],
 
-        'summonerKobold' : ['CONJURE RAT'],
+        # 'summonerKobold' : ['CONJURE RAT'],
 
         'slowGolem' : ['STRIKE'],
 
@@ -69,15 +69,15 @@ class MonsterSelectGUI:
                 
         'bossSkeleton' : ['STRIKE', 'FIREBALL', 'HEAL']}
         self.fields = {}
-        self.possibleAbilities = ['BACKSTAB', 'BLOCK', 'BLOCK 2', 'CURSE OF CLUMSINESS', 
-                         'DEAD MAN WALKING', 'DEAD MAN WALKING 2', 'DISARM', 'DOUBLE SHOT', 
-                         'ENCOURAGE', 'FEINT', 'FEINT 2', 'FEINT 3', 'FIREBALL', 
-                         'FIREBALL 2', 'FIREBALL 3', 'FIRESTORM', 'FLATTEN', 'FOOT SHOT', 
-                         'HEAD SHOT', 'HEADACHE', 'HEAL', 'HEAL 2', 'HEAL 3', 
-                         'KNOCK BACK', 'KNOCK BACK 2', 'KNOCK BACK 3', 'KNOCK OVER', 
-                         'MIGRAINE', 'PIERCING THRUST', 'ROUSING SHOUT', 'ROUSING SONG', 
-                         'SHARPEN', 'SHARPEN', 'SHOOT', 'SHOOT 2', 'STRIKE', 
-                         'STUN', 'STUN 2', 'STUN 3', 'TIGHTEN']
+        self.possibleAbilities = ['BACKSTAB', 'BLOCK', 'BLOCK 2', 'CURSE OF CLUMSINESS',
+                                  'DEAD MAN WALKING', 'DEAD MAN WALKING 2', 'DISARM', 'DOUBLE SHOT',
+                                  'ENCOURAGE', 'EXTRA SHOT', 'FEINT', 'FEINT 2', 'FEINT 3', 'FIREBALL', 'FIREBALL 2',
+                                  'FIREBALL 3', 'FIRESTORM', 'FLATTEN', 'FOOT SHOT', 'HEAD SHOT',
+                                  'HEADACHE', 'HEAL', 'HEAL 2', 'HEAL 3', 'KNOCK BACK', 'KNOCK BACK 2',
+                                  'KNOCK BACK 3', 'KNOCK OVER', 'MIGRAINE', 'PANIC', 'PETRIFY',
+                                  'PIERCING THRUST', 'ROUSING SHOUT', 'ROUSING SONG', 'SCARE', 'SCARE 2',
+                                  'SHARPEN/WEIGHTEN', 'SHOOT', 'SHOOT 2', 'STRIKE', 'STUN',
+                                  'STUN 2', 'STUN 3', 'TIGHTEN', 'UNDRESS']
         self.creatureAbilities = []
         self.window = master
         self.window.title("Monster Manager")
