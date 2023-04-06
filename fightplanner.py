@@ -145,8 +145,8 @@ class MonsterSelectGUI:
                                   'HEADACHE', 'HEAL', 'HEAL 2', 'HEAL 3', 'KNOCK BACK', 'KNOCK BACK 2',
                                   'KNOCK BACK 3', 'KNOCK OVER', 'MIGRAINE', 'PANIC', 'PETRIFY',
                                   'PIERCING THRUST', 'ROUSING SHOUT', 'ROUSING SONG', 'SCARE', 'SCARE 2',
-                                  'SHARPEN/WEIGHTEN', 'SHOOT', 'SHOOT 2', 'STRIKE', 'STUN',
-                                  'STUN 2', 'STUN 3', 'TIGHTEN', 'UNDRESS']
+                                  'SHARPEN', 'SHOOT', 'SHOOT 2', 'STRIKE', 'STUN',
+                                  'STUN 2', 'STUN 3', 'TIGHTEN', 'UNDRESS', 'WEIGHTEN']
         self.creatureAbilities = []
         self.window = master
         self.window.title("Monster Manager")
@@ -161,12 +161,6 @@ class MonsterSelectGUI:
         self.helpButton = tk.Button(self.mainFrame, text="Help", command=self.help)
         self.helpButton.pack()
         self.mainFrame.pack()
-
-        #self.button2 = tk.Button(master, text="Function 2", command=self.function2)
-        #self.button2.pack()
-
-        #self.button3 = tk.Button(master, text="Function 3", command=self.function3)
-        #self.button3.pack()
 
     def monsterSelection(self):
         

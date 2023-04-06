@@ -196,10 +196,13 @@ class Creature():
         return
 
     def healWeighting(self, healing):
-        if (self._maxHP/(self._curHP + healing) > 1.5):
-            return self._maxHP/(self._curHP + healing)
+        if self._curHP == self._maxHP:
+            return 0  # or some other high weighting
+        elif self._maxHP / (self._curHP + healing) > 1.3:
+            return (self._maxHP / (self._curHP + healing))
         else:
             return 0.5
+
     
     def checkAbility(self):
         weightingList = []
@@ -542,6 +545,7 @@ class BuffAbility(Ability):
                             abilityweight =  (caster.ARM * 2 * D4.average()) / self.combatDurWeighting(D4.average()+1)
                         else:
                             abilityweight = 0
+                        return abilityweight
                     
 
             case 'BLOCK 2':
@@ -556,21 +560,7 @@ class BuffAbility(Ability):
                             abilityweight =  (caster.ARM * 2 * D8.average()) / self.combatDurWeighting(D8.average()+1)
                         else:
                             abilityweight = 0
-                    
-            # case 'CONJURE RAT':
-            #     if not test:
-            #         caster.hasSummoningSickness = 1
-            #         primedList.append(Creature('giantRat'))
-            #         team = caster.TEAM
-            #         teamList.append(team)
-            #         primedList[-1].TEAM = team
-            #         primedList[-1].INIT = 0
-            #         simState.aliveList.append(team)
-                    
-            #     if test:
-            #         if self.canCast(caster):
-            #             if not (caster.hasSummoningSickness):
-            #                 abilityweight = 100
+                        return abilityweight
 
             case 'DEAD MAN WALKING':
                 if not test:
@@ -589,6 +579,7 @@ class BuffAbility(Ability):
                             #multiplied by the heal weighting    
                         else:
                             abilityweight = 0
+                        return abilityweight
                     
 
             case 'DEAD MAN WALKING 2':
@@ -602,9 +593,10 @@ class BuffAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         if not (caster.isFortified):
-                            abilityweight = (25 * D8.average()+1) / self.combatDurWeighting(D8.average()+1) * caster.healWeighting(30)  
+                            abilityweight = (25 * D8.average()+1) / self.combatDurWeighting(D8.average()+1) * caster.healWeighting(30) 
                         else:
                             abilityweight = 0
+                        return abilityweight
                     
             case 'DOPPELGANGER':
                 if not test:
@@ -615,7 +607,8 @@ class BuffAbility(Ability):
                     if self.canCast(caster):
                         if not (caster.isDoppelgangered):
                             abilityweight =  caster.target.statAverage() * D8.average() * (D8.average()+1) / self.combatDurWeighting(D8.average()+1)
-
+                        return abilityweight
+                        
             case 'ENCOURAGE':
                 if not test:
                     target.tempSTR += 1
@@ -638,6 +631,7 @@ class BuffAbility(Ability):
                             # stats+maxHP increase quartered, multiplied by the duration 
                         else:
                             abilityweight = 0
+                        return abilityweight
 
             case 'EXTRA ACTION':
                 if not test:
@@ -656,6 +650,7 @@ class BuffAbility(Ability):
                             abilityweight *= 0
                         if caster.extraShot:
                             abilityweight *= 0
+                        return abilityweight
 
             case 'EXTRA ACTION 2':
                 if not test:
@@ -674,6 +669,7 @@ class BuffAbility(Ability):
                             abilityweight *= 0
                         if caster.extraShot:
                             abilityweight *= 0
+                        return abilityweight
 
             case 'EXTRA SHOT':
                 if not test:
@@ -691,6 +687,7 @@ class BuffAbility(Ability):
                             abilityweight *= 0
                         if caster.extraShot:
                             abilityweight *= 0
+                        return abilityweight
 
             case 'HEAL':
                 if not test:
@@ -701,30 +698,33 @@ class BuffAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         healval = caster.dexterity() * (D6.average())
-                        abilityweight = (healval / 2) * target.healWeighting(healval)  
+                        abilityweight = (healval / 2) * target.healWeighting(healval)
+                    return abilityweight
 
             case 'HEAL 2':
                 if not test:
                     healval = caster.dexterity() * (D6.roll() + 4)
                     target.takeHealing(healval)
                     if logEvents:
-                        cLog.record(f"{caster.printName} healed {caster.targetAlly.printName} for {healval}! They have {caster.targetAlly._curHP} remaining")
+                        cLog.record(f"{caster.printName} healed {caster.targetAlly.printName} for {healval}!")
                 if test:
                     if self.canCast(caster):
                         healval = caster.dexterity() * (D6.average() + 4)
-                        abilityweight = (healval / 2) * target.healWeighting(healval)  
+                        abilityweight = (healval / 2) * target.healWeighting(healval)
+                    return abilityweight
 
             case 'HEAL 3':
                 if not test:
                     healval = caster.dexterity() * (D12.roll() + 4)
                     target.takeHealing(healval)
                     if logEvents:
-                        cLog.record(f"{caster.printName} healed on {caster.targetAlly.printName} for {healval}!")
+                        cLog.record(f"{caster.printName} healed {caster.targetAlly.printName} for {healval}!")
                 if test:
                     if self.canCast(caster):
                         healval = caster.dexterity() * (D12.average() + 4)
                         abilityweight = (healval / 2) * target.healWeighting(healval) 
-
+                    return abilityweight
+                        
             case 'ROUSING SHOUT':
                 if not test:
                     encourageDuration = D4.roll()+1
@@ -752,7 +752,8 @@ class BuffAbility(Ability):
                             #half of current HP + quarter of maxHP increase * average rounds of effect
                             #divided by the combat duration weighting
                             #multiplied by the heal weighting    
-
+                    return abilityweight
+                
             case 'ROUSING SONG':
                 if not test:
                     for ally in primedList:
@@ -765,8 +766,9 @@ class BuffAbility(Ability):
                         for ally in primedList:
                             if caster.TEAM == ally.TEAM:
                                 abilityweight = abilityweight + (ally._maxAP/(ally.AP+1)) * (ally.statAverage())
+                    return abilityweight
                     
-            case 'SHARPEN/WEIGHTEN':
+            case 'SHARPEN'|'WEIGHTEN':
                 if not test:
                     caster.isSharpened = 1
                     caster.modWEA += 1
@@ -775,6 +777,7 @@ class BuffAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         abilityweight = avgCombatdur*caster.statHighest()
+                    return abilityweight
 
             case 'TIGHTEN':
                 if not test:
@@ -785,7 +788,7 @@ class BuffAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         abilityweight = avgCombatdur*caster.statHighest()
-
+                    return abilityweight
         return abilityweight        
 
 class DebuffAbility(Ability):
@@ -808,7 +811,8 @@ class DebuffAbility(Ability):
                         if not target.isPanicked:
                             abilityweight =  (max(target._RWEA.average(), target._WEA.average()))*2.5*(D4.average()+1)/ self.combatDurWeighting(D4.average()+1)
                         else:
-                            abilityweight = 0 
+                            abilityweight = 0
+                    return abilityweight
 
             case 'PETRIFY':
                 if not test:
@@ -828,7 +832,8 @@ class DebuffAbility(Ability):
                         if not (target.isPetrified):
                             abilityweight =  (19 * (D4.average()+3)) / self.combatDurWeighting(D4.average()+3)
                         else:
-                            abilityweight = 0      
+                            abilityweight = 0
+                    return abilityweight  
 
             case 'SCARE':
                 if not test:
@@ -848,7 +853,8 @@ class DebuffAbility(Ability):
                         if not target.isScared:
                             abilityweight =  (12 * (D4.average()+1)) / self.combatDurWeighting(D4.average()+1)
                         else:
-                            abilityweight = 0    
+                            abilityweight = 0
+                    return abilityweight  
 
             case 'SCARE 2':
                 if not test:
@@ -869,6 +875,7 @@ class DebuffAbility(Ability):
                             abilityweight =  (12 * (D4.average()+4)) / self.combatDurWeighting(D4.average()+4)
                         else:
                             abilityweight = 0
+                    return abilityweight
 
             case 'UNDRESS':
                 if not test:
@@ -878,6 +885,7 @@ class DebuffAbility(Ability):
                 if test:
                     if self.canCast(caster):
                             abilityweight =  (target.ARM/20) * max(target._RWEA.average(), target._WEA.average()) * avgCombatdur
+                    return abilityweight
                         
         return abilityweight       
 
@@ -900,6 +908,7 @@ class MeleeAbility(Ability):
                     if self.canCast(caster):
                         dieroll = caster._WEA.average()
                         totaldamage = dieroll * self.statSuccess(self.damStat, caster)
+                    return totaldamage
 
             case 'DISARM':
                 if not test:
@@ -912,6 +921,7 @@ class MeleeAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         totaldamage = 0
+                    return totaldamage
             
             case 'FEINT':
                 if not test:
@@ -923,6 +933,7 @@ class MeleeAbility(Ability):
                     if self.canCast(caster):
                         dieroll = caster._WEA.average()
                         totaldamage = (dieroll + 1) * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'FEINT 2':
                 if not test:
@@ -934,6 +945,7 @@ class MeleeAbility(Ability):
                     if self.canCast(caster):
                         dieroll = caster._WEA.average()
                         totaldamage = (dieroll + 2) * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'FEINT 3':
                 if not test:
@@ -945,6 +957,7 @@ class MeleeAbility(Ability):
                     if self.canCast(caster):
                         dieroll = caster._WEA.average()
                         totaldamage = (dieroll + 3) * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'FLATTEN':
                 if not test:
@@ -958,6 +971,7 @@ class MeleeAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         totaldamage = 0 + 0
+                    return totaldamage
             
             case 'KNOCK OVER':
                 if not test:
@@ -969,6 +983,7 @@ class MeleeAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         totaldamage = 0
+                    return totaldamage
             
             case 'PIERCING THRUST':
                 if not test:
@@ -980,6 +995,7 @@ class MeleeAbility(Ability):
                     if self.canCast(caster):
                         dieroll = caster._WEA.average()
                         totaldamage = (dieroll + 2) * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'STRIKE':
                 if not test:
@@ -991,6 +1007,7 @@ class MeleeAbility(Ability):
                     if self.canCast(caster):
                         dieroll = caster._WEA.average()
                         totaldamage = dieroll * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'STUN':
                 if not test:
@@ -1001,7 +1018,8 @@ class MeleeAbility(Ability):
                         cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                 if test:
                     if self.canCast(caster):
-                        totaldamage =  D6.average() * target.statAverage() * (D4.average()+1) / self.combatDurWeighting(D4.average()+1)
+                        totaldamage =  D6.average() * target.statAverage() / self.combatDurWeighting(D4.average()+1)
+                    return totaldamage
             
             case 'STUN 2':
                 if not test:
@@ -1012,7 +1030,8 @@ class MeleeAbility(Ability):
                         cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                 if test:
                     if self.canCast(caster):
-                        totaldamage =  D6.average() * target.statAverage() * (D4.average()+3) / self.combatDurWeighting(D4.average()+3)
+                        totaldamage =  D6.average() * target.statAverage() / self.combatDurWeighting(D4.average()+3)
+                    return totaldamage
             
             case 'STUN 3':
                 if not test:
@@ -1023,7 +1042,8 @@ class MeleeAbility(Ability):
                         cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
                 if test:
                     if self.canCast(caster):
-                        totaldamage =  D6.average() * target.statAverage() * (D6.average()+6) / self.combatDurWeighting(D6.average()+6)
+                        totaldamage =  D6.average() * target.statAverage() / self.combatDurWeighting(D6.average()+6)
+                    return totaldamage
             
             case _:
                 pass
@@ -1051,6 +1071,7 @@ class RangedAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         totaldamage = target.coordination() * (D4.roll+1) / 2 / self.combatDurWeighting(D4.roll+1)
+                    return totaldamage
 
             case 'DOUBLE SHOT':
                 if not test:
@@ -1067,6 +1088,7 @@ class RangedAbility(Ability):
                             totaldamage *= 100
                         if caster.doubleShot:
                             totaldamage *= 0
+                        return totaldamage
             
             case 'FIREBALL':
                 if not test:
@@ -1078,6 +1100,7 @@ class RangedAbility(Ability):
                     if self.canCast(caster):
                         dieroll = D4.average()
                         totaldamage = dieroll * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'FIREBALL 2':
                 if not test:
@@ -1089,6 +1112,7 @@ class RangedAbility(Ability):
                     if self.canCast(caster):
                         dieroll = D6.average()
                         totaldamage = dieroll * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'FIREBALL 3':
                 if not test:
@@ -1100,6 +1124,7 @@ class RangedAbility(Ability):
                     if self.canCast(caster):
                         dieroll = D8.average()
                         totaldamage = dieroll * self.statSuccess(self.damStat, caster)
+                    return totaldamage
             
             case 'FIRESTORM':
                 if not test:
@@ -1153,6 +1178,7 @@ class RangedAbility(Ability):
                                     totaldamage = totaldamage - (damage/2)
                         if (caster._curHP - damage <= 0):
                             totaldamage = totaldamage * 0
+                    return totaldamage
 
             case 'HEADACHE':
                 if not test:
@@ -1169,6 +1195,7 @@ class RangedAbility(Ability):
                             totaldamage = (10 * 3 / self.combatDurWeighting(3))   
                         else:
                             totaldamage = 0
+                        return totaldamage
             
             case 'HEADSHOT':
                 if not test:
@@ -1182,6 +1209,7 @@ class RangedAbility(Ability):
                         totaldamage = dieroll * self.statSuccess(self.damStat, caster) * 4
                         if caster.extraShot:
                             totaldamage *= 100
+                    return totaldamage
                     
             case 'MIGRAINE':
                 if not test:
@@ -1200,6 +1228,7 @@ class RangedAbility(Ability):
                             totaldamage = (10 * target.hasHeadache + 20 * (5-target.hasHeadache))/ self.combatDurWeighting(5)
                         else:
                             totaldamage = 0
+                        return totaldamage
             
             case 'SHOOT':
                 if not test:
@@ -1215,7 +1244,7 @@ class RangedAbility(Ability):
                             totaldamage *= 100
                         if caster.doubleShot:
                             totaldamage *= 100
-
+                    return totaldamage
             
             case 'SHOOT 2':
                 if not test:
@@ -1229,6 +1258,7 @@ class RangedAbility(Ability):
                         totaldamage = dieroll * self.statSuccess(self.damStat, caster)
                         if caster.extraShot:
                             totaldamage *= 100
+                    return totaldamage
             case _:
                 pass
         return totaldamage
@@ -1247,7 +1277,8 @@ allAbilities.append(BuffAbility('EXTRA SHOT', 1, 'self', 'DEX', 20))
 allAbilities.append(BuffAbility('HEAL', 1, 'ally', 'NOU', 20))
 allAbilities.append(BuffAbility('HEAL 2', 2, 'ally', 'NOU', 22))
 allAbilities.append(BuffAbility('HEAL 3', 4, 'ally', 'NOU', 24))
-allAbilities.append(BuffAbility('SHARPEN/WEIGHTEN', 1, 'ally', 'NA', 0))
+allAbilities.append(BuffAbility('SHARPEN', 1, 'ally', 'NA', 0))
+allAbilities.append(BuffAbility('WEIGHTEN', 1, 'ally', 'NA', 0))
 allAbilities.append(BuffAbility('TIGHTEN', 1, 'ally', 'NA', 0))
 allAbilities.append(BuffAbility('ROUSING SHOUT', 2, 'ally', 'NA', 0))
 allAbilities.append(BuffAbility('ROUSING SONG', 0, 'ally', 'NA', 0))
