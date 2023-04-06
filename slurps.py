@@ -770,8 +770,8 @@ class BuffAbility(Ability):
                 if not test:
                     caster.isSharpened = 1
                     caster.modWEA += 1
-                if logEvents:
-                        cLog.record(f"{caster.printName} enhances their weapon!")
+                    if logEvents:
+                            cLog.record(f"{caster.printName} enhances their weapon!")
                 if test:
                     if self.canCast(caster):
                         abilityweight = avgCombatdur*caster.statHighest()
@@ -780,8 +780,8 @@ class BuffAbility(Ability):
                 if not test:
                     caster.isTightened = 1
                     caster.modRWEA += 1
-                if logEvents:
-                        cLog.record(f"{caster.printName} enhances their weapon!")
+                    if logEvents:
+                            cLog.record(f"{caster.printName} enhances their weapon!")
                 if test:
                     if self.canCast(caster):
                         abilityweight = avgCombatdur*caster.statHighest()

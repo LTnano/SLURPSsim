@@ -56,7 +56,23 @@ class MonsterSelectGUI:
         
         'goblinlvl1' : {'Name' : 'Goblin Novice Adventurer', 'HP' : 70, 'STR' : 10, 'END' : 7, 'COR' : 10, 'DEX' : 10, 'INT' : 10, 'NOU' : 13, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
 
-        'faylvl1' : {'Name' : 'Fay Novice Adventurer', 'HP' : 100, 'STR' : 10, 'END' : 10, 'COR' : 7, 'DEX' : 10, 'INT' : 10, 'NOU' : 10, 'WIL' : 13, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10}
+        'faylvl1' : {'Name' : 'Fay Novice Adventurer', 'HP' : 100, 'STR' : 10, 'END' : 10, 'COR' : 7, 'DEX' : 10, 'INT' : 10, 'NOU' : 10, 'WIL' : 13, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
+
+        'humanlvl4' : {'Name' : 'Human Adventurer', 'HP' : 134, 'STR' : 16, 'END' : 12, 'COR' : 12, 'DEX' : 10, 'INT' : 10, 'NOU' : 12, 'WIL' : 10, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 13},
+
+        'trolllvl4' : {'Name' : 'Troll Adventurer', 'HP' : 136, 'STR' : 15, 'END' : 14, 'COR' : 10, 'DEX' : 7, 'INT' : 10, 'NOU' : 10, 'WIL' : 10, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 13},
+
+        'dwarflvl4' : {'Name' : 'Dwarf Adventurer', 'HP' : 153, 'STR' : 15, 'END' : 18, 'COR' : 12, 'DEX' : 10, 'INT' : 7, 'NOU' : 10, 'WIL' : 10, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 13},
+
+        'ranilvl4' : {'Name' : 'Rani Adventurer', 'HP' : 130, 'STR' : 13, 'END' : 10, 'COR' : 19, 'DEX' : 10, 'INT' : 10, 'NOU' : 10, 'WIL' : 10, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 13},
+
+        'elflvl4' : {'Name' : 'Elf Adventurer', 'HP' : 130, 'STR' : 15, 'END' : 10, 'COR' : 10, 'DEX' : 20, 'INT' : 10, 'NOU' : 7, 'WIL' : 10, 'WEA' : 4, 'RWEA' : 6, 'ARM' : 1, 'AP' : 13},
+
+        'sagelvl4' : {'Name' : 'Sage Adventurer', 'HP' : 130, 'STR' : 10, 'END' : 10, 'COR' : 10, 'DEX' : 13, 'INT' : 22, 'NOU' : 10, 'WIL' : 7, 'WEA' : 4, 'RWEA' : 0, 'ARM' : 0, 'AP' : 14},
+        
+        'goblinlvl4' : {'Name' : 'Goblin Adventurer', 'HP' : 121, 'STR' : 10, 'END' : 7, 'COR' : 12, 'DEX' : 10, 'INT' : 14, 'NOU' : 19, 'WIL' : 10, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 13},
+
+        'faylvl4' : {'Name' : 'Fay Adventurer', 'HP' : 142, 'STR' : 10, 'END' : 16, 'COR' : 7, 'DEX' : 10, 'INT' : 10, 'NOU' : 10, 'WIL' : 19, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 13}
         }
 
         self.keyList = ['Name', 'HP', 'STR', 'END', 'COR', 'DEX', 'INT', 'NOU', 'WIL', 'WEA', 'RWEA', 'ARM', 'AP']
@@ -103,7 +119,23 @@ class MonsterSelectGUI:
 
         'goblinlvl1' : ['STRIKE', 'HEAL'],
 
-        'faylvl1' : ['STRIKE', 'SCARE']
+        'faylvl1' : ['STRIKE', 'SCARE'],
+
+        'humanlvl4' : ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN'],
+
+        'trolllvl4' : ['STRIKE', 'STUN', 'SCARE', 'HEAL', 'KNOCK OVER', 'SHARPEN', 'STUN 2', 'BLOCK'],
+
+        'dwarflvl4' : ['STRIKE', 'BLOCK', 'HEAL', 'DEAD MAN WALKING', 'SHARPEN', 'ENCOURAGE'],
+
+        'ranilvl4' : ['STRIKE', 'FEINT', 'SCARE', 'SHARPEN', 'STUN', 'FEINT 2', 'HEADACHE'],
+
+        'elflvl4' : ['STRIKE', 'SHOOT', 'STUN', 'FEINT', 'TIGHTEN', 'EXTRA SHOT', 'ENCOURAGE'],
+
+        'sagelvl4' : ['STRIKE', 'FIREBALL', 'HEADACHE', 'SCARE', 'FIREBALL 2'],
+
+        'goblinlvl4' : ['STRIKE', 'HEAL', 'FIREBALL', 'SHARPEN', 'HEAL 2', 'HEADACHE'],
+
+        'faylvl4' : ['STRIKE', 'SCARE', 'ENCOURAGE', 'HEAL', 'PANIC', 'SHARPEN', 'BLOCK']
         }
         self.fields = {}
         self.possibleAbilities = ['BACKSTAB', 'BLOCK', 'BLOCK 2', 'CURSE OF CLUMSINESS',
@@ -203,6 +235,8 @@ class MonsterSelectGUI:
             self.teamTwoListBox.delete(index)
 
     def exportTeams(self):
+        self.chosenList = []
+        self.teamList = []
         # Export the lists
         for item in self.teamOne:
             self.chosenList.append(item)
