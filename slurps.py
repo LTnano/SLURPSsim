@@ -213,6 +213,7 @@ class Creature():
                     weightingList.append(int(weighting))
         self.prioList = list(zip(self.abilities, weightingList))
         self.prioList.sort(key=takeSecond)
+        print(f"{self.prioList}")
 
     def hitChance(self, successBonus, successContest):
         roll = 1
@@ -777,6 +778,8 @@ class BuffAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         abilityweight = avgCombatdur*caster.statHighest()
+                        if caster.isSharpened:
+                            abilityweight *= 0
                     return abilityweight
 
             case 'TIGHTEN':
@@ -788,6 +791,8 @@ class BuffAbility(Ability):
                 if test:
                     if self.canCast(caster):
                         abilityweight = avgCombatdur*caster.statHighest()
+                        if caster.isTightened:
+                            abilityweight *= 0
                     return abilityweight
         return abilityweight        
 
