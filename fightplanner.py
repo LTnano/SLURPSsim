@@ -34,8 +34,6 @@ class MonsterSelectGUI:
 
         'priestKobold' : {'Name': 'Kobold Healer', 'HP' : 30, 'STR' : 3, 'END' : 5, 'COR' : 8, 'DEX' : 9, 'INT' : 7, 'NOU' : 6, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 0, 'ARM' : 0, 'AP' : 7},
 
-        # 'summonerKobold' : {'Name' : 'Kobold Summoner', 'HP' : 100, 'STR' : 5, 'END' : 5, 'COR' : 10, 'DEX' : 10, 'INT' : 10, 'NOU' : 9, 'WIL' : 10, 'WEA' : 0, 'RWEA' : 0, 'ARM' : 0, 'AP' : 0},
-
         'slowGolem' : {'Name': 'Golem', 'HP' : 300, 'STR' : 14, 'END' : 30, 'COR' : 8, 'DEX' : 4, 'INT' : 2, 'NOU' : 2, 'WIL' : 2, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 5, 'AP' : 0},
 
         'thinBilly' : {'Name' : 'Thin Billy', 'HP' : 200, 'STR' : 13, 'END' : 20, 'COR' : 13, 'DEX' : 13, 'INT' : 13, 'NOU' : 17, 'WIL' : 13, 'WEA' : 8, 'RWEA' : 0, 'ARM' : 2, 'AP' : 10},
@@ -96,8 +94,6 @@ class MonsterSelectGUI:
         'rangedKobold' : ['SHOOT'],
 
         'priestKobold' : ['HEADACHE'],
-
-        # 'summonerKobold' : ['CONJURE RAT'],
 
         'slowGolem' : ['STRIKE'],
 

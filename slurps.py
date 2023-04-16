@@ -213,7 +213,6 @@ class Creature():
                     weightingList.append(int(weighting))
         self.prioList = list(zip(self.abilities, weightingList))
         self.prioList.sort(key=takeSecond)
-        print(f"{self.prioList}")
 
     def hitChance(self, successBonus, successContest):
         roll = 1
@@ -1271,7 +1270,6 @@ class RangedAbility(Ability):
 
 allAbilities.append(BuffAbility('BLOCK', 1, 'self', 'END', 20))
 allAbilities.append(BuffAbility('BLOCK 2', 2, 'self', 'END', 25))
-# allAbilities.append(BuffAbility('CONJURE RAT', 0, 'self', 'NA', 0))
 allAbilities.append(BuffAbility('DEAD MAN WALKING', 2, 'self', 'END', 20))
 allAbilities.append(BuffAbility('DEAD MAN WALKING 2', 3, 'self', 'END', 25))
 allAbilities.append(BuffAbility('DOPPELGANGER', 3, 'self', 'INT', 30))
