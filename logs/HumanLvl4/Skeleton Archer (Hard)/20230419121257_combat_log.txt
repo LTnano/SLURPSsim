@@ -1,0 +1,75 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Skeleton Archer(Hard)
+
+
+
+Round 1
+
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Human Adventurer for 40 damage
+
+Round 2
+
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Archer(Hard) for 32 damage
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) missed Human Adventurer
+
+Round 3
+
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton Archer(Hard)
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Human Adventurer for 32 damage
+
+Round 4
+
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 3 rounds!
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) missed Human Adventurer
+
+Round 5
+
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Archer(Hard) for 48 damage
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Human Adventurer for 8 damage
+
+Round 6
+
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Archer(Hard) for 96 damage
+Skeleton Archer(Hard) died!
+
+Combat Ended! Team 1 won!
+[9, 9, 6, 3, 8, 3, 3, 3, 4, 3, 3, 6, 7, 5, 5, 6, 3, 3, 13, 7, 8, 5, 5, 9, 7, 4, 6, 4, 3, 5, 4, 4, 4, 7, 7, 5, 7, 3, 6, 4, 7, 3, 4, 6, 13, 4, 3, 5, 6, 6, 5, 5, 5, 6, 6, 4, 3, 4, 5, 4, 5, 6, 3, 3, 4, 7, 12, 4, 5, 4, 10, 7, 9, 6, 5, 5, 6, 7, 10, 6, 8, 10, 3, 4, 9, 3, 10, 3, 5, 4, 9, 13, 8, 5, 5, 7, 5, 15, 7, 9, 6, 3, 4, 6, 5, 7, 4, 6, 4, 9, 3, 8, 4, 5, 3, 3, 6, 8, 8, 4, 3, 3, 7, 12, 3, 4, 3, 7, 5, 4, 8, 3, 9, 4, 10, 9, 3, 14, 7, 5, 6, 3, 9, 7, 3, 4, 4, 7, 4, 8, 5, 4, 7, 13, 4, 9, 4, 7, 4, 5, 6, 6, 8, 3, 4, 6, 6, 8, 3, 4, 7, 8, 10, 3, 5, 15, 7, 3, 3, 7, 4, 4, 4, 4, 6, 3, 14, 7, 6, 4, 6, 10, 5, 9, 8, 5, 7, 10, 12, 6, 12, 11, 6, 6, 10, 9, 8, 5, 11, 5, 3, 6, 12, 3, 13, 13, 4, 3, 8, 6, 6, 6, 3, 10, 4, 5, 5, 13, 5, 3, 7, 3, 5, 3, 5, 4, 3, 11, 3, 5, 9, 14, 7, 9, 6, 5, 4, 8, 3, 6, 3, 7, 8, 5, 4, 6, 7, 4, 4, 7, 3, 3, 6, 4, 7, 5, 3, 3, 7, 4, 8, 5, 6, 4, 11, 7, 4, 9, 5, 6, 8, 13, 4, 5, 9, 3, 4, 7, 16, 3, 3, 6, 7, 11, 6, 6, 3, 9, 6, 5, 6, 11, 5, 6, 8, 4, 8, 3, 4, 14, 5, 4, 10, 6, 3, 7, 15, 4, 5, 5, 9, 7, 3, 4, 5, 3, 3, 4, 9, 5, 7, 10, 6, 4, 7, 5, 5, 6, 12, 3, 3, 5, 12, 5, 6, 12, 4, 7, 8, 6, 3, 6, 3, 3, 4, 6, 5, 7, 6, 7, 8, 8, 4, 3, 3, 19, 6, 3, 4, 6, 12, 3, 11, 3, 4, 6, 7, 6, 3, 17, 3, 4, 4, 3, 13, 10, 5, 6, 6, 5, 10, 11, 11, 6, 8, 8, 5, 8, 3, 3, 4, 11, 10, 5, 6, 6, 9, 10, 7, 6, 6, 5, 7, 5, 7, 14, 4, 7, 5, 4, 5, 5, 5, 9, 10, 5, 4, 6, 3, 4, 21, 6, 9, 3, 6, 3, 4, 4, 3, 4, 5, 5, 5, 7, 8, 6, 5, 9, 8, 5, 5, 19, 3, 3, 6, 9, 3, 5, 19, 13, 3, 6, 3, 4, 7, 5, 7, 4, 3, 4, 8, 3, 3, 6, 8, 4, 4, 11, 8, 6, 6, 3, 5, 13, 3, 11, 3, 4, 11, 9, 5, 7, 7, 7, 9, 11, 5, 5, 11, 6], Average = 6.22
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Human Adventurer
+Initiative: 26
+Team: 1
+HP: 74
+AP: 10
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Skeleton Archer(Hard)
+Initiative: 21
+Team: 2
+HP: -66
+AP: 2
+Abilities: ['SHOOT']
+
+Over 500 rounds:
+
+Team 1 has 86.8% winrate
+Team 2 has 13.200000000000001% winrate
+The average number of rounds per combat was 6.22

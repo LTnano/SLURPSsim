@@ -1,0 +1,117 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Thin Billy
+
+
+
+Round 1
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Thin Billy
+
+Round 3
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Thin Billy for 32 damage
+
+Round 4
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Thin Billy
+
+Round 5
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Thin Billy
+
+Round 6
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Thin Billy for 48 damage
+
+Round 7
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Thin Billy
+
+Round 8
+
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 65 damage
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 3 rounds!
+
+Round 9
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Thin Billy
+
+Round 10
+
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 26 damage
+Human Adventurer used STRIKE
+Human Adventurer hit Thin Billy for 32 damage
+
+Round 11
+
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Thin Billy
+
+Round 12
+
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 65 damage
+Human Adventurer died!
+
+Combat Ended! Team 2 won!
+[14, 5, 4, 8, 6, 5, 2, 3, 17, 7, 15, 19, 3, 4, 5, 13, 4, 4, 10, 11, 6, 3, 14, 8, 7, 3, 8, 4, 9, 6, 2, 8, 6, 8, 2, 6, 6, 13, 12, 4, 11, 3, 2, 9, 3, 14, 7, 9, 5, 4, 5, 11, 11, 3, 7, 16, 7, 5, 4, 10, 5, 4, 6, 3, 7, 11, 10, 6, 7, 11, 7, 6, 9, 5, 2, 6, 3, 9, 6, 6, 6, 7, 5, 12, 5, 4, 6, 5, 5, 9, 3, 13, 5, 13, 5, 15, 4, 10, 7, 7, 9, 5, 7, 4, 7, 14, 2, 2, 2, 4, 10, 11, 5, 7, 11, 10, 7, 8, 12, 7, 9, 7, 3, 16, 10, 7, 17, 12, 8, 5, 27, 8, 7, 4, 3, 6, 14, 18, 5, 6, 6, 9, 11, 8, 6, 4, 8, 5, 8, 12, 6, 6, 2, 6, 9, 4, 14, 3, 5, 9, 6, 4, 8, 8, 11, 4, 6, 4, 2, 11, 8, 5, 5, 7, 11, 13, 6, 7, 2, 5, 5, 11, 6, 2, 2, 7, 4, 8, 8, 6, 9, 6, 12, 7, 6, 11, 11, 4, 9, 2, 11, 8, 4, 8, 8, 4, 2, 7, 5, 6, 5, 9, 8, 9, 15, 7, 4, 6, 12, 5, 6, 9, 13, 6, 7, 15, 4, 4, 3, 4, 12, 6, 8, 8, 5, 6, 6, 3, 5, 2, 7, 4, 6, 3, 5, 6, 5, 7, 4, 11, 11, 11, 8, 8, 6, 5, 11, 8, 3, 5, 10, 9, 8, 10, 11, 6, 3, 7, 9, 14, 4, 7, 3, 11, 13, 4, 23, 5, 7, 5, 10, 7, 6, 10, 12, 2, 7, 3, 8, 8, 7, 4, 10, 5, 7, 4, 2, 5, 4, 15, 7, 5, 5, 12, 2, 6, 3, 2, 7, 11, 13, 9, 2, 2, 13, 4, 9, 9, 6, 4, 12, 5, 11, 2, 10, 4, 4, 9, 2, 7, 3, 8, 10, 11, 5, 10, 3, 19, 6, 9, 8, 9, 5, 11, 5, 10, 12, 8, 4, 3, 8, 2, 7, 2, 11, 5, 4, 7, 5, 12, 8, 14, 8, 4, 5, 6, 3, 8, 2, 2, 9, 8, 6, 4, 4, 11, 5, 12, 2, 9, 12, 5, 3, 11, 8, 4, 12, 7, 4, 6, 2, 4, 13, 4, 9, 3, 12, 9, 9, 10, 5, 4, 4, 5, 7, 7, 7, 5, 12, 6, 5, 6, 2, 3, 3, 5, 7, 3, 6, 5, 9, 7, 5, 4, 4, 5, 7, 12, 4, 2, 4, 3, 9, 5, 5, 5, 7, 3, 6, 10, 2, 5, 5, 9, 5, 2, 3, 7, 6, 6, 8, 8, 13, 3, 10, 2, 9, 4, 5, 9, 3, 7, 2, 7, 2, 4, 8, 6, 17, 5, 7, 6, 4, 11, 11, 4, 5, 7, 3, 14, 9, 6, 12, 10, 10, 3, 10, 5, 2, 10, 10, 13, 4, 6, 5, 4, 12, 13, 4, 12], Average = 7.016
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Thin Billy
+Initiative: 23
+Team: 2
+HP: 88
+AP: 10
+Abilities: ['STRIKE', 'HEAL']
+
+Human Adventurer
+Initiative: 14
+Team: 1
+HP: -2
+AP: 10
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 6.399999999999995% winrate
+Team 2 has 93.60000000000001% winrate
+The average number of rounds per combat was 7.016

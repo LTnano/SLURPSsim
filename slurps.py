@@ -258,13 +258,13 @@ class Creature():
         if self.target is None:
             self.target = random.choice(primedList)
         if opposition in simState.aliveList:
-            while ((self.target.TEAM == self.TEAM) or (self.target.isAlive == False) or (self.target.isStunned == True)):
-                self.target = random.choice(primedList)
             if all(tar.isStunned for tar in primedList if tar.TEAM == opposition):
                 stunnedTargets = [tar for tar in primedList if tar.isStunned and tar.TEAM == opposition]
                 if stunnedTargets:
                     self.target = random.choice(stunnedTargets)
-            return
+                    return
+            while ((self.target.TEAM == self.TEAM) or (self.target.isAlive == False) or (self.target.isStunned == True)):
+                self.target = random.choice(primedList)
 
     def chooseAlly(self):
         if self.TEAM == 1:
@@ -536,9 +536,9 @@ class BuffAbility(Ability):
             case 'BLOCK':
                 if not test:
                     caster.ARM *= 2
-                    caster.isBlocking = D4.roll()+1
+                    caster.isBlocking = D4.roll()+2
                     if logEvents:
-                        cLog.record(f"{caster.printName} starts blocking for {caster.isBlocking} rounds!")
+                        cLog.record(f"{caster.printName} starts blocking for {caster.isBlocking - 1} rounds! Raising their armour to {caster.ARM}")
                 if test:
                     if self.canCast(caster):
                         if not caster.isBlocking:
@@ -551,9 +551,9 @@ class BuffAbility(Ability):
             case 'BLOCK 2':
                 if not test:
                     caster.ARM *= 2
-                    caster.isBlocking = D8.roll()+1
+                    caster.isBlocking = D8.roll()+2
                     if logEvents:
-                        cLog.record(f"{caster.printName} starts blocking for {caster.isBlocking} rounds! Raising their armour to {caster.ARM}")
+                        cLog.record(f"{caster.printName} starts blocking for {caster.isBlocking - 1} rounds! Raising their armour to {caster.ARM}")
                 if test:
                     if self.canCast(caster):
                         if not (caster.isBlocking):
@@ -567,9 +567,9 @@ class BuffAbility(Ability):
                     caster._tempHP += 20
                     caster._curHP += 20
                     caster._maxHP += 20
-                    caster.isFortified = D4.roll()+1
+                    caster.isFortified = D4.roll()+2
                     if logEvents:
-                        cLog.record(f"{caster.printName} is a dead man walking for {caster.isFortified} rounds!")
+                        cLog.record(f"{caster.printName} is a dead man walking for {caster.isFortified - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not (caster.isFortified):
@@ -587,9 +587,9 @@ class BuffAbility(Ability):
                     caster._tempHP += 30
                     caster._curHP += 30
                     caster._maxHP += 30
-                    caster.isFortified = D8.roll()+1
+                    caster.isFortified = D8.roll()+2
                     if logEvents:
-                        cLog.record(f"{caster.printName} is a very dead man walking for {caster.isFortified} rounds!")
+                        cLog.record(f"{caster.printName} is a very dead man walking for {caster.isFortified - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not (caster.isFortified):
@@ -600,9 +600,9 @@ class BuffAbility(Ability):
                     
             case 'DOPPELGANGER':
                 if not test:
-                    caster.isDoppelgangered = D8.roll()+1
+                    caster.isDoppelgangered = D8.roll()+2
                     if logEvents:
-                        cLog.record(f"{caster.printName} creates a illusory clone mimicking their movements for {caster.isDoppelgangered} rounds!")
+                        cLog.record(f"{caster.printName} creates a illusory clone mimicking their movements for {caster.isDoppelgangered - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not (caster.isDoppelgangered):
@@ -621,9 +621,9 @@ class BuffAbility(Ability):
                     target._maxHP += 10
                     encourageDuration = D4.roll()+1
                     if target.isEncouraged < encourageDuration:
-                        target.isEncouraged = encourageDuration
+                        target.isEncouraged = encourageDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} encouraged {target.printName} for {target.isEncouraged} rounds!")
+                        cLog.record(f"{caster.printName} encouraged {target.printName} for {target.isEncouraged - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not (target.isEncouraged):
@@ -807,9 +807,9 @@ class DebuffAbility(Ability):
                 if not test:
                     target.tempSTR -= 5
                     target.tempCOR -= 5
-                    target.isPanicked = D4.roll()+1
+                    target.isPanicked = D4.roll()+2
                     if logEvents:
-                        cLog.record(f"{caster.printName} panics {target.printName} for {target.isPanicked} rounds!")
+                        cLog.record(f"{caster.printName} panics {target.printName} for {target.isPanicked - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not target.isPanicked:
@@ -828,9 +828,9 @@ class DebuffAbility(Ability):
                     target.tempNOU -= 2
                     target.tempWIL -= 2
                     target._maxHP -= 20
-                    target.isPetrified = D4.roll()+3
+                    target.isPetrified = D4.roll()+4
                     if logEvents:
-                        cLog.record(f"{caster.printName} petrifies {target.printName} for {target.isPetrified} rounds!")
+                        cLog.record(f"{caster.printName} petrifies {target.printName} for {target.isPetrified - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not (target.isPetrified):
@@ -849,9 +849,9 @@ class DebuffAbility(Ability):
                     target.tempNOU -= 1
                     target.tempWIL -= 1
                     target._maxHP -= 10
-                    target.isScared = D4.roll()+1
+                    target.isScared = D4.roll()+2
                     if logEvents:
-                        cLog.record(f"{caster.printName} scares {target.printName} for {target.isScared} rounds!")
+                        cLog.record(f"{caster.printName} scares {target.printName} for {target.isScared - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not target.isScared:
@@ -870,9 +870,9 @@ class DebuffAbility(Ability):
                     target.tempNOU -= 1
                     target.tempWIL -= 1
                     target._maxHP -= 10
-                    target.isScared = D4.roll()+4
+                    target.isScared = D4.roll()+5
                     if logEvents:
-                        cLog.record(f"{caster.printName} scares {target.printName} for {target.isScared} rounds!")
+                        cLog.record(f"{caster.printName} scares {target.printName} for {target.isScared - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         if not target.isScared:
@@ -919,9 +919,9 @@ class MeleeAbility(Ability):
                     disarmDuration = D4.roll() + 1
                     target._WEA, target._RWEA = D0
                     if target.isDisarmed < disarmDuration:
-                        target.isDisarmed = disarmDuration
+                        target.isDisarmed = disarmDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit {target.printName} and disarmed them for {disarmDuration} rounds!")
+                        cLog.record(f"{caster.printName} hit {target.printName} and disarmed them for {disarmDuration - 1} rounds!")
                 if test:
                     if self.canCast(caster):
                         totaldamage = 0
@@ -967,11 +967,11 @@ class MeleeAbility(Ability):
                 if not test:
                     effectDuration = D6.roll() + 4
                     if target.isProne < effectDuration:
-                        target.isProne = effectDuration
+                        target.isProne = effectDuration + 1
                     if target.isStunned < effectDuration:
-                        target.isStunned = effectDuration
+                        target.isStunned = effectDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} flattened {target.printName} for {target.isProne} rounds")
+                        cLog.record(f"{caster.printName} flattened {target.printName} for {target.isProne - 1} rounds")
                 if test:
                     if self.canCast(caster):
                         totaldamage = 0 + 0
@@ -981,9 +981,9 @@ class MeleeAbility(Ability):
                 if not test:
                     proneDuration = D4.roll() + 1
                     if target.isProne < proneDuration:
-                        target.isProne = proneDuration
+                        target.isProne = proneDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit and knocked {target.printName} over for {target.isProne} rounds")
+                        cLog.record(f"{caster.printName} hit and knocked {target.printName} over for {target.isProne - 1} rounds")
                 if test:
                     if self.canCast(caster):
                         totaldamage = 0
@@ -1017,9 +1017,9 @@ class MeleeAbility(Ability):
                 if not test:
                     stunDuration = D4.roll() + 1
                     if target.isStunned < stunDuration:
-                        target.isStunned = stunDuration
+                        target.isStunned = stunDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned - 1} rounds")
                 if test:
                     if self.canCast(caster):
                         totaldamage =  D6.average() * target.statAverage() / self.combatDurWeighting(D4.average()+1)
@@ -1029,9 +1029,9 @@ class MeleeAbility(Ability):
                 if not test:
                     stunDuration = D4.roll() + 3
                     if target.isStunned < stunDuration:
-                        target.isStunned = stunDuration
+                        target.isStunned = stunDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned - 1} rounds")
                 if test:
                     if self.canCast(caster):
                         totaldamage =  D6.average() * target.statAverage() / self.combatDurWeighting(D4.average()+3)
@@ -1041,9 +1041,9 @@ class MeleeAbility(Ability):
                 if not test:
                     stunDuration = D6.roll() + 6
                     if target.isStunned < stunDuration:
-                        target.isStunned = stunDuration
+                        target.isStunned = stunDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned} rounds")
+                        cLog.record(f"{caster.printName} hit and stunned {target.printName} for {target.isStunned - 1} rounds")
                 if test:
                     if self.canCast(caster):
                         totaldamage =  D6.average() * target.statAverage() / self.combatDurWeighting(D6.average()+6)
@@ -1069,9 +1069,9 @@ class RangedAbility(Ability):
                     clumDuration = D4.roll() + 1
                     if target.isClumsy < clumDuration:
                         target.tempCOR -= (target._COR/2)
-                        target.isClumsy = clumDuration
+                        target.isClumsy = clumDuration + 1
                     if logEvents:
-                        cLog.record(f"{caster.printName} hit and cursed {target.printName} for {target.isClumsy} rounds")
+                        cLog.record(f"{caster.printName} hit and cursed {target.printName} for {target.isClumsy - 1} rounds")
                 if test:
                     if self.canCast(caster):
                         totaldamage = target.coordination() * (D4.roll+1) / 2 / self.combatDurWeighting(D4.roll+1)
@@ -1380,7 +1380,7 @@ def beginCombatLoop(monList):
         combatRound += 1
     if logEvents:
         cLog.record(f"\nCombat Ended! Team {simState.aliveList[0]} won!")
-    combatRoundList.append(combatRound)
+    combatRoundList.append(combatRound-1)
     return (sum(combatRoundList) / len(combatRoundList)), (simState.aliveList[0]-1)
 
 if __name__ == '__main__':
@@ -1404,7 +1404,6 @@ if __name__ == '__main__':
         constructFighters()
         rollInitiative()
         avgCombatdur, combatVictor = beginCombatLoop(primedList)
-        avgCombatdur = avgCombatdur - 1
         winrateList.append(combatVictor)
         if (cycleloop % 10 == 0) and (cycleloop != 0):
                 print(f"Simulated {cycleloop} of {varianceMinimizer}...")
