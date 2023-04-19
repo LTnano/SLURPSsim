@@ -1,6 +1,7 @@
 import tkinter as tk
 import random
 
+# created entirely with prompts into chatGPT to learn tkinter
 class Die():
     def __init__(self, sides, name):
         self.sides = sides
