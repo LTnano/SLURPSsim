@@ -1,0 +1,105 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Skeleton (Hard)
+
+
+
+Round 1
+
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+
+Round 2
+
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton (Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Human Adventurer for 55 damage
+
+Round 3
+
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton (Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Human Adventurer for 22 damage
+
+Round 4
+
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 2 rounds!
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+
+Round 5
+
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton (Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+
+Round 6
+
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton (Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+
+Round 7
+
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 4 rounds!
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+
+Round 8
+
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton (Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+
+Round 9
+
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton (Hard) for 48 damage
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Human Adventurer for 66 damage
+
+Round 10
+
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton (Hard) for 48 damage
+Skeleton (Hard) used STRIKE
+Skeleton (Hard) hit Human Adventurer for 22 damage
+Human Adventurer died!
+
+Combat Ended! Team 2 won!
+[8, 7, 6, 3, 6, 16, 5, 8, 4, 5, 8, 9, 15, 5, 7, 13, 8, 7, 7, 17, 5, 5, 4, 7, 12, 14, 7, 4, 8, 6, 12, 7, 6, 9, 8, 12, 9, 5, 11, 4, 8, 5, 8, 8, 11, 3, 9, 6, 9, 5, 2, 4, 11, 4, 11, 5, 8, 9, 5, 5, 8, 9, 10, 5, 15, 6, 8, 8, 6, 8, 6, 4, 6, 10, 9, 6, 3, 6, 6, 9, 9, 7, 6, 3, 6, 5, 4, 5, 4, 6, 7, 9, 9, 5, 3, 3, 7, 6, 4, 10, 8, 10, 4, 3, 3, 4, 6, 12, 5, 3, 8, 9, 6, 6, 15, 7, 10, 6, 6, 7, 6, 9, 9, 9, 4, 10, 13, 5, 8, 6, 4, 3, 12, 7, 9, 5, 5, 6, 7, 4, 8, 7, 9, 11, 10, 6, 4, 7, 8, 8, 3, 7, 4, 5, 6, 17, 10, 10, 7, 5, 13, 3, 7, 6, 4, 7, 7, 7, 7, 3, 18, 8, 11, 5, 11, 9, 4, 9, 4, 9, 2, 5, 7, 6, 5, 14, 6, 7, 5, 5, 10, 16, 13, 4, 14, 9, 5, 7, 6, 11, 4, 7, 2, 5, 10, 17, 3, 11, 10, 10, 4, 7, 5, 2, 6, 4, 12, 21, 3, 5, 3, 7, 6, 9, 4, 6, 13, 7, 7, 3, 4, 9, 6, 5, 7, 12, 7, 3, 8, 10, 8, 6, 6, 5, 7, 13, 10, 10, 10, 8, 11, 4, 5, 5, 5, 10, 7, 9, 6, 5, 6, 7, 6, 4, 3, 5, 10, 5, 6, 6, 7, 9, 10, 4, 8, 5, 8, 4, 8, 6, 8, 6, 4, 6, 9, 7, 8, 13, 10, 11, 5, 13, 4, 3, 7, 11, 9, 21, 5, 13, 5, 9, 6, 5, 9, 6, 3, 11, 7, 5, 8, 6, 15, 3, 4, 10, 4, 6, 6, 14, 4, 3, 6, 6, 5, 10, 10, 5, 4, 14, 5, 6, 4, 3, 9, 3, 6, 8, 9, 13, 6, 8, 9, 7, 7, 5, 14, 5, 3, 7, 6, 11, 6, 11, 4, 7, 7, 19, 4, 6, 4, 6, 12, 7, 7, 4, 5, 16, 6, 6, 5, 6, 5, 6, 4, 5, 12, 4, 9, 12, 9, 5, 4, 6, 8, 18, 9, 5, 8, 8, 3, 14, 13, 7, 8, 9, 9, 14, 3, 7, 7, 8, 9, 6, 8, 10, 8, 5, 5, 10, 7, 12, 7, 9, 14, 14, 6, 7, 4, 7, 5, 8, 4, 7, 6, 5, 7, 4, 6, 5, 13, 5, 3, 9, 9, 11, 9, 5, 8, 19, 4, 7, 8, 8, 4, 4, 6, 5, 6, 5, 8, 4, 13, 4, 3, 10, 11, 12, 7, 3, 4, 13, 8, 7, 5, 7, 6, 8, 12, 15, 3, 5, 3, 10, 9, 12, 12, 7, 7, 3, 6, 6, 12, 6, 12, 5, 8, 10, 5, 12, 5, 6, 14, 14, 14, 6, 9, 8, 8, 10], Average = 7.41
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Human Adventurer
+Initiative: 27
+Team: 1
+HP: -11
+AP: 8
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Skeleton (Hard)
+Initiative: 23
+Team: 2
+HP: 44
+AP: 0
+Abilities: ['STRIKE', 'FEINT']
+
+Over 500 rounds:
+
+Team 1 has 51.4% winrate
+Team 2 has 48.6% winrate
+The average number of rounds per combat was 7.41

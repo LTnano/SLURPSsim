@@ -1,0 +1,112 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Skeleton Wizard
+
+
+
+Round 1
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Human Adventurer for 14 damage
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Human Adventurer for 28 damage
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton Wizard
+
+Round 3
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Human Adventurer for 42 damage
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer failed to cast DEAD MAN WALKING
+
+Round 4
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Human Adventurer for 21 damage
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer failed to cast DEAD MAN WALKING
+
+Round 5
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard missed Human Adventurer
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 4 rounds!
+
+Round 6
+
+Skeleton Wizard cannot use FIREBALL 2 as they do not have enough AP!
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Wizard for 16 damage
+
+Round 7
+
+Skeleton Wizard cannot use FIREBALL 2 as they do not have enough AP!
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton Wizard
+
+Round 8
+
+Skeleton Wizard cannot use FIREBALL 2 as they do not have enough AP!
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton Wizard
+
+Round 9
+
+Skeleton Wizard cannot use FIREBALL 2 as they do not have enough AP!
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Wizard for 64 damage
+
+Round 10
+
+Skeleton Wizard cannot use FIREBALL 2 as they do not have enough AP!
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 2 rounds!
+
+Round 11
+
+Skeleton Wizard cannot use FIREBALL 2 as they do not have enough AP!
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton Wizard
+
+Round 12
+
+Skeleton Wizard cannot use FIREBALL 2 as they do not have enough AP!
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Wizard for 80 damage
+Skeleton Wizard died!
+
+Combat Ended! Team 1 won!
+[9, 8, 8, 9, 8, 4, 5, 4, 6, 4, 5, 5, 7, 4, 3, 5, 5, 5, 3, 6, 4, 6, 5, 10, 7, 4, 3, 5, 8, 3, 8, 3, 3, 3, 5, 4, 7, 3, 13, 11, 3, 5, 3, 5, 5, 3, 4, 6, 3, 5, 3, 5, 3, 6, 11, 14, 4, 5, 4, 3, 4, 5, 5, 3, 6, 3, 3, 4, 5, 4, 5, 6, 4, 4, 5, 7, 5, 5, 5, 3, 5, 8, 5, 5, 3, 3, 3, 6, 3, 5, 8, 3, 7, 3, 10, 9, 3, 10, 8, 6, 4, 4, 3, 5, 6, 3, 8, 4, 4, 7, 3, 3, 12, 5, 3, 8, 5, 3, 8, 3, 4, 5, 10, 6, 11, 3, 5, 5, 4, 4, 5, 7, 4, 5, 3, 4, 5, 4, 9, 3, 5, 7, 3, 3, 5, 5, 3, 7, 3, 7, 5, 4, 3, 7, 4, 3, 4, 3, 8, 6, 3, 7, 3, 5, 3, 5, 6, 7, 4, 3, 6, 9, 6, 3, 5, 7, 8, 7, 3, 5, 4, 3, 5, 5, 3, 6, 3, 6, 5, 3, 4, 3, 3, 4, 4, 5, 6, 3, 9, 3, 3, 5, 6, 8, 3, 4, 6, 6, 3, 4, 3, 5, 5, 5, 7, 5, 8, 8, 6, 6, 3, 5, 3, 10, 3, 3, 3, 7, 8, 7, 13, 11, 3, 6, 7, 6, 7, 12, 5, 3, 4, 9, 7, 5, 6, 9, 3, 4, 6, 4, 6, 4, 7, 3, 7, 3, 6, 3, 4, 6, 5, 4, 6, 4, 5, 3, 5, 7, 5, 4, 4, 3, 4, 3, 6, 3, 15, 3, 5, 8, 3, 3, 6, 6, 3, 4, 7, 4, 6, 4, 7, 4, 10, 8, 3, 4, 3, 3, 9, 6, 3, 5, 9, 5, 7, 3, 3, 8, 5, 6, 3, 6, 12, 3, 11, 8, 10, 7, 4, 4, 3, 3, 3, 3, 4, 5, 8, 6, 5, 5, 3, 7, 5, 6, 4, 4, 3, 6, 4, 3, 3, 4, 5, 3, 3, 10, 5, 3, 10, 3, 4, 11, 3, 3, 5, 5, 4, 3, 5, 4, 7, 4, 4, 3, 4, 5, 7, 9, 5, 5, 4, 3, 3, 7, 4, 4, 3, 4, 4, 3, 3, 7, 5, 3, 3, 5, 16, 4, 3, 10, 5, 6, 3, 3, 7, 4, 3, 7, 14, 3, 11, 5, 5, 5, 9, 12, 5, 11, 4, 5, 3, 3, 5, 3, 6, 3, 8, 6, 8, 4, 4, 3, 10, 6, 3, 5, 16, 9, 9, 9, 3, 3, 8, 3, 6, 9, 4, 8, 6, 11, 6, 7, 4, 5, 5, 7, 6, 6, 3, 11, 6, 5, 3, 3, 5, 10, 11, 3, 6, 9, 6, 4, 4, 7, 8, 7, 3, 4, 11, 5, 4, 4, 4, 3, 15, 6, 4, 8, 7, 5, 9, 3, 8, 5, 3, 3, 4, 6, 3, 3, 5, 3, 5, 7, 3, 5, 6, 3, 5, 12], Average = 5.358
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Skeleton Wizard
+Initiative: 26
+Team: 2
+HP: -60
+AP: 0
+Abilities: ['FIREBALL 2']
+
+Human Adventurer
+Initiative: 20
+Team: 1
+HP: 49
+AP: 4
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 97.39999999999999% winrate
+Team 2 has 2.6% winrate
+The average number of rounds per combat was 5.358

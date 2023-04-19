@@ -1,0 +1,56 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Skeleton
+
+
+
+Round 1
+
+Skeleton used STRIKE
+Skeleton missed Human Adventurer
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Skeleton used STRIKE
+Skeleton missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton for 80 damage
+
+Round 3
+
+Skeleton used STRIKE
+Skeleton missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton for 80 damage
+Skeleton died!
+
+Combat Ended! Team 1 won!
+[6, 12, 6, 8, 3, 5, 14, 4, 3, 3, 15, 7, 13, 6, 7, 3, 10, 3, 8, 14, 4, 7, 14, 10, 8, 13, 12, 5, 18, 10, 19, 6, 6, 6, 13, 4, 16, 13, 9, 5, 12, 3, 11, 13, 10, 7, 16, 3, 12, 15, 6, 9, 10, 7, 10, 6, 4, 14, 5, 7, 5, 7, 4, 9, 9, 5, 3, 7, 7, 11, 7, 14, 12, 17, 8, 3, 5, 3, 12, 7, 9, 3, 14, 12, 15, 15, 6, 10, 11, 8, 11, 9, 14, 7, 15, 10, 10, 12, 8, 7, 9, 9, 6, 7, 6, 13, 14, 5, 4, 7, 3, 13, 12, 5, 11, 5, 7, 11, 12, 6, 7, 10, 6, 7, 10, 7, 22, 9, 14, 7, 4, 6, 7, 3, 6, 14, 9, 7, 12, 6, 13, 12, 12, 4, 14, 8, 8, 8, 5, 15, 9, 10, 7, 15, 9, 3, 7, 13, 5, 6, 4, 5, 15, 8, 11, 5, 9, 4, 12, 5, 7, 14, 13, 6, 21, 10, 4, 9, 14, 12, 13, 8, 7, 6, 13, 11, 15, 8, 5, 5, 8, 14, 8, 8, 7, 12, 15, 11, 15, 5, 13, 4, 5, 3, 6, 9, 16, 6, 10, 6, 9, 8, 15, 10, 12, 5, 6, 3, 18, 12, 10, 16, 13, 4, 3, 8, 7, 13, 17, 7, 8, 5, 15, 16, 8, 7, 17, 5, 12, 9, 15, 4, 14, 15, 16, 8, 9, 13, 8, 6, 7, 5, 10, 6, 10, 7, 14, 17, 5, 8, 9, 11, 5, 6, 5, 11, 8, 3, 5, 4, 4, 9, 10, 15, 14, 13, 5, 13, 5, 6, 13, 11, 16, 5, 15, 6, 4, 5, 6, 3, 8, 14, 12, 9, 3, 9, 7, 4, 3, 4, 12, 3, 3, 9, 11, 9, 7, 21, 6, 6, 8, 10, 7, 9, 10, 5, 6, 6, 17, 4, 4, 9, 12, 11, 8, 7, 9, 13, 17, 12, 11, 3, 7, 6, 6, 9, 14, 8, 5, 13, 13, 11, 9, 14, 6, 6, 5, 12, 3, 14, 9, 7, 4, 5, 10, 12, 12, 10, 10, 15, 5, 7, 16, 17, 4, 5, 13, 6, 12, 4, 8, 10, 4, 7, 10, 7, 5, 7, 13, 4, 5, 6, 14, 5, 3, 8, 4, 9, 10, 11, 10, 6, 9, 13, 12, 7, 5, 8, 5, 5, 12, 12, 13, 8, 12, 14, 7, 8, 4, 11, 9, 10, 15, 4, 14, 12, 15, 6, 12, 3, 8, 4, 14, 15, 17, 8, 7, 13, 12, 11, 4, 8, 3, 4, 13, 6, 6, 13, 11, 11, 4, 6, 15, 7, 11, 6, 11, 7, 11, 12, 8, 8, 6, 8, 11, 10, 10, 13, 6, 20, 10, 4, 5, 14, 17, 11, 12, 7, 6, 7, 7, 12, 7, 6, 9, 11, 16, 5, 4, 4, 5, 10, 4, 6, 12, 7, 4, 7, 6, 11, 7, 9, 5, 13, 4, 8, 12, 12, 4, 3], Average = 8.888
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Skeleton
+Initiative: 20
+Team: 2
+HP: -20
+AP: 0
+Abilities: ['STRIKE']
+
+Human Adventurer
+Initiative: 13
+Team: 1
+HP: 134
+AP: 12
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 79.80000000000001% winrate
+Team 2 has 20.200000000000003% winrate
+The average number of rounds per combat was 8.888

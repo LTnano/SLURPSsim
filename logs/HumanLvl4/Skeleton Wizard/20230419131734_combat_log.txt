@@ -1,0 +1,63 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Skeleton Wizard
+
+
+
+Round 1
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Human Adventurer for 35 damage
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton Wizard
+
+Round 3
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Human Adventurer for 14 damage
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Wizard for 32 damage
+
+Round 4
+
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton Wizard for 96 damage
+Skeleton Wizard died!
+
+Combat Ended! Team 1 won!
+[3, 4, 4, 11, 3, 3, 3, 6, 5, 7, 7, 5, 3, 5, 5, 8, 3, 3, 6, 6, 3, 3, 4, 7, 4, 10, 6, 8, 3, 7, 11, 3, 9, 6, 6, 3, 4, 3, 3, 3, 6, 4, 7, 6, 5, 3, 4, 4, 5, 5, 9, 5, 5, 6, 8, 5, 6, 3, 3, 11, 3, 6, 7, 3, 3, 3, 5, 6, 4, 4, 7, 10, 6, 6, 6, 3, 6, 7, 8, 7, 3, 5, 8, 4, 8, 5, 3, 5, 3, 3, 5, 6, 4, 5, 4, 5, 5, 4, 10, 4, 4, 6, 5, 7, 4, 4, 4, 5, 4, 3, 3, 6, 5, 3, 3, 4, 5, 6, 7, 11, 5, 4, 5, 14, 5, 5, 4, 5, 3, 6, 7, 5, 3, 5, 6, 6, 5, 4, 6, 3, 7, 4, 8, 8, 3, 6, 3, 5, 4, 4, 4, 9, 3, 4, 7, 6, 3, 7, 6, 5, 3, 7, 6, 5, 6, 7, 6, 5, 3, 3, 8, 3, 11, 9, 10, 3, 3, 12, 3, 5, 4, 3, 5, 4, 8, 3, 7, 5, 5, 5, 7, 5, 4, 5, 12, 5, 10, 7, 5, 3, 12, 4, 6, 10, 4, 4, 4, 3, 5, 3, 4, 5, 9, 8, 4, 4, 11, 4, 3, 7, 5, 7, 6, 4, 6, 8, 11, 5, 10, 6, 3, 3, 6, 7, 6, 3, 5, 5, 4, 5, 9, 6, 4, 5, 3, 5, 3, 6, 6, 4, 4, 3, 4, 3, 9, 10, 3, 5, 4, 3, 3, 5, 11, 8, 10, 4, 9, 9, 10, 5, 4, 3, 6, 4, 5, 4, 3, 4, 3, 4, 8, 3, 4, 7, 3, 4, 4, 4, 3, 4, 11, 5, 8, 7, 5, 3, 7, 5, 4, 4, 4, 3, 6, 9, 4, 4, 4, 4, 7, 11, 3, 3, 4, 10, 4, 10, 4, 3, 9, 6, 4, 4, 7, 4, 7, 3, 9, 3, 4, 15, 4, 4, 4, 6, 6, 4, 7, 7, 6, 3, 7, 6, 5, 5, 6, 4, 4, 4, 3, 3, 12, 7, 8, 3, 8, 4, 4, 4, 6, 7, 5, 4, 3, 6, 3, 3, 5, 5, 5, 3, 5, 3, 4, 5, 4, 3, 3, 5, 7, 7, 3, 5, 7, 6, 3, 13, 10, 7, 3, 9, 6, 5, 3, 7, 5, 4, 8, 8, 6, 7, 4, 4, 10, 3, 4, 6, 5, 6, 9, 7, 9, 4, 3, 10, 3, 5, 7, 3, 3, 8, 12, 3, 6, 3, 7, 7, 3, 3, 3, 9, 5, 5, 4, 5, 5, 3, 6, 7, 3, 11, 3, 8, 6, 4, 5, 7, 12, 4, 4, 5, 3, 4, 7, 8, 11, 3, 3, 3, 10, 7, 4, 4, 6, 4, 3, 4, 8, 5, 7, 5, 6, 6, 6, 4, 3, 4, 5, 5, 7, 7, 3, 6, 6, 3, 5, 9, 12, 4, 4, 4, 4, 3, 4, 3, 5, 6, 3, 7, 4, 4], Average = 5.398
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Skeleton Wizard
+Initiative: 24
+Team: 2
+HP: -28
+AP: 2
+Abilities: ['FIREBALL 2']
+
+Human Adventurer
+Initiative: 22
+Team: 1
+HP: 85
+AP: 12
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 97.8% winrate
+Team 2 has 2.1999999999999997% winrate
+The average number of rounds per combat was 5.398

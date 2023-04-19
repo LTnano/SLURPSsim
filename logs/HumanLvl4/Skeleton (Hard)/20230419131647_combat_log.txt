@@ -1,0 +1,119 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Skeleton (Hard)
+
+
+
+Round 1
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Human Adventurer for 44 damage
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton (Hard) for 32 damage
+
+Round 3
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton (Hard)
+
+Round 4
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Skeleton (Hard)
+
+Round 5
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton (Hard) for 96 damage
+
+Round 6
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Human Adventurer for 22 damage
+Human Adventurer used HEAL 2
+Human Adventurer failed to cast HEAL 2
+
+Round 7
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used HEAL 2
+Human Adventurer healed Human Adventurer for 50!
+
+Round 8
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used HEAL 2
+Human Adventurer failed to cast HEAL 2
+
+Round 9
+
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used HEAL 2
+Human Adventurer failed to cast HEAL 2
+
+Round 10
+
+Skeleton (Hard) used STRIKE
+Skeleton (Hard) hit Human Adventurer for 33 damage
+Human Adventurer used HEAL 2
+Human Adventurer healed Human Adventurer for 60!
+
+Round 11
+
+Skeleton (Hard) used STRIKE
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used HEAL 2
+Human Adventurer healed Human Adventurer for 80!
+
+Round 12
+
+Skeleton (Hard) used STRIKE
+Skeleton (Hard) missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Skeleton (Hard) for 64 damage
+Skeleton (Hard) died!
+
+Combat Ended! Team 1 won!
+[8, 20, 7, 5, 14, 7, 7, 4, 6, 8, 5, 5, 9, 6, 9, 5, 8, 11, 8, 10, 6, 4, 8, 6, 10, 4, 10, 6, 5, 6, 9, 5, 7, 7, 10, 15, 8, 6, 9, 5, 10, 16, 13, 5, 4, 4, 8, 6, 6, 16, 13, 3, 10, 9, 9, 9, 7, 6, 14, 6, 6, 10, 5, 4, 5, 8, 9, 6, 5, 6, 6, 4, 6, 9, 14, 9, 12, 17, 7, 11, 4, 10, 14, 5, 14, 4, 7, 5, 10, 6, 5, 8, 10, 12, 11, 8, 5, 11, 6, 8, 6, 6, 5, 15, 17, 5, 9, 11, 5, 6, 9, 10, 6, 4, 3, 9, 6, 4, 6, 6, 7, 3, 8, 6, 9, 7, 6, 11, 5, 7, 4, 9, 5, 8, 12, 9, 4, 3, 9, 5, 15, 11, 8, 14, 16, 6, 13, 15, 7, 9, 7, 8, 6, 7, 5, 5, 5, 10, 14, 8, 11, 5, 4, 8, 5, 3, 5, 11, 4, 6, 9, 4, 8, 7, 7, 12, 6, 4, 5, 6, 8, 7, 6, 4, 9, 8, 7, 12, 7, 9, 7, 12, 5, 6, 10, 11, 5, 4, 11, 11, 12, 6, 7, 7, 3, 10, 6, 4, 3, 6, 2, 5, 12, 9, 5, 7, 4, 5, 13, 6, 11, 8, 10, 4, 9, 14, 17, 8, 5, 4, 5, 5, 8, 6, 5, 5, 11, 2, 23, 12, 6, 8, 6, 7, 8, 5, 6, 18, 4, 4, 5, 5, 12, 11, 4, 5, 11, 4, 7, 8, 4, 5, 13, 4, 7, 7, 5, 9, 4, 12, 10, 5, 4, 3, 6, 6, 5, 7, 4, 6, 6, 3, 9, 11, 4, 13, 5, 2, 5, 8, 4, 7, 8, 6, 7, 4, 5, 4, 6, 7, 7, 4, 12, 10, 12, 9, 15, 8, 6, 10, 6, 11, 11, 7, 4, 9, 12, 11, 5, 7, 11, 11, 4, 4, 6, 6, 11, 7, 4, 5, 8, 5, 6, 6, 4, 16, 5, 5, 6, 7, 6, 2, 8, 5, 7, 7, 9, 2, 7, 6, 8, 3, 3, 13, 9, 8, 7, 8, 7, 3, 13, 4, 20, 4, 10, 6, 8, 2, 3, 12, 6, 3, 3, 6, 5, 6, 7, 8, 12, 16, 6, 11, 6, 7, 12, 5, 5, 3, 9, 3, 5, 5, 4, 4, 5, 9, 3, 4, 17, 5, 10, 6, 11, 7, 4, 5, 8, 11, 7, 4, 6, 4, 14, 5, 8, 7, 7, 12, 8, 5, 5, 5, 13, 4, 5, 15, 13, 13, 7, 11, 11, 3, 11, 7, 3, 6, 10, 8, 4, 4, 6, 5, 10, 7, 5, 12, 6, 7, 6, 10, 4, 6, 3, 6, 9, 7, 4, 5, 6, 6, 8, 6, 4, 9, 7, 13, 6, 8, 16, 3, 7, 7, 4, 6, 10, 13, 7, 9, 6, 5, 17, 6, 5, 6, 14, 4, 4, 6, 3, 6, 6, 4, 7, 5, 5, 7, 4, 3, 6, 12], Average = 7.418
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Skeleton (Hard)
+Initiative: 26
+Team: 2
+HP: -52
+AP: 0
+Abilities: ['STRIKE', 'FEINT']
+
+Human Adventurer
+Initiative: 15
+Team: 1
+HP: 134
+AP: 0
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 50.8% winrate
+Team 2 has 49.2% winrate
+The average number of rounds per combat was 7.418

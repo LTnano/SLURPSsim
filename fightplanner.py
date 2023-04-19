@@ -20,9 +20,9 @@ class MonsterSelectGUI:
 
         'meleeSkeletonH' : {'Name' : 'Skeleton (Hard)', 'HP' : 140, 'STR' : 11, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 6, 'RWEA' : 0, 'ARM' : 2, 'AP' : 9},
 
-        'rangedSkeleton' : {'Name': 'Skeleton Archer', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 4, 'ARM' : 0, 'AP' : 9},
+        'rangedSkeleton' : {'Name': 'Skeleton Archer', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 4, 'ARM' : 0, 'AP' : 7},
 
-        'rangedSkeletonH' : {'Name' : 'Skeleton Archer(Hard)', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 6, 'ARM' : 0, 'AP' : 7},
+        'rangedSkeletonH' : {'Name' : 'Skeleton Archer(Hard)', 'HP' : 110, 'STR' : 8, 'END' : 14, 'COR' : 11, 'DEX' : 10, 'INT' : 5, 'NOU' : 8, 'WIL' : 7, 'WEA' : 0, 'RWEA' : 6, 'ARM' : 0, 'AP' : 9},
 
         'wizardSkeleton' : {'Name': 'Skeleton Wizard', 'HP' : 100, 'STR' : 7, 'END' : 8, 'COR' : 8, 'DEX' : 7, 'INT' : 11, 'NOU' : 6, 'WIL' : 2, 'WEA' : 0, 'RWEA' : 0, 'ARM' : 0, 'AP' : 10},
 
@@ -93,7 +93,7 @@ class MonsterSelectGUI:
 
         'rangedKobold' : ['SHOOT'],
 
-        'priestKobold' : ['HEADACHE'],
+        'priestKobold' : ['HEADACHE', 'HEAL'],
 
         'slowGolem' : ['STRIKE'],
 
@@ -227,6 +227,7 @@ class MonsterSelectGUI:
     def exportTeams(self):
         self.chosenList = []
         self.teamList = []
+        data = {}
         # Export the lists
         for item in self.teamOne:
             self.chosenList.append(item)
