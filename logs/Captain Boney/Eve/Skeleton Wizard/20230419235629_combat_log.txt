@@ -1,0 +1,61 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Skeleton Wizard
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney missed Skeleton Wizard
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Captain Boney for 7 damage
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney hit Skeleton Wizard for 45 damage
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard missed Captain Boney
+
+Round 3
+
+Captain Boney used STRIKE
+Captain Boney missed Skeleton Wizard
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard hit Captain Boney for 28 damage
+
+Round 4
+
+Captain Boney used STRIKE
+Captain Boney hit Skeleton Wizard for 60 damage
+Skeleton Wizard died!
+
+Combat Ended! Team 1 won!
+[3, 2, 2, 4, 2, 2, 4, 2, 2, 3, 6, 3, 5, 4, 2, 4, 2, 5, 2, 2, 3, 2, 3, 6, 6, 4, 4, 2, 3, 3, 3, 2, 4, 3, 4, 3, 3, 2, 4, 3, 2, 2, 3, 3, 3, 4, 5, 4, 2, 4, 3, 6, 4, 5, 5, 3, 2, 5, 3, 3, 5, 4, 3, 3, 5, 3, 2, 2, 2, 3, 2, 7, 5, 3, 2, 4, 3, 2, 4, 3, 2, 5, 2, 2, 3, 3, 5, 3, 3, 2, 3, 3, 4, 6, 3, 4, 3, 2, 2, 2, 2, 5, 4, 2, 2, 5, 2, 2, 3, 2, 3, 4, 2, 2, 2, 2, 3, 2, 3, 3, 2, 5, 3, 4, 4, 5, 3, 2, 3, 3, 2, 3, 2, 4, 3, 4, 3, 3, 3, 3, 4, 3, 2, 3, 3, 4, 5, 5, 5, 5, 4, 5, 3, 2, 8, 4, 4, 4, 2, 2, 3, 2, 2, 3, 4, 6, 4, 6, 3, 4, 2, 4, 3, 4, 2, 4, 2, 6, 3, 3, 4, 5, 3, 2, 2, 3, 2, 2, 2, 3, 4, 3, 4, 2, 3, 3, 3, 3, 2, 4, 4, 5, 3, 3, 2, 3, 2, 2, 3, 3, 2, 2, 2, 2, 4, 2, 2, 2, 3, 3, 3, 3, 5, 3, 2, 2, 5, 2, 10, 3, 4, 4, 4, 4, 3, 4, 2, 2, 3, 4, 3, 4, 4, 4, 4, 2, 5, 2, 2, 5, 2, 3, 3, 3, 4, 4, 3, 2, 5, 3, 4, 5, 2, 3, 2, 3, 3, 3, 2, 6, 3, 4, 2, 4, 5, 4, 2, 3, 4, 3, 3, 4, 4, 4, 6, 2, 8, 5, 5, 2, 2, 3, 3, 4, 2, 3, 3, 2, 2, 4, 4, 3, 2, 2, 2, 2, 2, 3, 2, 3, 5, 2, 2, 3, 2, 2, 4, 3, 2, 3, 2, 2, 3, 2, 2, 2, 3, 5, 4, 3, 4, 4, 5, 2, 4, 2, 5, 3, 8, 2, 3, 3, 3, 3, 2, 5, 4, 3, 3, 3, 3, 3, 3, 2, 2, 2, 3, 4, 5, 2, 3, 2, 3, 4, 3, 2, 2, 3, 2, 3, 2, 4, 3, 3, 3, 2, 3, 3, 2, 2, 2, 4, 3, 4, 3, 4, 2, 5, 2, 2, 3, 3, 4, 3, 5, 6, 3, 2, 4, 3, 2, 3, 2, 2, 7, 2, 5, 3, 6, 2, 2, 3, 2, 2, 3, 2, 3, 3, 2, 4, 2, 4, 2, 2, 4, 2, 4, 2, 6, 3, 4, 4, 4, 2, 2, 3, 5, 3, 2, 3, 3, 4, 4, 7, 6, 5, 2, 2, 2, 2, 2, 4, 2, 3, 2, 2, 6, 3, 3, 2, 5, 4, 6, 4, 3, 2, 3, 2, 2, 3, 8, 3, 2, 5, 2, 6, 3, 2, 4, 4, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 3, 2, 3, 3, 3, 4, 6, 3, 3, 4], Average = 3.208
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 33
+Team: 1
+HP: 215
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Skeleton Wizard
+Initiative: 21
+Team: 2
+HP: -5
+AP: 4
+Abilities: ['FIREBALL 2']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 3.208

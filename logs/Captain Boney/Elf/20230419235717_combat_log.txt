@@ -1,0 +1,60 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Elf Adventurer
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney hit Elf Adventurer for 60 damage
+Elf Adventurer used EXTRA SHOT
+Elf Adventurer used SHOOT
+Elf Adventurer shot Captain Boney for 90 damage
+Elf Adventurer used SHOOT
+Elf Adventurer shot Captain Boney for 90 damage
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney hit Elf Adventurer for 45 damage
+Elf Adventurer used EXTRA SHOT
+Elf Adventurer used SHOOT
+Elf Adventurer shot Captain Boney for 15 damage
+Elf Adventurer used SHOOT
+Elf Adventurer missed Captain Boney
+
+Round 3
+
+Captain Boney used STRIKE
+Captain Boney hit Elf Adventurer for 90 damage
+Elf Adventurer died!
+
+Combat Ended! Team 1 won!
+[3, 2, 4, 3, 2, 3, 3, 16, 3, 2, 3, 3, 2, 3, 3, 2, 3, 3, 3, 4, 3, 3, 3, 3, 3, 3, 4, 4, 2, 2, 3, 3, 4, 3, 2, 3, 2, 3, 3, 3, 2, 3, 3, 3, 3, 2, 2, 3, 3, 16, 3, 9, 3, 4, 3, 3, 2, 4, 4, 3, 3, 3, 4, 3, 3, 2, 2, 3, 3, 3, 3, 2, 2, 2, 3, 4, 3, 5, 2, 4, 3, 2, 3, 2, 3, 2, 4, 3, 2, 3, 3, 8, 3, 2, 2, 2, 3, 4, 5, 3, 2, 2, 3, 3, 2, 4, 4, 2, 3, 2, 3, 4, 4, 3, 4, 6, 3, 2, 2, 2, 3, 4, 4, 2, 4, 3, 4, 2, 2, 4, 3, 16, 3, 5, 3, 3, 2, 3, 3, 3, 3, 2, 3, 2, 2, 3, 2, 16, 4, 3, 3, 2, 3, 2, 3, 3, 4, 3, 3, 2, 2, 4, 3, 3, 3, 3, 3, 5, 2, 3, 3, 3, 2, 3, 4, 3, 4, 11, 4, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 2, 4, 4, 4, 5, 3, 3, 2, 4, 4, 15, 4, 4, 3, 3, 2, 3, 2, 3, 3, 3, 4, 3, 2, 3, 3, 3, 3, 2, 3, 16, 2, 3, 4, 6, 2, 2, 2, 3, 3, 3, 3, 3, 4, 2, 3, 3, 4, 2, 2, 3, 3, 3, 7, 2, 3, 2, 3, 3, 3, 4, 2, 2, 3, 3, 3, 3, 2, 2, 16, 4, 3, 4, 2, 3, 2, 4, 4, 3, 4, 3, 2, 4, 3, 2, 2, 2, 2, 2, 3, 2, 3, 3, 3, 4, 2, 4, 3, 2, 3, 3, 3, 3, 4, 3, 3, 4, 3, 3, 4, 2, 3, 4, 3, 3, 3, 2, 3, 2, 3, 4, 4, 3, 2, 3, 4, 3, 3, 3, 3, 2, 2, 3, 4, 3, 3, 4, 3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 2, 3, 2, 3, 4, 4, 3, 3, 4, 3, 4, 3, 2, 3, 3, 21, 4, 3, 3, 2, 3, 16, 3, 2, 4, 4, 4, 3, 4, 2, 3, 2, 3, 3, 4, 3, 2, 2, 4, 3, 4, 2, 4, 3, 2, 4, 3, 3, 4, 3, 2, 3, 4, 3, 2, 3, 3, 4, 3, 2, 4, 4, 3, 3, 4, 3, 3, 2, 4, 3, 4, 2, 3, 3, 3, 3, 2, 4, 2, 2, 3, 3, 2, 3, 3, 3, 3, 2, 4, 4, 3, 17, 3, 3, 2, 3, 2, 2, 2, 3, 3, 2, 3, 4, 3, 2, 4, 15, 3, 2, 4, 3, 3, 3, 3, 16, 4, 17, 3, 4, 3, 3, 3, 2, 2, 3, 4, 3, 2, 3, 6, 3, 3, 3, 4, 2, 3, 17, 2, 3, 5, 4, 2, 2, 4, 3, 3, 2, 4, 3, 3, 2, 2, 3, 17, 6, 3, 2, 2, 4, 3, 3], Average = 3.436
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 29
+Team: 1
+HP: 55
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Elf Adventurer
+Initiative: 21
+Team: 2
+HP: -65
+AP: 7
+Abilities: ['STRIKE', 'SHOOT', 'STUN', 'FEINT', 'TIGHTEN', 'EXTRA SHOT', 'ENCOURAGE']
+
+Over 500 rounds:
+
+Team 1 has 36.8% winrate
+Team 2 has 63.2% winrate
+The average number of rounds per combat was 3.436

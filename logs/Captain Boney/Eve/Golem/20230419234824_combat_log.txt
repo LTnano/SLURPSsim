@@ -1,0 +1,194 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Golem
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney hit Golem for 75 damage
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney hit Golem for 45 damage
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 3
+
+Captain Boney used STRIKE
+Captain Boney missed Golem
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 4
+
+Captain Boney used STRIKE
+Captain Boney hit Golem for 60 damage
+Golem used STRIKE
+Golem hit Captain Boney for 14 damage
+
+Round 5
+
+Captain Boney used STRIKE
+Captain Boney hit Golem for 90 damage
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 6
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 12!
+Golem used STRIKE
+Golem hit Captain Boney for 28 damage
+
+Round 7
+
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 8
+
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 9
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 10
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 60!
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 11
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 12
+
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 13
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 14
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 15
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 16
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 17
+
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 18
+
+Captain Boney used STRIKE
+Captain Boney missed Golem
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 19
+
+Captain Boney used STRIKE
+Captain Boney missed Golem
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 20
+
+Captain Boney used STRIKE
+Captain Boney missed Golem
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 21
+
+Captain Boney used STRIKE
+Captain Boney missed Golem
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 22
+
+Captain Boney used STRIKE
+Captain Boney missed Golem
+Golem used STRIKE
+Golem missed Captain Boney
+
+Round 23
+
+Captain Boney used STRIKE
+Captain Boney hit Golem for 90 damage
+Golem died!
+
+Combat Ended! Team 1 won!
+[21, 29, 21, 7, 19, 23, 22, 19, 28, 17, 23, 20, 18, 21, 21, 23, 25, 22, 19, 22, 30, 34, 26, 23, 24, 21, 22, 27, 19, 22, 21, 26, 22, 15, 22, 23, 24, 20, 24, 26, 22, 22, 21, 5, 22, 19, 24, 24, 22, 23, 25, 19, 22, 22, 20, 18, 29, 26, 8, 24, 24, 28, 7, 17, 22, 24, 28, 20, 19, 21, 23, 24, 9, 21, 21, 18, 27, 22, 22, 26, 21, 23, 27, 23, 25, 20, 9, 24, 20, 19, 20, 20, 17, 20, 27, 17, 22, 24, 25, 29, 15, 24, 28, 22, 28, 25, 19, 23, 23, 19, 22, 24, 24, 17, 21, 11, 24, 25, 17, 28, 23, 13, 19, 27, 19, 18, 24, 21, 22, 18, 23, 35, 9, 25, 34, 18, 22, 19, 25, 20, 23, 23, 10, 28, 21, 24, 25, 21, 24, 18, 21, 19, 22, 30, 19, 24, 22, 21, 6, 28, 18, 21, 27, 17, 22, 30, 23, 30, 20, 20, 20, 21, 25, 22, 18, 18, 19, 21, 20, 23, 31, 19, 22, 23, 26, 20, 17, 22, 23, 22, 22, 25, 21, 21, 23, 23, 19, 21, 19, 21, 25, 23, 20, 18, 18, 21, 21, 26, 18, 23, 22, 23, 26, 25, 17, 19, 28, 23, 24, 23, 25, 23, 22, 27, 20, 19, 23, 20, 20, 18, 25, 24, 19, 22, 19, 25, 20, 24, 18, 23, 21, 20, 21, 21, 31, 27, 27, 8, 32, 16, 21, 23, 26, 20, 20, 21, 21, 20, 26, 20, 24, 23, 25, 25, 17, 21, 25, 25, 22, 24, 20, 20, 24, 26, 20, 20, 21, 22, 26, 20, 18, 20, 26, 20, 31, 17, 24, 23, 19, 20, 20, 25, 21, 21, 25, 38, 20, 23, 27, 8, 26, 19, 18, 23, 24, 21, 18, 25, 25, 28, 22, 18, 16, 20, 32, 22, 22, 20, 19, 18, 18, 21, 19, 23, 25, 22, 23, 23, 20, 19, 21, 27, 31, 23, 22, 21, 31, 26, 20, 18, 21, 22, 22, 24, 24, 25, 19, 21, 20, 23, 17, 18, 19, 22, 23, 20, 21, 19, 21, 24, 25, 6, 25, 27, 20, 24, 21, 22, 23, 23, 19, 21, 22, 19, 20, 24, 9, 20, 26, 20, 26, 19, 20, 5, 24, 19, 21, 28, 28, 18, 20, 19, 22, 26, 26, 23, 21, 30, 25, 24, 25, 19, 23, 23, 23, 23, 28, 29, 23, 28, 18, 29, 23, 17, 21, 26, 23, 21, 20, 20, 28, 21, 28, 24, 22, 20, 24, 27, 20, 22, 20, 21, 28, 24, 21, 22, 21, 22, 18, 20, 20, 22, 22, 25, 20, 19, 21, 23, 19, 24, 19, 27, 16, 21, 20, 20, 14, 22, 22, 25, 19, 22, 21, 22, 10, 26, 18, 23, 23, 21, 21, 24, 17, 22, 20, 5, 19, 23, 19, 17, 17, 22, 23, 22, 27, 29, 24, 19, 26, 23, 26, 22, 20, 25, 27, 18, 26, 25, 22, 23], Average = 21.85
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 20
+Team: 1
+HP: 250
+AP: 0
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Golem
+Initiative: 20
+Team: 2
+HP: -60
+AP: 0
+Abilities: ['STRIKE']
+
+Over 500 rounds:
+
+Team 1 has 99.6% winrate
+Team 2 has 0.4% winrate
+The average number of rounds per combat was 21.85

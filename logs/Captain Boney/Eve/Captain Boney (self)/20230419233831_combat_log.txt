@@ -1,0 +1,98 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Captain Boney 2
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 45 damage
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+
+Round 3
+
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 75 damage
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 90 damage
+
+Round 4
+
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+
+Round 5
+
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 30 damage
+
+Round 6
+
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+
+Round 7
+
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+
+Round 8
+
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 15 damage
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+
+Round 9
+
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 90 damage
+Captain Boney died!
+
+Combat Ended! Team 2 won!
+[31, 27, 32, 21, 31, 13, 24, 39, 34, 23, 29, 25, 39, 23, 22, 24, 24, 27, 22, 20, 33, 21, 30, 32, 34, 33, 23, 38, 31, 22, 39, 21, 30, 28, 9, 29, 29, 47, 20, 26, 18, 25, 33, 24, 23, 38, 22, 35, 42, 27, 26, 18, 27, 25, 23, 23, 27, 35, 19, 24, 22, 26, 17, 25, 31, 16, 25, 23, 25, 30, 19, 30, 33, 23, 31, 24, 28, 30, 32, 23, 20, 24, 27, 23, 21, 25, 22, 30, 23, 24, 22, 25, 31, 21, 25, 22, 28, 34, 20, 27, 19, 31, 33, 21, 45, 22, 53, 28, 20, 22, 28, 22, 25, 25, 22, 35, 23, 25, 27, 31, 15, 38, 28, 21, 30, 22, 22, 22, 38, 24, 21, 24, 34, 21, 27, 23, 15, 9, 26, 22, 41, 23, 23, 39, 30, 28, 22, 43, 36, 25, 39, 21, 34, 35, 29, 24, 22, 29, 27, 31, 30, 21, 23, 24, 28, 36, 26, 27, 33, 21, 30, 9, 46, 28, 25, 56, 44, 33, 40, 27, 40, 38, 23, 33, 22, 37, 48, 24, 29, 21, 32, 60, 28, 28, 19, 28, 23, 22, 26, 27, 26, 45, 27, 28, 34, 20, 25, 28, 41, 41, 9, 22, 43, 31, 22, 16, 17, 26, 25, 37, 27, 24, 23, 26, 29, 41, 37, 36, 19, 28, 19, 20, 26, 25, 28, 28, 41, 23, 31, 28, 23, 32, 24, 39, 23, 26, 33, 45, 24, 27, 7, 26, 36, 42, 27, 19, 34, 28, 29, 32, 33, 26, 43, 28, 45, 19, 36, 35, 22, 29, 11, 37, 21, 23, 24, 10, 23, 59, 32, 29, 37, 46, 47, 41, 38, 22, 13, 33, 22, 38, 11, 25, 28, 24, 33, 25, 24, 28, 21, 26, 22, 25, 24, 35, 26, 13, 33, 20, 30, 24, 27, 35, 37, 27, 31, 16, 17, 19, 21, 28, 28, 9, 25, 17, 18, 24, 21, 35, 22, 34, 25, 36, 56, 36, 36, 44, 24, 26, 29, 43, 49, 18, 27, 46, 24, 21, 32, 24, 32, 40, 43, 6, 40, 20, 17, 23, 29, 30, 24, 23, 4, 32, 22, 24, 26, 19, 36, 17, 8, 40, 28, 20, 31, 29, 33, 20, 36, 22, 24, 25, 26, 21, 24, 21, 24, 35, 26, 23, 24, 40, 20, 51, 23, 43, 31, 30, 39, 28, 25, 25, 23, 24, 25, 36, 23, 27, 47, 33, 34, 28, 21, 30, 26, 40, 22, 14, 18, 28, 21, 25, 31, 25, 9, 71, 25, 20, 20, 26, 16, 27, 41, 32, 21, 23, 34, 25, 27, 25, 21, 18, 32, 33, 24, 22, 30, 29, 21, 34, 24, 30, 20, 27, 34, 23, 37, 27, 23, 40, 19, 50, 30, 31, 39, 24, 24, 44, 22, 29, 27, 42, 24, 18, 26, 19, 36, 31, 37, 40, 24, 28, 23, 20, 25, 33, 20, 22, 22, 23, 23, 9, 33, 12, 22, 36, 27, 35, 29, 24, 26, 9], Average = 27.672
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 32
+Team: 1
+HP: -5
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Captain Boney 2
+Initiative: 26
+Team: 2
+HP: 160
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 49.4% winrate
+Team 2 has 50.6% winrate
+The average number of rounds per combat was 27.672

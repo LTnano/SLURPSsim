@@ -1,0 +1,278 @@
+Team 1:
+Kobold Archer
+Kobold Archer 2
+Kobold Warrior
+Kobold Healer 2
+Kobold Mage
+Kobold Healer
+Kobold Warrior 2
+Kobold Mage 2
+
+Team 2:
+Skeleton Archer
+Skeleton
+Skeleton Wizard
+Skeleton (Hard)
+Skeleton Archer(Hard)
+
+
+
+Round 1
+
+Kobold Archer used SHOOT
+Kobold Archer shot Skeleton Wizard for 24 damage
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 shot Skeleton Wizard for 8 damage
+Kobold Warrior used STRIKE
+Kobold Warrior hit Skeleton Wizard for 18 damage
+Skeleton Archer used SHOOT
+Skeleton Archer shot Kobold Mage 2 for 24 damage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 missed Skeleton Archer
+Skeleton used STRIKE
+Skeleton hit Kobold Archer for 33 damage
+Kobold Mage used FIREBALL
+Kobold Mage hit Skeleton (Hard) for 7 damage
+Kobold Healer used HEADACHE
+Kobold Healer missed Skeleton Archer(Hard)
+Skeleton Wizard used FIREBALL 2
+Skeleton Wizard missed Kobold Healer 2
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Kobold Archer for 44 damage
+Kobold Archer died!
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) missed Kobold Warrior
+Kobold Warrior 2 used STRIKE
+Kobold Warrior 2 missed Skeleton (Hard)
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 hit Skeleton Wizard for 7 damage
+
+Round 2
+
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 shot Skeleton Wizard for 32 damage
+Kobold Warrior used STRIKE
+Kobold Warrior hit Skeleton Wizard for 18 damage
+Skeleton Wizard died!
+Skeleton Archer used SHOOT
+Skeleton Archer shot Kobold Mage 2 for 8 damage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 missed Skeleton Archer
+Skeleton used STRIKE
+Skeleton hit Kobold Warrior 2 for 44 damage
+Kobold Mage used FIREBALL
+Kobold Mage missed Skeleton (Hard)
+Kobold Healer used HEADACHE
+Kobold Healer missed Skeleton Archer(Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Kobold Mage 2
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Kobold Warrior for 48 damage
+Kobold Warrior 2 used STRIKE
+Kobold Warrior 2 hit Skeleton (Hard) for 9 damage
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 hit Skeleton Archer for 21 damage
+
+Round 3
+
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 missed Skeleton
+Kobold Warrior used STRIKE
+Kobold Warrior missed Skeleton Archer(Hard)
+Skeleton Archer used SHOOT
+Skeleton Archer missed Kobold Mage 2
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 inflicted Skeleton Archer with a painful HEADACHE, causing 10 damage
+Skeleton used STRIKE
+Skeleton hit Kobold Warrior 2 for 22 damage
+Kobold Warrior 2 died!
+Kobold Mage used FIREBALL
+Kobold Mage hit Skeleton (Hard) for 21 damage
+Kobold Healer used HEADACHE
+Kobold Healer missed Skeleton Archer(Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Kobold Mage 2
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Kobold Warrior for 24 damage
+Kobold Warrior died!
+Kobold Mage 2 used FIREBALL
+Kobold Mage 2 missed Skeleton Archer
+
+Round 4
+
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 shot Skeleton for 16 damage
+Skeleton Archer takes 10 damage from a HEADACHE
+Skeleton Archer used SHOOT
+Skeleton Archer shot Kobold Mage 2 for 16 damage
+Kobold Mage 2 died!
+Kobold Healer 2 used HEAL
+Kobold Healer 2 failed to cast HEAL
+Skeleton used STRIKE
+Skeleton missed Kobold Mage
+Kobold Mage used FIREBALL
+Kobold Mage missed Skeleton (Hard)
+Kobold Healer used HEADACHE
+Kobold Healer missed Skeleton Archer(Hard)
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Kobold Mage
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Kobold Mage for 16 damage
+
+Round 5
+
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 shot Skeleton for 16 damage
+Skeleton Archer takes 10 damage from a HEADACHE
+Skeleton Archer used SHOOT
+Skeleton Archer missed Kobold Healer 2
+Kobold Healer 2 used HEAL
+Kobold Healer 2 healed Kobold Healer for 45!
+Skeleton used STRIKE
+Skeleton hit Kobold Mage for 22 damage
+Kobold Mage used FIREBALL
+Kobold Mage missed Skeleton (Hard)
+Kobold Healer used HEADACHE
+Kobold Healer inflicted Skeleton Archer(Hard) with a painful HEADACHE, causing 10 damage
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Kobold Mage for 55 damage
+Kobold Mage died!
+Skeleton Archer(Hard) takes 10 damage from a HEADACHE
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Kobold Healer for 8 damage
+
+Round 6
+
+Kobold Archer 2 used SHOOT
+Kobold Archer 2 shot Skeleton for 24 damage
+Skeleton Archer takes 10 damage from a HEADACHE
+Skeleton Archer used SHOOT
+Skeleton Archer shot Kobold Healer 2 for 8 damage
+Kobold Healer 2 used HEADACHE
+Kobold Healer 2 missed Skeleton Archer
+Skeleton used STRIKE
+Skeleton hit Kobold Healer 2 for 33 damage
+Kobold Healer 2 died!
+Kobold Healer used HEAL
+Kobold Healer healed Kobold Archer 2 for 36!
+Skeleton (Hard) used FEINT
+Skeleton (Hard) missed Kobold Archer 2
+Skeleton Archer(Hard) takes 10 damage from a HEADACHE
+Skeleton Archer(Hard) used SHOOT
+Skeleton Archer(Hard) shot Kobold Healer for 48 damage
+Kobold Healer died!
+
+Round 7
+
+Kobold Archer 2 cannot use SHOOT as they do not have enough AP!
+Skeleton Archer used SHOOT
+Skeleton Archer shot Kobold Archer 2 for 16 damage
+Skeleton used STRIKE
+Skeleton missed Kobold Archer 2
+Skeleton (Hard) used FEINT
+Skeleton (Hard) hit Kobold Archer 2 for 55 damage
+Kobold Archer 2 died!
+
+Combat Ended! Team 2 won!
+[5, 8, 4, 3, 4, 8, 6, 5, 7, 6, 8, 5, 7, 4, 5, 5, 6, 6, 5, 5, 5, 7, 6, 5, 5, 5, 5, 6, 6, 4, 5, 4, 5, 5, 6, 5, 5, 4, 5, 6, 4, 6, 5, 4, 4, 4, 4, 7, 8, 5, 4, 5, 8, 5, 6, 5, 4, 7, 4, 6, 6, 6, 5, 5, 5, 4, 5, 6, 3, 7, 7, 5, 4, 5, 5, 5, 5, 5, 6, 5, 5, 7, 4, 5, 5, 9, 6, 5, 5, 4, 7, 6, 5, 5, 6, 5, 4, 6, 4, 9, 5, 6, 6, 6, 5, 7, 7, 6, 7, 5, 5, 8, 4, 7, 11, 5, 5, 9, 6, 6, 7, 5, 10, 5, 6, 5, 7, 8, 5, 4, 7, 7, 5, 5, 7, 4, 10, 6, 5, 5, 11, 10, 4, 5, 5, 8, 5, 7, 7, 5, 5, 5, 4, 3, 5, 6, 8, 6, 5, 5, 4, 5, 5, 8, 7, 4, 4, 5, 5, 5, 5, 10, 10, 6, 4, 6, 7, 5, 5, 5, 7, 6, 6, 6, 8, 5, 8, 6, 8, 4, 7, 6, 6, 5, 5, 6, 5, 6, 4, 8, 7, 8, 5, 5, 4, 9, 5, 5, 5, 5, 6, 8, 5, 4, 7, 5, 5, 5, 6, 7, 5, 5, 6, 3, 6, 6, 5, 6, 5, 6, 5, 8, 6, 6, 5, 5, 6, 6, 5, 5, 6, 11, 8, 5, 4, 5, 8, 6, 5, 3, 6, 6, 5, 5, 6, 4, 5, 8, 5, 4, 5, 10, 7, 7, 4, 9, 5, 6, 8, 4, 6, 14, 5, 7, 6, 4, 5, 6, 6, 5, 6, 6, 5, 7, 5, 5, 4, 5, 6, 6, 6, 9, 5, 4, 6, 7, 6, 4, 5, 4, 5, 4, 5, 7, 5, 5, 4, 5, 5, 6, 5, 7, 4, 5, 5, 6, 7, 5, 5, 5, 5, 5, 6, 5, 6, 6, 6, 5, 7, 5, 6, 5, 4, 6, 4, 6, 5, 4, 5, 8, 5, 6, 5, 5, 5, 4, 5, 4, 5, 4, 4, 4, 7, 4, 5, 7, 5, 4, 5, 5, 4, 7, 5, 7, 5, 6, 5, 5, 9, 4, 5, 4, 5, 5, 5, 5, 4, 6, 6, 5, 4, 7, 6, 10, 5, 5, 5, 5, 4, 5, 8, 6, 5, 5, 4, 5, 6, 10, 6, 5, 5, 5, 5, 3, 4, 8, 5, 6, 5, 5, 5, 5, 7, 6, 4, 5, 6, 4, 7, 8, 7, 5, 7, 6, 7, 4, 7, 7, 6, 5, 8, 6, 4, 5, 6, 5, 7, 6, 4, 5, 8, 5, 5, 6, 4, 4, 5, 6, 6, 4, 5, 5, 4, 6, 4, 4, 5, 5, 6, 4, 5, 5, 5, 6, 5, 5, 5, 4, 5, 6, 7, 6, 5, 6, 5, 7, 5, 6, 6, 4, 6, 4, 5, 4, 12, 5, 4, 4, 7, 5, 4, 6, 5, 5, 6, 5, 7, 5, 5, 5, 5, 6, 6, 7, 5, 5, 9, 4, 6, 4, 6, 6, 7, 5, 6, 4, 5, 7, 5, 6, 4, 6, 5, 4, 5, 7, 4, 5, 5, 5, 5, 7, 6, 6, 5, 4, 4, 4, 5, 9, 8, 5, 5, 5, 7, 5, 7, 5, 4, 5, 7, 5, 5, 5, 5, 6, 6, 5, 4, 16, 8, 5, 6, 4, 5, 6, 9, 6, 4, 6, 5, 4, 5, 4, 6, 5, 7, 7, 4, 5, 7, 4, 5, 4, 4, 6, 6, 8, 7, 5, 5, 4, 6, 4, 6, 5, 4, 5, 5, 5, 7, 5, 5, 5, 6, 7, 4, 5, 5, 6, 7, 5, 6, 5, 9, 4, 7, 5, 6, 5, 9, 5, 5, 5, 7, 5, 4, 5, 5, 5, 4, 4, 4, 6, 5, 6, 5, 7, 4, 5, 5, 6, 5, 7, 5, 5, 4, 4, 5, 5, 5, 6, 4, 5, 6, 5, 5, 5, 6, 5, 6, 5, 4, 9, 8, 9, 5, 4, 6, 5, 7, 5, 6, 5, 5, 5, 5, 5, 6, 6, 5, 7, 5, 6, 4, 5, 4, 4, 5, 5, 5, 6, 5, 7, 4, 4, 5, 5, 5, 4, 6, 5, 4, 7, 5, 19, 5, 7, 4, 3, 7, 5, 5, 5, 6, 9, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 5, 7, 4, 5, 4, 7, 6, 6, 5, 7, 4, 4, 7, 5, 6, 8, 6, 4, 8, 5, 4, 5, 8, 4, 7, 5, 5, 6, 5, 5, 6, 5, 5, 5, 6, 7, 6, 6, 5, 4, 6, 6, 6, 7, 10, 6, 5, 8, 7, 5, 7, 5, 5, 6, 7, 6, 6, 7, 5, 4, 6, 5, 5, 4, 5, 4, 11, 6, 5, 7, 7, 6, 7, 6, 6, 5, 7, 5, 4, 8, 7, 4, 5, 4, 5, 5, 4, 6, 4, 6, 6, 4, 4, 4, 5, 7, 20, 5, 5, 5, 7, 7, 5, 5, 4, 4, 6, 5, 4, 5, 7, 6, 4, 5, 4, 4, 4, 6, 5, 4, 6, 5, 5, 5, 4, 6, 5, 3, 5, 5, 5, 4, 4, 5, 4, 6, 9, 5, 4, 5, 5, 4, 5, 5, 6, 5, 3, 4, 4, 9, 6, 4, 7, 4, 5, 4, 4, 6, 5, 7, 5, 6, 4, 7, 13, 5, 5, 6, 4, 5, 6, 7, 8, 8, 7, 6, 6, 5, 4, 5, 7, 9, 5, 5, 7, 4, 6, 4, 5, 8, 6, 6, 4, 4, 6, 4, 7, 5, 6, 6, 5, 4, 6, 7, 5, 4, 6, 6, 5, 5, 6, 5, 5, 6, 9, 6, 6, 5, 9, 6, 6, 4, 8, 7, 9, 5, 5, 5, 8, 4, 10, 6, 6, 4, 5, 5, 6, 6, 6, 5, 4, 5, 5, 7, 5, 7, 5, 6, 5, 5, 3, 9, 8, 6, 6, 5, 7, 4, 8, 5, 5, 8, 7, 5, 5, 5, 7, 7, 5, 5, 5, 6, 7], Average = 5.598
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Kobold Archer
+Initiative: 28
+Team: 1
+HP: -37
+AP: 5
+Abilities: ['SHOOT']
+
+Kobold Archer 2
+Initiative: 28
+Team: 1
+HP: -31
+AP: 0
+Abilities: ['SHOOT']
+
+Kobold Warrior
+Initiative: 24
+Team: 1
+HP: -12
+AP: 0
+Abilities: ['STRIKE']
+
+Skeleton Archer
+Initiative: 23
+Team: 2
+HP: 49
+AP: 0
+Abilities: ['SHOOT']
+
+Kobold Healer 2
+Initiative: 20
+Team: 1
+HP: -11
+AP: 1
+Abilities: ['HEADACHE', 'HEAL']
+
+Skeleton
+Initiative: 18
+Team: 2
+HP: 84
+AP: 0
+Abilities: ['STRIKE']
+
+Kobold Mage
+Initiative: 17
+Team: 1
+HP: -53
+AP: 2
+Abilities: ['FIREBALL']
+
+Kobold Healer
+Initiative: 17
+Team: 1
+HP: -26
+AP: 1
+Abilities: ['HEADACHE', 'HEAL']
+
+Skeleton Wizard
+Initiative: 16
+Team: 2
+HP: -7
+AP: 8
+Abilities: ['FIREBALL 2']
+
+Skeleton (Hard)
+Initiative: 15
+Team: 2
+HP: 103
+AP: 2
+Abilities: ['STRIKE', 'FEINT']
+
+Skeleton Archer(Hard)
+Initiative: 14
+Team: 2
+HP: 80
+AP: 3
+Abilities: ['SHOOT']
+
+Kobold Warrior 2
+Initiative: 10
+Team: 1
+HP: -6
+AP: 0
+Abilities: ['STRIKE']
+
+Kobold Mage 2
+Initiative: 8
+Team: 1
+HP: -8
+AP: 4
+Abilities: ['FIREBALL']
+
+Over 1000 rounds:
+
+Team 1 has 0.0% winrate
+Team 2 has 100.0% winrate
+The average number of rounds per combat was 5.598

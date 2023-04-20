@@ -1,0 +1,187 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Captain Boney 2
+
+
+
+Round 1
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 60 damage
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 2
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 3
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 60 damage
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 15 damage
+
+Round 4
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 60 damage
+
+Round 5
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 6
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 90 damage
+
+Round 7
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 8
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 9
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 90 damage
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 10
+
+Captain Boney 2 used HEAL
+Captain Boney 2 healed Captain Boney 2 for 48!
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 11
+
+Captain Boney 2 used HEAL
+Captain Boney 2 healed Captain Boney 2 for 48!
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 45 damage
+
+Round 12
+
+Captain Boney 2 used HEAL
+Captain Boney 2 failed to cast HEAL
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 13
+
+Captain Boney 2 used HEAL
+Captain Boney 2 failed to cast HEAL
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 15 damage
+
+Round 14
+
+Captain Boney 2 used HEAL
+Captain Boney 2 failed to cast HEAL
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 15
+
+Captain Boney 2 used HEAL
+Captain Boney 2 healed Captain Boney 2 for 72!
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 16
+
+Captain Boney 2 used HEAL
+Captain Boney 2 healed Captain Boney 2 for 12!
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 45 damage
+
+Round 17
+
+Captain Boney 2 used HEAL
+Captain Boney 2 failed to cast HEAL
+Captain Boney used STRIKE
+Captain Boney hit Captain Boney 2 for 15 damage
+
+Round 18
+
+Captain Boney 2 used HEAL
+Captain Boney 2 failed to cast HEAL
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 19
+
+Captain Boney 2 used HEAL
+Captain Boney 2 healed Captain Boney 2 for 24!
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 20
+
+Captain Boney 2 used HEAL
+Captain Boney 2 healed Captain Boney 2 for 60!
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 21
+
+Captain Boney 2 used HEAL
+Captain Boney 2 healed Captain Boney 2 for 24!
+Captain Boney used STRIKE
+Captain Boney missed Captain Boney 2
+
+Round 22
+
+Captain Boney 2 used STRIKE
+Captain Boney 2 hit Captain Boney for 90 damage
+Captain Boney died!
+
+Combat Ended! Team 2 won!
+[19, 40, 10, 21, 26, 23, 23, 34, 28, 28, 36, 32, 41, 21, 29, 19, 30, 29, 21, 24, 28, 25, 35, 31, 20, 40, 6, 24, 22, 21, 18, 54, 27, 30, 23, 27, 27, 19, 43, 13, 22, 44, 30, 25, 39, 30, 24, 28, 39, 31, 39, 22, 26, 24, 22, 23, 42, 42, 38, 5, 22, 27, 38, 27, 30, 33, 28, 30, 28, 20, 12, 27, 19, 26, 22, 21, 26, 19, 47, 16, 21, 19, 35, 31, 22, 38, 36, 30, 16, 32, 33, 41, 20, 35, 32, 25, 21, 43, 41, 25, 31, 21, 25, 26, 33, 28, 20, 20, 28, 27, 41, 27, 36, 6, 23, 21, 36, 44, 18, 24, 29, 24, 10, 22, 45, 34, 27, 46, 26, 35, 21, 36, 28, 26, 30, 25, 24, 23, 22, 21, 37, 26, 31, 20, 7, 31, 36, 24, 38, 45, 42, 28, 22, 27, 23, 27, 22, 34, 24, 19, 28, 26, 40, 30, 24, 39, 17, 27, 30, 22, 32, 21, 25, 22, 28, 23, 27, 10, 21, 30, 33, 4, 38, 19, 31, 31, 21, 21, 16, 27, 30, 30, 41, 30, 30, 28, 24, 40, 23, 29, 33, 31, 43, 27, 27, 20, 20, 41, 34, 32, 36, 18, 24, 20, 33, 21, 20, 38, 26, 37, 24, 19, 23, 33, 30, 6, 13, 24, 34, 44, 28, 37, 24, 24, 41, 9, 20, 45, 35, 29, 31, 11, 32, 29, 21, 9, 37, 32, 31, 25, 30, 45, 23, 28, 33, 10, 24, 29, 28, 24, 44, 22, 39, 26, 26, 28, 26, 33, 21, 40, 21, 42, 25, 27, 43, 23, 21, 25, 19, 30, 6, 18, 34, 30, 32, 24, 22, 26, 23, 25, 24, 32, 22, 36, 36, 26, 26, 11, 18, 30, 33, 21, 25, 26, 30, 32, 41, 46, 29, 38, 39, 55, 26, 21, 23, 15, 31, 37, 40, 25, 21, 40, 34, 37, 37, 20, 29, 61, 38, 30, 29, 24, 23, 20, 23, 40, 20, 28, 32, 25, 20, 30, 32, 28, 33, 32, 28, 25, 12, 37, 20, 23, 24, 30, 15, 26, 19, 21, 33, 27, 28, 38, 22, 26, 26, 41, 20, 32, 21, 22, 18, 20, 23, 43, 25, 28, 44, 24, 35, 26, 56, 29, 25, 22, 29, 26, 22, 32, 39, 32, 35, 31, 47, 35, 41, 20, 23, 24, 32, 41, 30, 32, 23, 25, 29, 27, 22, 13, 32, 38, 10, 28, 22, 31, 31, 22, 30, 32, 32, 40, 20, 36, 23, 32, 27, 22, 28, 23, 22, 37, 41, 21, 23, 28, 32, 23, 22, 32, 29, 24, 21, 26, 34, 28, 37, 23, 27, 24, 27, 11, 39, 24, 22, 48, 20, 43, 36, 34, 35, 22, 34, 20, 26, 34, 22, 25, 21, 42, 25, 19, 22, 24, 34, 24, 32, 29, 36, 38, 41, 34, 27, 24, 30, 22, 27, 35, 33, 25, 26, 25, 23, 19, 33, 32, 30, 23, 14, 34, 29, 22], Average = 27.97
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Captain Boney 2
+Initiative: 22
+Team: 2
+HP: 250
+AP: 0
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Captain Boney
+Initiative: 20
+Team: 1
+HP: -50
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 52.2% winrate
+Team 2 has 47.8% winrate
+The average number of rounds per combat was 27.97

@@ -1,0 +1,166 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Dwarf Adventurer
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney hit Dwarf Adventurer for 15 damage
+Dwarf Adventurer used SHARPEN
+Dwarf Adventurer enhances their weapon!
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney hit Dwarf Adventurer for 60 damage
+Dwarf Adventurer used DEAD MAN WALKING
+Dwarf Adventurer is a dead man walking for 5 rounds!
+
+Round 3
+
+Captain Boney used STRIKE
+Captain Boney missed Dwarf Adventurer
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 4
+
+Captain Boney used STRIKE
+Captain Boney missed Dwarf Adventurer
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer hit Captain Boney for 30 damage
+
+Round 5
+
+Captain Boney used STRIKE
+Captain Boney hit Dwarf Adventurer for 75 damage
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 6
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 12!
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 7
+
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 8
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 60!
+Dwarf Adventurer used DEAD MAN WALKING
+Dwarf Adventurer is a dead man walking for 4 rounds!
+
+Round 9
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 12!
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 10
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 12!
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 11
+
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer hit Captain Boney for 90 damage
+
+Round 12
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 13
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Dwarf Adventurer used DEAD MAN WALKING
+Dwarf Adventurer is a dead man walking for 2 rounds!
+
+Round 14
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 15
+
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 16
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 24!
+Dwarf Adventurer used DEAD MAN WALKING
+Dwarf Adventurer is a dead man walking for 4 rounds!
+
+Round 17
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 18
+
+Captain Boney used STRIKE
+Captain Boney missed Dwarf Adventurer
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Captain Boney
+
+Round 19
+
+Captain Boney used STRIKE
+Captain Boney hit Dwarf Adventurer for 60 damage
+Dwarf Adventurer died!
+
+Combat Ended! Team 1 won!
+[6, 3, 18, 17, 6, 2, 15, 4, 4, 8, 12, 20, 7, 5, 7, 12, 10, 3, 22, 6, 7, 19, 6, 6, 5, 12, 22, 7, 8, 5, 6, 23, 15, 2, 2, 5, 2, 26, 8, 8, 9, 16, 23, 5, 8, 18, 10, 4, 12, 3, 17, 20, 18, 15, 9, 16, 21, 8, 18, 7, 18, 22, 14, 23, 2, 17, 12, 19, 18, 4, 19, 6, 3, 2, 22, 9, 20, 17, 5, 19, 21, 7, 5, 19, 9, 23, 19, 5, 7, 13, 5, 21, 7, 7, 16, 9, 17, 18, 12, 8, 4, 9, 7, 6, 10, 6, 5, 8, 13, 4, 6, 15, 6, 6, 10, 5, 9, 21, 4, 18, 8, 23, 7, 4, 12, 20, 4, 5, 6, 10, 20, 20, 7, 19, 8, 17, 8, 7, 11, 6, 19, 17, 11, 12, 3, 7, 5, 10, 5, 3, 7, 11, 17, 5, 10, 7, 19, 7, 5, 17, 8, 17, 19, 19, 4, 8, 20, 9, 4, 7, 11, 7, 9, 3, 6, 5, 17, 4, 18, 7, 8, 22, 6, 5, 7, 4, 2, 7, 4, 3, 20, 8, 3, 11, 23, 12, 5, 7, 20, 7, 19, 3, 11, 18, 6, 17, 7, 18, 7, 7, 5, 8, 5, 25, 6, 16, 4, 17, 18, 19, 10, 6, 10, 4, 8, 6, 7, 9, 24, 4, 5, 4, 21, 28, 19, 8, 10, 5, 9, 21, 9, 14, 7, 5, 8, 18, 22, 17, 14, 4, 9, 6, 18, 7, 5, 8, 13, 12, 11, 5, 9, 7, 17, 4, 8, 5, 8, 11, 3, 25, 17, 6, 7, 15, 7, 7, 20, 18, 7, 19, 12, 6, 6, 7, 9, 8, 7, 17, 4, 5, 2, 3, 18, 6, 20, 10, 6, 14, 6, 5, 20, 4, 17, 4, 8, 5, 4, 5, 8, 8, 5, 10, 21, 8, 5, 17, 13, 10, 10, 17, 17, 15, 5, 2, 5, 10, 15, 9, 8, 11, 11, 2, 11, 9, 9, 22, 6, 16, 23, 18, 7, 6, 9, 4, 26, 4, 4, 22, 16, 7, 6, 14, 24, 4, 5, 3, 16, 6, 14, 28, 12, 17, 17, 8, 4, 7, 7, 18, 6, 5, 5, 22, 5, 4, 7, 4, 5, 6, 7, 11, 15, 15, 5, 5, 7, 6, 6, 4, 8, 21, 16, 8, 5, 19, 15, 15, 16, 5, 6, 22, 7, 21, 9, 9, 6, 5, 23, 3, 4, 6, 16, 5, 7, 3, 22, 15, 7, 2, 6, 9, 23, 10, 5, 4, 16, 7, 5, 13, 7, 3, 16, 24, 12, 5, 7, 7, 8, 2, 5, 8, 23, 6, 24, 11, 9, 5, 5, 6, 6, 8, 17, 2, 18, 5, 22, 16, 16, 4, 10, 7, 6, 4, 9, 7, 8, 11, 5, 4, 6, 19, 10, 7, 8, 6, 3, 19, 13, 19, 24, 6, 11, 18, 20, 19, 16, 16, 23, 20, 23, 21, 9, 7, 8, 5, 15, 5, 4, 4, 24, 19], Average = 10.616
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 25
+Team: 1
+HP: 250
+AP: 0
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Dwarf Adventurer
+Initiative: 24
+Team: 2
+HP: -37
+AP: 4
+Abilities: ['STRIKE', 'BLOCK', 'HEAL', 'DEAD MAN WALKING', 'SHARPEN', 'ENCOURAGE']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 10.616

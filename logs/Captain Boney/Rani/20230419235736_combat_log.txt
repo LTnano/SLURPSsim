@@ -1,0 +1,68 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Rani Adventurer
+
+
+
+Round 1
+
+Rani Adventurer used SHARPEN
+Rani Adventurer enhances their weapon!
+Captain Boney used STRIKE
+Captain Boney hit Rani Adventurer for 30 damage
+
+Round 2
+
+Rani Adventurer used FEINT 2
+Rani Adventurer hit Captain Boney for 104 damage
+Captain Boney used STRIKE
+Captain Boney missed Rani Adventurer
+
+Round 3
+
+Rani Adventurer used FEINT 2
+Rani Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Rani Adventurer for 30 damage
+
+Round 4
+
+Rani Adventurer used FEINT 2
+Rani Adventurer hit Captain Boney for 52 damage
+Captain Boney used STRIKE
+Captain Boney missed Rani Adventurer
+
+Round 5
+
+Rani Adventurer used FEINT 2
+Rani Adventurer hit Captain Boney for 104 damage
+Captain Boney died!
+
+Combat Ended! Team 2 won!
+[5, 7, 15, 8, 22, 15, 7, 6, 3, 21, 5, 5, 9, 9, 10, 5, 6, 12, 8, 6, 9, 4, 24, 19, 19, 19, 23, 5, 7, 5, 7, 21, 5, 7, 19, 7, 27, 22, 10, 7, 7, 7, 7, 12, 7, 31, 7, 6, 12, 5, 4, 6, 8, 5, 6, 5, 5, 6, 11, 4, 5, 6, 6, 4, 7, 14, 4, 3, 5, 4, 5, 7, 8, 5, 7, 5, 8, 8, 8, 15, 14, 5, 4, 6, 10, 9, 20, 3, 6, 5, 8, 5, 9, 5, 7, 9, 21, 4, 6, 6, 6, 6, 24, 6, 6, 19, 10, 4, 16, 9, 8, 7, 10, 6, 23, 7, 8, 6, 14, 13, 9, 14, 7, 7, 7, 5, 7, 7, 5, 3, 24, 2, 7, 11, 6, 6, 4, 7, 25, 6, 7, 5, 6, 18, 13, 8, 5, 18, 2, 3, 8, 4, 21, 23, 18, 7, 23, 5, 16, 6, 10, 17, 9, 5, 7, 4, 6, 11, 6, 5, 3, 21, 7, 10, 7, 8, 5, 6, 5, 5, 2, 21, 7, 19, 7, 4, 6, 5, 9, 7, 20, 10, 7, 8, 6, 5, 5, 7, 7, 6, 10, 6, 7, 4, 9, 5, 9, 10, 19, 16, 5, 6, 6, 8, 21, 8, 2, 7, 8, 5, 18, 9, 16, 4, 24, 8, 17, 8, 10, 7, 8, 6, 7, 10, 9, 5, 13, 13, 6, 7, 6, 6, 8, 22, 7, 5, 29, 10, 18, 20, 2, 6, 8, 5, 6, 4, 6, 13, 7, 7, 10, 5, 3, 3, 6, 4, 26, 4, 7, 5, 7, 9, 4, 6, 19, 8, 14, 6, 19, 20, 5, 6, 17, 10, 5, 4, 5, 5, 26, 5, 12, 8, 6, 6, 5, 8, 9, 7, 6, 6, 5, 12, 7, 10, 6, 8, 8, 12, 7, 20, 9, 7, 6, 7, 10, 5, 4, 6, 22, 4, 6, 16, 7, 5, 5, 3, 3, 7, 6, 6, 18, 9, 2, 5, 7, 8, 5, 3, 6, 6, 7, 9, 5, 7, 22, 24, 7, 7, 5, 6, 10, 8, 7, 18, 5, 6, 8, 22, 24, 3, 7, 9, 7, 11, 5, 7, 2, 7, 6, 8, 7, 18, 10, 5, 6, 2, 20, 5, 3, 6, 10, 9, 5, 5, 21, 2, 7, 6, 4, 17, 7, 15, 6, 12, 5, 5, 5, 13, 9, 7, 23, 22, 6, 5, 19, 2, 24, 7, 10, 19, 10, 12, 7, 2, 27, 7, 3, 4, 6, 27, 6, 19, 6, 7, 12, 7, 5, 5, 5, 2, 17, 7, 7, 7, 9, 9, 20, 5, 12, 7, 11, 6, 5, 4, 11, 7, 7, 16, 2, 5, 21, 7, 3, 22, 7, 7, 5, 6, 11, 5, 6, 6, 17, 12, 7, 12, 21, 6, 3, 5, 4, 10, 7, 5, 6, 3, 2, 16, 6, 5, 7, 25, 9, 6, 10, 6, 14, 6, 6, 20, 6, 6, 7, 10, 7, 19, 5, 5, 2, 5], Average = 9.01
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Rani Adventurer
+Initiative: 37
+Team: 2
+HP: 70
+AP: 4
+Abilities: ['STRIKE', 'FEINT', 'SCARE', 'SHARPEN', 'STUN', 'FEINT 2', 'HEADACHE']
+
+Captain Boney
+Initiative: 25
+Team: 1
+HP: -10
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 32.599999999999994% winrate
+Team 2 has 67.4% winrate
+The average number of rounds per combat was 9.01

@@ -1,0 +1,171 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Goblin Adventurer
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+Goblin Adventurer used SHARPEN
+Goblin Adventurer enhances their weapon!
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 60 damage
+Goblin Adventurer used HEADACHE
+Goblin Adventurer inflicted Captain Boney with a painful HEADACHE, causing 10 damage
+
+Round 3
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 60 damage
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 40 damage
+
+Round 4
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 60!
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 40 damage
+
+Round 5
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+Goblin Adventurer used HEADACHE
+Goblin Adventurer inflicted Captain Boney with a painful HEADACHE, causing 10 damage
+
+Round 6
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 24!
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 10 damage
+
+Round 7
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 10 damage
+
+Round 8
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+Goblin Adventurer used HEADACHE
+Goblin Adventurer inflicted Captain Boney with a painful HEADACHE, causing 10 damage
+
+Round 9
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 12!
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 40 damage
+
+Round 10
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 40 damage
+
+Round 11
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 24!
+Goblin Adventurer used HEADACHE
+Goblin Adventurer inflicted Captain Boney with a painful HEADACHE, causing 10 damage
+
+Round 12
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+Goblin Adventurer used FIREBALL
+Goblin Adventurer missed Captain Boney
+
+Round 13
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 40 damage
+
+Round 14
+
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 12!
+Goblin Adventurer used STRIKE
+Goblin Adventurer missed Captain Boney
+
+Round 15
+
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+Goblin Adventurer used STRIKE
+Goblin Adventurer missed Captain Boney
+
+Round 16
+
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+Goblin Adventurer used STRIKE
+Goblin Adventurer missed Captain Boney
+
+Round 17
+
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+Goblin Adventurer used STRIKE
+Goblin Adventurer missed Captain Boney
+
+Round 18
+
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 30 damage
+Goblin Adventurer died!
+
+Combat Ended! Team 1 won!
+[3, 6, 16, 6, 18, 2, 3, 5, 14, 5, 16, 5, 4, 2, 3, 5, 13, 3, 3, 2, 6, 4, 19, 18, 12, 7, 2, 5, 3, 2, 16, 4, 3, 3, 4, 13, 2, 6, 16, 17, 2, 9, 2, 14, 5, 15, 7, 18, 3, 7, 4, 7, 2, 6, 21, 5, 4, 11, 4, 15, 15, 8, 13, 18, 16, 3, 4, 3, 2, 3, 11, 20, 15, 2, 5, 2, 4, 3, 5, 3, 10, 17, 11, 4, 18, 6, 4, 19, 13, 6, 4, 3, 6, 12, 3, 2, 9, 14, 33, 19, 6, 6, 19, 6, 2, 5, 6, 4, 2, 4, 14, 4, 12, 6, 5, 17, 16, 5, 18, 2, 8, 3, 3, 14, 6, 17, 4, 3, 8, 2, 13, 12, 18, 3, 3, 9, 5, 4, 14, 13, 20, 9, 12, 17, 16, 7, 3, 11, 19, 3, 6, 4, 26, 27, 5, 3, 5, 4, 16, 3, 2, 7, 3, 3, 17, 8, 18, 2, 10, 11, 14, 6, 24, 13, 6, 5, 3, 5, 4, 3, 17, 2, 19, 5, 3, 3, 12, 4, 4, 5, 5, 7, 16, 11, 4, 9, 19, 3, 16, 4, 2, 6, 6, 16, 9, 2, 7, 19, 25, 3, 2, 4, 3, 10, 4, 7, 2, 10, 30, 6, 15, 15, 3, 2, 13, 7, 18, 4, 5, 3, 9, 3, 3, 4, 20, 4, 8, 2, 19, 8, 4, 16, 2, 3, 6, 12, 3, 5, 14, 5, 19, 3, 7, 19, 5, 22, 27, 16, 8, 3, 3, 2, 31, 14, 14, 3, 4, 3, 7, 2, 6, 4, 5, 3, 4, 2, 10, 12, 4, 6, 2, 20, 6, 5, 13, 5, 5, 12, 5, 2, 16, 3, 20, 15, 4, 3, 2, 7, 6, 19, 9, 23, 16, 4, 16, 3, 4, 2, 16, 5, 13, 3, 4, 16, 3, 5, 2, 3, 17, 3, 12, 8, 3, 7, 5, 3, 2, 16, 3, 4, 7, 3, 4, 2, 2, 15, 5, 6, 7, 5, 2, 5, 7, 22, 3, 9, 4, 14, 6, 4, 12, 5, 17, 7, 15, 3, 7, 13, 3, 5, 18, 3, 17, 4, 6, 16, 6, 16, 15, 8, 2, 4, 17, 19, 4, 5, 7, 26, 3, 18, 30, 8, 7, 6, 5, 3, 22, 25, 11, 9, 4, 5, 16, 3, 17, 13, 3, 15, 3, 17, 4, 4, 3, 2, 8, 15, 2, 8, 4, 21, 30, 2, 5, 6, 4, 2, 5, 6, 4, 3, 4, 15, 3, 8, 3, 2, 5, 16, 3, 17, 3, 14, 18, 4, 7, 4, 17, 3, 26, 8, 3, 4, 13, 8, 7, 6, 6, 5, 3, 2, 16, 6, 2, 4, 3, 8, 4, 4, 2, 8, 2, 3, 19, 11, 7, 16, 7, 2, 4, 4, 2, 3, 8, 14, 7, 3, 8, 5, 25, 5, 7, 12, 5, 30, 5, 4, 17, 4, 4, 14, 5, 3, 4, 4, 6, 4, 4, 26, 5, 18], Average = 8.386
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 22
+Team: 1
+HP: 218
+AP: 0
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Goblin Adventurer
+Initiative: 16
+Team: 2
+HP: -29
+AP: 0
+Abilities: ['STRIKE', 'HEAL', 'FIREBALL', 'SHARPEN', 'HEAL 2', 'HEADACHE']
+
+Over 500 rounds:
+
+Team 1 has 98.8% winrate
+Team 2 has 1.2% winrate
+The average number of rounds per combat was 8.386

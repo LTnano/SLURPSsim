@@ -1,0 +1,140 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Fay Adventurer
+
+
+
+Round 1
+
+Fay Adventurer used SHARPEN
+Fay Adventurer enhances their weapon!
+Captain Boney used STRIKE
+Captain Boney missed Fay Adventurer
+
+Round 2
+
+Fay Adventurer used SCARE
+Fay Adventurer scares Captain Boney for 3 rounds!
+Captain Boney used STRIKE
+Captain Boney hit Fay Adventurer for 42 damage
+
+Round 3
+
+Fay Adventurer used PANIC
+Fay Adventurer panics Captain Boney for 5 rounds!
+Captain Boney used STRIKE
+Captain Boney hit Fay Adventurer for 9 damage
+
+Round 4
+
+Fay Adventurer used ENCOURAGE
+Fay Adventurer encouraged Fay Adventurer for 3 rounds!
+Captain Boney used STRIKE
+Captain Boney hit Fay Adventurer for 45 damage
+
+Round 5
+
+Fay Adventurer used STRIKE
+Fay Adventurer hit Captain Boney for 33 damage
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 6
+
+Fay Adventurer used SCARE
+Fay Adventurer scares Captain Boney for 3 rounds!
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 44!
+
+Round 7
+
+Fay Adventurer used STRIKE
+Fay Adventurer hit Captain Boney for 44 damage
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 8
+
+Fay Adventurer used ENCOURAGE
+Fay Adventurer encouraged Fay Adventurer for 2 rounds!
+Captain Boney used STRIKE
+Captain Boney missed Fay Adventurer
+
+Round 9
+
+Fay Adventurer used PANIC
+Fay Adventurer panics Captain Boney for 5 rounds!
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+
+Round 10
+
+Fay Adventurer used SCARE
+Fay Adventurer missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 11
+
+Fay Adventurer used SCARE
+Fay Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Fay Adventurer
+
+Round 12
+
+Fay Adventurer used SCARE
+Fay Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Fay Adventurer
+
+Round 13
+
+Fay Adventurer used SCARE
+Fay Adventurer scares Captain Boney for 3 rounds!
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 14
+
+Fay Adventurer used STRIKE
+Fay Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Fay Adventurer for 14 damage
+
+Round 15
+
+Fay Adventurer used STRIKE
+Fay Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Fay Adventurer for 84 damage
+Fay Adventurer died!
+
+Combat Ended! Team 1 won!
+[3, 3, 3, 18, 6, 8, 3, 20, 17, 15, 18, 21, 3, 7, 3, 16, 9, 16, 16, 4, 9, 6, 10, 3, 7, 2, 3, 7, 18, 16, 23, 3, 15, 5, 3, 2, 3, 16, 2, 17, 3, 6, 4, 4, 17, 18, 17, 4, 5, 2, 4, 15, 18, 11, 3, 3, 17, 9, 3, 16, 16, 8, 18, 16, 12, 7, 7, 15, 3, 13, 7, 5, 19, 19, 13, 18, 3, 8, 5, 14, 17, 13, 3, 7, 11, 20, 16, 4, 15, 3, 9, 17, 24, 15, 16, 18, 12, 10, 16, 3, 15, 5, 17, 3, 10, 16, 8, 15, 15, 4, 17, 4, 7, 3, 3, 11, 3, 4, 3, 3, 6, 20, 20, 2, 3, 17, 9, 4, 17, 18, 3, 4, 7, 2, 15, 8, 4, 15, 2, 6, 7, 14, 4, 4, 17, 17, 19, 7, 4, 3, 20, 8, 10, 10, 21, 15, 15, 17, 9, 11, 3, 17, 15, 9, 14, 16, 2, 2, 8, 16, 4, 16, 8, 3, 6, 4, 19, 3, 11, 4, 16, 2, 16, 2, 7, 4, 3, 15, 3, 17, 3, 2, 17, 16, 15, 22, 2, 2, 3, 3, 5, 6, 2, 2, 17, 3, 10, 15, 23, 18, 13, 18, 20, 18, 2, 17, 8, 2, 17, 2, 19, 5, 17, 8, 5, 15, 4, 3, 7, 5, 3, 8, 2, 20, 3, 4, 8, 3, 2, 3, 3, 6, 22, 5, 9, 19, 15, 3, 4, 3, 4, 3, 18, 7, 16, 3, 2, 3, 2, 3, 16, 15, 21, 9, 12, 2, 17, 3, 7, 18, 2, 3, 3, 5, 4, 4, 3, 18, 3, 3, 11, 24, 3, 16, 3, 20, 7, 4, 16, 5, 16, 3, 3, 3, 7, 3, 3, 8, 3, 8, 3, 4, 15, 8, 4, 9, 4, 2, 15, 20, 15, 15, 16, 8, 6, 10, 16, 15, 3, 3, 5, 7, 8, 17, 3, 3, 15, 3, 3, 3, 10, 2, 22, 8, 3, 18, 3, 4, 11, 2, 4, 4, 3, 3, 3, 16, 3, 7, 3, 7, 4, 15, 17, 4, 10, 15, 9, 6, 3, 16, 9, 15, 16, 7, 3, 17, 9, 15, 3, 5, 3, 8, 18, 15, 18, 3, 2, 2, 5, 15, 9, 15, 17, 21, 6, 19, 3, 9, 8, 16, 16, 3, 4, 5, 3, 17, 2, 7, 3, 10, 15, 5, 25, 4, 15, 17, 3, 6, 17, 4, 14, 3, 5, 2, 3, 2, 12, 10, 4, 15, 17, 3, 15, 4, 4, 16, 16, 3, 8, 3, 7, 2, 3, 3, 22, 3, 17, 3, 4, 15, 8, 2, 25, 16, 11, 2, 18, 11, 4, 9, 2, 16, 15, 7, 7, 6, 3, 2, 4, 17, 3, 7, 3, 8, 4, 3, 16, 7, 17, 3, 18, 15, 6, 2, 10, 2, 3, 10, 9, 3, 6, 16, 4, 18, 20, 19, 2, 12, 15, 3, 17, 16, 3, 9, 3, 17, 18, 15, 16, 15], Average = 9.22
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Fay Adventurer
+Initiative: 25
+Team: 2
+HP: -52
+AP: 0
+Abilities: ['STRIKE', 'SCARE', 'ENCOURAGE', 'HEAL', 'PANIC', 'SHARPEN', 'BLOCK']
+
+Captain Boney
+Initiative: 21
+Team: 1
+HP: 240
+AP: 6
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 9.22

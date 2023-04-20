@@ -1,0 +1,142 @@
+Team 1:
+Human Novice Adventurer
+Elf Novice Adventurer
+Sage Novice Adventurer
+Dwarf Novice Adventurer
+
+Team 2:
+Giant Rat
+Giant Rat 2
+Giant Rat 4
+Giant Rat 3
+
+
+
+Round 1
+
+Human Novice Adventurer used STRIKE
+Human Novice Adventurer missed Giant Rat 4
+Elf Novice Adventurer used SHOOT
+Elf Novice Adventurer shot Giant Rat 2 for 30 damage
+Giant Rat used STRIKE
+Giant Rat hit Human Novice Adventurer for 16 damage
+Giant Rat 2 used STRIKE
+Giant Rat 2 missed Sage Novice Adventurer
+Sage Novice Adventurer used FIREBALL
+Sage Novice Adventurer hit Giant Rat 4 for 40 damage
+Giant Rat 4 used STRIKE
+Giant Rat 4 missed Elf Novice Adventurer
+Dwarf Novice Adventurer used STRIKE
+Dwarf Novice Adventurer missed Giant Rat 4
+Giant Rat 3 used STRIKE
+Giant Rat 3 missed Elf Novice Adventurer
+
+Round 2
+
+Human Novice Adventurer used STRIKE
+Human Novice Adventurer hit Giant Rat 4 for 40 damage
+Giant Rat 4 died!
+Elf Novice Adventurer used SHOOT
+Elf Novice Adventurer shot Giant Rat 2 for 10 damage
+Giant Rat used STRIKE
+Giant Rat hit Human Novice Adventurer for 24 damage
+Giant Rat 2 used STRIKE
+Giant Rat 2 missed Sage Novice Adventurer
+Sage Novice Adventurer used FIREBALL
+Sage Novice Adventurer hit Giant Rat 2 for 20 damage
+Giant Rat 2 died!
+Dwarf Novice Adventurer used STRIKE
+Dwarf Novice Adventurer hit Giant Rat for 40 damage
+Giant Rat 3 used STRIKE
+Giant Rat 3 missed Elf Novice Adventurer
+
+Round 3
+
+Human Novice Adventurer used STRIKE
+Human Novice Adventurer hit Giant Rat 3 for 10 damage
+Elf Novice Adventurer used SHOOT
+Elf Novice Adventurer shot Giant Rat for 40 damage
+Giant Rat died!
+Sage Novice Adventurer used FIREBALL
+Sage Novice Adventurer hit Giant Rat 3 for 20 damage
+Dwarf Novice Adventurer used STRIKE
+Dwarf Novice Adventurer missed Giant Rat 3
+Giant Rat 3 used STRIKE
+Giant Rat 3 missed Elf Novice Adventurer
+
+Round 4
+
+Human Novice Adventurer used STRIKE
+Human Novice Adventurer missed Giant Rat 3
+Elf Novice Adventurer used SHOOT
+Elf Novice Adventurer shot Giant Rat 3 for 20 damage
+Giant Rat 3 died!
+
+Combat Ended! Team 1 won!
+[4, 4, 3, 4, 4, 4, 6, 4, 3, 4, 4, 4, 3, 4, 3, 4, 4, 3, 3, 6, 3, 4, 3, 3, 3, 3, 3, 2, 3, 3, 5, 4, 4, 3, 4, 3, 4, 4, 3, 4, 4, 4, 3, 5, 4, 5, 3, 4, 4, 3, 4, 3, 4, 5, 4, 4, 3, 3, 3, 4, 4, 4, 4, 4, 6, 5, 4, 3, 4, 3, 3, 3, 3, 5, 4, 6, 3, 3, 3, 3, 5, 3, 4, 3, 3, 4, 3, 4, 3, 3, 4, 4, 4, 5, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 4, 4, 5, 4, 4, 5, 4, 4, 4, 3, 3, 5, 3, 3, 4, 3, 4, 4, 4, 4, 3, 4, 3, 5, 5, 7, 3, 3, 3, 4, 3, 4, 4, 5, 4, 4, 5, 3, 2, 5, 4, 5, 3, 4, 6, 5, 5, 3, 3, 4, 4, 4, 4, 3, 4, 4, 3, 4, 4, 3, 4, 3, 3, 4, 4, 5, 4, 3, 4, 5, 4, 4, 5, 4, 4, 4, 4, 3, 3, 3, 6, 5, 3, 4, 4, 3, 4, 3, 3, 4, 4, 5, 4, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 4, 3, 3, 4, 3, 3, 4, 5, 3, 3, 3, 4, 5, 3, 3, 4, 4, 3, 4, 4, 5, 3, 4, 3, 4, 5, 3, 5, 4, 5, 4, 4, 5, 3, 5, 3, 6, 4, 3, 4, 5, 4, 4, 3, 3, 4, 3, 3, 3, 4, 4, 3, 6, 4, 6, 3, 2, 4, 4, 5, 4, 3, 3, 4, 5, 3, 4, 4, 3, 5, 5, 3, 3, 4, 3, 4, 4, 3, 5, 6, 3, 5, 3, 4, 5, 3, 6, 3, 4, 5, 2, 4, 4, 3, 3, 5, 3, 4, 3, 3, 4, 4, 3, 4, 4, 3, 3, 4, 4, 5, 3, 4, 3, 4, 4, 6, 4, 4, 3, 4, 4, 4, 3, 5, 4, 4, 4, 4, 5, 3, 3, 3, 3, 4, 3, 5, 4, 5, 4, 4, 3, 4, 3, 7, 3, 4, 5, 4, 4, 4, 3, 5, 4, 3, 5, 4, 4, 3, 3, 5, 3, 5, 3, 3, 4, 3, 4, 4, 4, 3, 3, 4, 3, 4, 5, 4, 3, 3, 5, 4, 4, 5, 4, 5, 3, 5, 4, 4, 3, 5, 4, 3, 6, 4, 5, 3, 3, 4, 8, 4, 3, 3, 5, 5, 3, 3, 3, 4, 3, 4, 3, 3, 5, 3, 4, 3, 4, 3, 4, 3, 4, 6, 4, 5, 4, 5, 5, 5, 3, 4, 4, 3, 3, 4, 4, 4, 5, 3, 4, 5, 5, 3, 5, 3, 4, 3, 3, 5, 4, 4, 4, 2, 4, 3, 4, 3, 4, 4, 5, 4, 4, 4, 3, 5, 5, 3, 4, 4, 3, 4, 4, 3, 4, 4, 4, 3, 3, 3, 5, 4, 3, 4], Average = 3.866
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Human Novice Adventurer
+Initiative: 30
+Team: 1
+HP: 60
+AP: 10
+Abilities: ['STRIKE', 'HEAL']
+
+Elf Novice Adventurer
+Initiative: 30
+Team: 1
+HP: 100
+AP: 6
+Abilities: ['STRIKE', 'SHOOT']
+
+Giant Rat
+Initiative: 23
+Team: 2
+HP: -30
+AP: 0
+Abilities: ['STRIKE']
+
+Giant Rat 2
+Initiative: 17
+Team: 2
+HP: -10
+AP: 0
+Abilities: ['STRIKE']
+
+Sage Novice Adventurer
+Initiative: 15
+Team: 1
+HP: 100
+AP: 8
+Abilities: ['STRIKE', 'FIREBALL']
+
+Giant Rat 4
+Initiative: 13
+Team: 2
+HP: -30
+AP: 0
+Abilities: ['STRIKE']
+
+Dwarf Novice Adventurer
+Initiative: 12
+Team: 1
+HP: 130
+AP: 10
+Abilities: ['STRIKE', 'TAUNT']
+
+Giant Rat 3
+Initiative: 9
+Team: 2
+HP: 0
+AP: 0
+Abilities: ['STRIKE']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 3.866

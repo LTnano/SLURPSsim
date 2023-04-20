@@ -1,0 +1,198 @@
+Team 1:
+Human Adventurer
+Fay Adventurer
+Rani Adventurer
+Troll Adventurer
+
+Team 2:
+Captain Boney
+Thin Billy
+
+
+
+Round 1
+
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+Captain Boney used STRIKE
+Captain Boney hit Rani Adventurer for 15 damage
+Fay Adventurer used SHARPEN
+Fay Adventurer enhances their weapon!
+Rani Adventurer used SHARPEN
+Rani Adventurer enhances their weapon!
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 26 damage
+Troll Adventurer used SHARPEN
+Troll Adventurer enhances their weapon!
+
+Round 2
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Rani Adventurer for 90 damage
+Fay Adventurer used SCARE
+Fay Adventurer scares Captain Boney for 4 rounds!
+Rani Adventurer used FEINT 2
+Rani Adventurer hit Captain Boney for 65 damage
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 52 damage
+Troll Adventurer used STUN 2
+Troll Adventurer hit and stunned Thin Billy for 5 rounds
+
+Round 3
+
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer failed to cast DEAD MAN WALKING
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Fay Adventurer used PANIC
+Fay Adventurer panics Captain Boney for 4 rounds!
+Rani Adventurer used FEINT 2
+Rani Adventurer missed Captain Boney
+Thin Billy stumbles around stunned taking no actions.
+Troll Adventurer used STUN 2
+Troll Adventurer missed Thin Billy
+
+Round 4
+
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer failed to cast DEAD MAN WALKING
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Fay Adventurer used ENCOURAGE
+Fay Adventurer encouraged Troll Adventurer for 5 rounds!
+Rani Adventurer used FEINT 2
+Rani Adventurer missed Captain Boney
+Thin Billy stumbles around stunned taking no actions.
+Troll Adventurer used STRIKE
+Troll Adventurer hit Thin Billy for 64 damage
+
+Round 5
+
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 4 rounds!
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Fay Adventurer used ENCOURAGE
+Fay Adventurer encouraged Troll Adventurer for 4 rounds!
+Rani Adventurer used FEINT 2
+Rani Adventurer missed Captain Boney
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 26 damage
+Troll Adventurer used STRIKE
+Troll Adventurer missed Thin Billy
+
+Round 6
+
+Human Adventurer used STRIKE
+Human Adventurer hit Captain Boney for 32 damage
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+Fay Adventurer used ENCOURAGE
+Fay Adventurer encouraged Troll Adventurer for 3 rounds!
+Rani Adventurer used FEINT 2
+Rani Adventurer hit Captain Boney for 104 damage
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 26 damage
+Troll Adventurer used STRIKE
+Troll Adventurer hit Thin Billy for 72 damage
+
+Round 7
+
+Human Adventurer used HEAL 2
+Human Adventurer healed Rani Adventurer for 50!
+Captain Boney used FIREBALL
+Captain Boney hit Rani Adventurer for 24 damage
+Fay Adventurer used HEAL
+Fay Adventurer failed to cast HEAL
+Rani Adventurer used FEINT 2
+Rani Adventurer hit Captain Boney for 39 damage
+Thin Billy used STRIKE
+Thin Billy missed Human Adventurer
+Troll Adventurer used STRIKE
+Troll Adventurer hit Thin Billy for 36 damage
+
+Round 8
+
+Human Adventurer used HEAL 2
+Human Adventurer healed Rani Adventurer for 60!
+Captain Boney used STRIKE
+Captain Boney missed Rani Adventurer
+Fay Adventurer used HEAL
+Fay Adventurer healed Troll Adventurer for 30!
+Rani Adventurer used STRIKE
+Rani Adventurer hit Captain Boney for 26 damage
+Captain Boney died!
+Thin Billy used STRIKE
+Thin Billy hit Human Adventurer for 52 damage
+Human Adventurer died!
+Troll Adventurer used STRIKE
+Troll Adventurer missed Thin Billy
+
+Round 9
+
+Fay Adventurer used HEAL
+Fay Adventurer failed to cast HEAL
+Rani Adventurer used STRIKE
+Rani Adventurer missed Thin Billy
+Thin Billy used STRIKE
+Thin Billy missed Troll Adventurer
+Troll Adventurer used STRIKE
+Troll Adventurer hit Thin Billy for 34 damage
+Thin Billy died!
+
+Combat Ended! Team 1 won!
+[10, 11, 15, 15, 18, 11, 8, 15, 16, 12, 7, 11, 17, 14, 10, 12, 10, 10, 11, 7, 9, 14, 14, 7, 13, 6, 10, 12, 18, 11, 11, 25, 13, 8, 7, 32, 14, 10, 12, 21, 7, 24, 14, 24, 19, 14, 9, 12, 8, 8, 14, 14, 15, 7, 10, 8, 10, 21, 8, 12, 19, 10, 10, 18, 12, 11, 17, 19, 30, 7, 28, 11, 10, 14, 12, 11, 10, 10, 9, 17, 18, 36, 10, 8, 13, 7, 26, 9, 8, 6, 8, 19, 10, 9, 7, 9, 15, 7, 15, 8, 9, 12, 12, 10, 10, 21, 15, 13, 12, 9, 28, 13, 19, 8, 21, 9, 19, 8, 10, 8, 13, 6, 6, 13, 16, 9, 16, 12, 9, 9, 9, 9, 13, 11, 24, 14, 14, 7, 13, 30, 11, 16, 8, 12, 10, 13, 14, 11, 19, 9, 16, 11, 10, 7, 16, 7, 7, 18, 10, 19, 21, 14, 7, 16, 14, 13, 10, 10, 19, 10, 13, 10, 17, 9, 11, 10, 5, 14, 10, 8, 12, 10, 16, 14, 14, 8, 6, 17, 17, 29, 8, 9, 10, 8, 16, 25, 14, 12, 11, 13, 12, 25, 9, 21, 8, 11, 8, 14, 14, 13, 13, 18, 15, 26, 16, 12, 9, 11, 15, 11, 10, 7, 26, 12, 13, 18, 13, 12, 14, 18, 14, 11, 24, 27, 14, 13, 11, 10, 16, 13, 14, 17, 8, 12, 10, 10, 12, 9, 12, 15, 12, 19, 9, 10, 20, 10, 18, 10, 17, 11, 12, 9, 9, 13, 7, 8, 12, 20, 9, 8, 8, 17, 22, 8, 9, 6, 35, 17, 21, 10, 25, 9, 9, 12, 9, 11, 12, 16, 15, 6, 13, 21, 9, 12, 10, 10, 14, 11, 11, 20, 7, 21, 7, 10, 32, 10, 15, 10, 10, 16, 9, 17, 16, 14, 16, 13, 13, 8, 10, 11, 13, 7, 10, 40, 24, 12, 28, 14, 10, 8, 10, 8, 17, 27, 21, 9, 13, 12, 10, 12, 14, 14, 7, 11, 11, 11, 10, 13, 15, 8, 18, 13, 16, 11, 15, 9, 17, 13, 10, 6, 12, 11, 11, 9, 15, 27, 13, 8, 13, 10, 11, 22, 7, 13, 11, 15, 13, 14, 17, 30, 15, 9, 13, 17, 22, 17, 7, 15, 19, 16, 12, 12, 7, 20, 13, 6, 13, 9, 7, 13, 11, 14, 10, 9, 13, 21, 12, 7, 11, 12, 13, 17, 10, 6, 10, 8, 22, 13, 29, 16, 8, 12, 9, 10, 14, 10, 18, 8, 7, 13, 13, 10, 11, 12, 14, 6, 10, 5, 32, 26, 22, 11, 12, 8, 13, 12, 11, 16, 8, 15, 12, 9, 10, 11, 14, 23, 8, 11, 11, 20, 14, 10, 29, 16, 10, 12, 10, 10, 9, 14, 15, 12, 12, 13, 11, 9, 7, 10, 20, 8, 13, 20, 12, 17, 11, 15, 17, 16, 8, 20, 17, 12, 13, 7, 14, 22, 10, 9, 14, 12, 5, 10, 15, 14, 23, 18, 9, 8, 8, 9, 15, 12, 14, 18, 24, 11, 13, 10, 6, 13, 9, 13, 10, 7, 11, 12, 11, 18, 8, 9, 14, 11, 29, 7, 19, 19, 8, 7, 18, 12, 8, 33, 19, 7, 17, 9, 10, 17, 13, 17, 8, 20, 16, 15, 18, 11, 11, 12, 7, 11, 10, 24, 9, 9, 8, 8, 10, 17, 8, 27, 11, 13, 15, 11, 14, 13, 13, 18, 12, 15, 11, 16, 6, 13, 10, 11, 13, 7, 11, 12, 10, 6, 10, 13, 16, 14, 14, 11, 10, 13, 11, 12, 15, 14, 11, 19, 14, 13, 6, 22, 11, 11, 11, 16, 8, 12, 10, 9, 10, 10, 13, 17, 7, 16, 31, 8, 11, 9, 20, 16, 38, 12, 9, 15, 15, 10, 18, 9, 13, 17, 26, 12, 17, 14, 7, 11, 14, 22, 8, 16, 16, 15, 12, 13, 16, 12, 18, 11, 15, 14, 7, 17, 9, 7, 11, 26, 9, 7, 44, 9, 11, 8, 12, 8, 14, 10, 12, 7, 10, 10, 10, 7, 20, 18, 9, 23, 7, 12, 24, 7, 8, 13, 28, 20, 7, 7, 15, 14, 15, 6, 8, 24, 9, 9, 15, 10, 19, 9, 9, 10, 11, 15, 21, 16, 10, 29, 17, 6, 26, 12, 11, 10, 13, 11, 13, 13, 11, 24, 25, 7, 10, 14, 7, 13, 11, 30, 15, 13, 9, 20, 9, 10, 13, 14, 10, 17, 11, 17, 13, 18, 8, 6, 13, 13, 29, 21, 15, 17, 16, 24, 25, 7, 17, 15, 12, 10, 8, 17, 13, 18, 13, 7, 9, 7, 6, 14, 12, 5, 9, 14, 9, 12, 11, 13, 9, 20, 29, 10, 8, 11, 16, 21, 20, 7, 11, 18, 10, 5, 13, 14, 19, 9, 10, 14, 9, 18, 14, 20, 9, 12, 26, 9, 18, 20, 8, 9, 10, 14, 12, 12, 14, 23, 11, 14, 15, 11, 10, 12, 21, 14, 17, 13, 19, 29, 11, 9, 10, 11, 11, 33, 17, 11, 23, 17, 13, 11, 14, 22, 12, 7, 10, 11, 13, 12, 11, 16, 11, 9, 8, 14, 14, 9, 10, 10, 10, 12, 8, 8, 14, 19, 14, 12, 18, 7, 12, 7, 12, 13, 15, 11, 14, 8, 22, 11, 10, 20, 7, 21, 16, 30, 12, 22, 15, 12, 9, 15, 13, 12, 15, 27, 9, 13, 8, 6, 9, 16, 12, 41, 13, 9, 19, 28, 11, 17, 24, 11, 18, 17, 9, 11, 17, 15, 10, 16, 8, 16, 8, 9, 13, 18, 12, 6, 10, 17, 8, 12, 27, 15, 9, 13, 18, 15, 12, 7, 14, 9, 9, 14, 17, 10, 15, 9, 12, 9, 13, 9, 16, 11, 8, 14, 13, 12, 11, 18, 13, 14, 16, 12, 12, 9, 13, 8, 15, 9, 13, 25, 11, 15, 18, 9, 13, 18, 8, 20, 13, 9, 8, 9, 11, 22, 11, 15, 7, 23, 27, 13, 23, 13, 11, 9], Average = 13.309
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Human Adventurer
+Initiative: 28
+Team: 1
+HP: -28
+AP: 1
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Captain Boney
+Initiative: 28
+Team: 2
+HP: -16
+AP: 7
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Fay Adventurer
+Initiative: 26
+Team: 1
+HP: 142
+AP: 3
+Abilities: ['STRIKE', 'SCARE', 'ENCOURAGE', 'HEAL', 'PANIC', 'SHARPEN', 'BLOCK']
+
+Rani Adventurer
+Initiative: 20
+Team: 1
+HP: 111
+AP: 0
+Abilities: ['STRIKE', 'FEINT', 'SCARE', 'SHARPEN', 'STUN', 'FEINT 2', 'HEADACHE']
+
+Thin Billy
+Initiative: 19
+Team: 2
+HP: -6
+AP: 10
+Abilities: ['STRIKE', 'HEAL']
+
+Troll Adventurer
+Initiative: 14
+Team: 1
+HP: 156
+AP: 8
+Abilities: ['STRIKE', 'STUN', 'SCARE', 'HEAL', 'KNOCK OVER', 'SHARPEN', 'STUN 2', 'BLOCK']
+
+Over 1000 rounds:
+
+Team 1 has 88.0% winrate
+Team 2 has 12.0% winrate
+The average number of rounds per combat was 13.309

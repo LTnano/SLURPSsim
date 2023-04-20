@@ -1,0 +1,147 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Sage Adventurer
+
+
+
+Round 1
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Captain Boney for 78 damage
+Captain Boney used STRIKE
+Captain Boney hit Sage Adventurer for 75 damage
+
+Round 2
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Captain Boney for 39 damage
+Captain Boney used STRIKE
+Captain Boney hit Sage Adventurer for 45 damage
+
+Round 3
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Captain Boney for 65 damage
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 60!
+
+Round 4
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Captain Boney for 26 damage
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 5
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Captain Boney for 26 damage
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+
+Round 6
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Captain Boney for 39 damage
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 7
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Captain Boney for 78 damage
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 60!
+
+Round 8
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 24!
+
+Round 9
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+
+Round 10
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 12!
+
+Round 11
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 12
+
+Sage Adventurer used STRIKE
+Sage Adventurer hit Captain Boney for 40 damage
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 36!
+
+Round 13
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 36!
+
+Round 14
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 60!
+
+Round 15
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Sage Adventurer
+
+Round 16
+
+Sage Adventurer used STRIKE
+Sage Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Sage Adventurer for 60 damage
+Sage Adventurer died!
+
+Combat Ended! Team 1 won!
+[4, 3, 7, 4, 5, 4, 2, 3, 4, 7, 5, 17, 3, 5, 2, 3, 5, 7, 5, 6, 7, 4, 6, 3, 6, 4, 3, 2, 7, 4, 6, 2, 3, 6, 3, 5, 5, 5, 3, 3, 3, 2, 16, 7, 2, 5, 6, 3, 4, 5, 3, 15, 4, 16, 4, 3, 2, 6, 5, 7, 17, 3, 6, 3, 2, 5, 4, 3, 3, 7, 4, 2, 16, 16, 5, 4, 3, 5, 5, 3, 5, 3, 3, 5, 5, 15, 4, 5, 2, 5, 7, 5, 3, 3, 3, 3, 4, 15, 16, 5, 5, 3, 6, 4, 3, 5, 3, 7, 5, 3, 17, 16, 4, 16, 16, 2, 4, 5, 3, 4, 3, 2, 4, 4, 5, 3, 6, 4, 6, 6, 3, 2, 4, 2, 5, 5, 6, 4, 5, 4, 15, 5, 3, 5, 16, 6, 5, 5, 2, 2, 18, 3, 6, 3, 7, 3, 5, 3, 19, 4, 5, 6, 4, 3, 2, 5, 6, 4, 3, 6, 7, 3, 6, 3, 2, 6, 2, 16, 4, 5, 5, 4, 3, 5, 2, 6, 4, 6, 16, 9, 3, 4, 3, 3, 5, 4, 3, 7, 2, 2, 3, 2, 4, 3, 3, 2, 3, 4, 5, 4, 6, 16, 4, 4, 4, 4, 3, 15, 3, 16, 5, 5, 3, 6, 18, 5, 6, 4, 6, 3, 2, 4, 2, 5, 3, 6, 3, 4, 5, 3, 4, 17, 7, 4, 3, 6, 6, 2, 2, 3, 3, 4, 2, 5, 7, 6, 2, 8, 2, 5, 16, 3, 2, 15, 5, 3, 6, 3, 3, 5, 3, 11, 16, 18, 16, 15, 3, 2, 6, 4, 5, 16, 3, 15, 4, 16, 6, 5, 5, 2, 6, 6, 3, 2, 3, 5, 6, 18, 2, 5, 3, 2, 4, 4, 5, 3, 6, 2, 4, 4, 7, 3, 5, 4, 6, 15, 4, 3, 4, 2, 5, 4, 3, 4, 5, 5, 3, 4, 6, 2, 2, 16, 4, 4, 7, 3, 16, 15, 2, 5, 4, 4, 2, 6, 4, 3, 4, 17, 15, 2, 4, 4, 4, 2, 5, 16, 15, 3, 5, 2, 4, 3, 3, 8, 4, 5, 2, 3, 2, 15, 4, 17, 5, 5, 3, 7, 17, 6, 4, 2, 5, 7, 4, 16, 2, 3, 2, 4, 6, 4, 2, 6, 3, 15, 5, 3, 5, 3, 15, 5, 3, 3, 17, 7, 3, 4, 6, 3, 3, 4, 5, 2, 5, 5, 3, 2, 3, 18, 4, 4, 7, 4, 16, 3, 4, 3, 7, 2, 2, 3, 3, 3, 3, 3, 4, 3, 10, 3, 5, 18, 2, 5, 6, 17, 7, 3, 3, 6, 3, 2, 5, 16, 7, 2, 16, 6, 3, 7, 3, 4, 4, 4, 4, 3, 2, 20, 6, 15, 2, 6, 3, 7, 3, 16, 2, 4, 3, 4, 5, 2, 18, 3, 5, 6, 4, 5, 3, 6, 4, 5, 3, 4, 2, 4, 4, 15, 3, 2, 4, 16], Average = 5.594
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Sage Adventurer
+Initiative: 18
+Team: 2
+HP: -50
+AP: 0
+Abilities: ['STRIKE', 'FIREBALL', 'HEADACHE', 'SCARE', 'FIREBALL 2']
+
+Captain Boney
+Initiative: 17
+Team: 1
+HP: 250
+AP: 0
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 78.0% winrate
+Team 2 has 22.0% winrate
+The average number of rounds per combat was 5.594

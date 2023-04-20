@@ -1,0 +1,83 @@
+Team 1:
+Sage Novice Adventurer
+Human Novice Adventurer
+Elf Novice Adventurer
+Dwarf Novice Adventurer
+
+Team 2:
+Skeleton
+
+
+
+Round 1
+
+Sage Novice Adventurer used FIREBALL
+Sage Novice Adventurer hit Skeleton for 10 damage
+Human Novice Adventurer used STRIKE
+Human Novice Adventurer hit Skeleton for 40 damage
+Skeleton used STRIKE
+Skeleton missed Elf Novice Adventurer
+Elf Novice Adventurer used SHOOT
+Elf Novice Adventurer shot Skeleton for 40 damage
+Dwarf Novice Adventurer used STRIKE
+Dwarf Novice Adventurer missed Skeleton
+
+Round 2
+
+Sage Novice Adventurer used FIREBALL
+Sage Novice Adventurer hit Skeleton for 10 damage
+Human Novice Adventurer used HEAL
+Human Novice Adventurer healed Sage Novice Adventurer for 20!
+Skeleton used STRIKE
+Skeleton missed Elf Novice Adventurer
+Elf Novice Adventurer used SHOOT
+Elf Novice Adventurer shot Skeleton for 40 damage
+Skeleton died!
+
+Combat Ended! Team 1 won!
+[3, 3, 2, 2, 2, 2, 4, 4, 4, 3, 3, 3, 3, 4, 2, 3, 4, 5, 4, 3, 3, 2, 5, 3, 3, 3, 3, 4, 3, 2, 3, 4, 3, 4, 3, 3, 4, 5, 3, 3, 3, 3, 2, 2, 2, 3, 5, 3, 4, 2, 3, 3, 4, 6, 2, 4, 2, 3, 3, 4, 4, 3, 3, 4, 2, 2, 5, 4, 2, 3, 4, 3, 2, 4, 3, 2, 2, 3, 4, 5, 3, 3, 4, 3, 4, 2, 3, 4, 4, 3, 3, 3, 3, 3, 3, 4, 3, 2, 4, 2, 3, 3, 4, 2, 5, 3, 4, 4, 3, 3, 3, 2, 3, 3, 3, 4, 3, 3, 3, 4, 3, 2, 5, 3, 3, 3, 3, 6, 3, 4, 3, 2, 5, 4, 3, 4, 4, 3, 2, 2, 3, 2, 3, 6, 3, 3, 3, 2, 5, 7, 3, 4, 3, 5, 3, 4, 3, 4, 4, 3, 3, 3, 2, 3, 2, 3, 4, 2, 2, 3, 5, 4, 3, 4, 4, 2, 3, 4, 3, 4, 3, 2, 4, 6, 3, 3, 4, 3, 3, 3, 3, 3, 2, 3, 2, 4, 2, 5, 3, 3, 2, 6, 3, 4, 4, 4, 3, 3, 2, 3, 4, 3, 2, 2, 2, 3, 4, 2, 3, 3, 4, 3, 4, 3, 3, 2, 5, 3, 4, 4, 2, 4, 4, 3, 3, 2, 4, 4, 3, 3, 2, 2, 3, 3, 5, 3, 3, 5, 3, 3, 3, 4, 3, 3, 4, 4, 4, 3, 4, 4, 4, 3, 4, 3, 2, 3, 3, 3, 3, 3, 2, 3, 2, 4, 3, 4, 3, 3, 4, 3, 3, 2, 3, 3, 3, 2, 2, 3, 4, 2, 3, 4, 3, 4, 4, 2, 2, 3, 3, 2, 3, 5, 2, 3, 3, 3, 3, 5, 4, 2, 2, 2, 2, 2, 2, 3, 4, 5, 5, 3, 3, 5, 3, 4, 3, 3, 3, 4, 5, 2, 4, 3, 3, 4, 3, 3, 2, 4, 3, 3, 3, 2, 4, 5, 4, 4, 2, 3, 4, 3, 2, 3, 5, 3, 3, 3, 4, 3, 4, 2, 3, 2, 4, 3, 3, 3, 2, 2, 3, 4, 4, 3, 4, 3, 2, 3, 3, 5, 4, 2, 3, 3, 2, 5, 3, 4, 5, 5, 3, 4, 2, 3, 4, 3, 4, 4, 3, 2, 4, 3, 3, 4, 3, 2, 4, 3, 5, 2, 3, 3, 4, 3, 2, 3, 3, 3, 2, 3, 3, 3, 3, 4, 4, 2, 4, 3, 2, 5, 3, 3, 2, 3, 7, 4, 3, 4, 2, 3, 4, 3, 3, 4, 2, 3, 3, 3, 3, 3, 3, 4, 2, 2, 4, 2, 4, 3, 3, 2, 7, 3, 7, 3, 4, 3, 5, 3, 3, 3, 3, 3, 3, 2, 3, 4, 3, 4, 4, 4, 2, 4, 2, 3, 4, 4, 2, 3, 3, 3, 2, 2, 2, 3, 3, 5, 2, 3, 4, 4, 4, 2], Average = 3.232
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Sage Novice Adventurer
+Initiative: 25
+Team: 1
+HP: 100
+AP: 9
+Abilities: ['STRIKE', 'FIREBALL']
+
+Human Novice Adventurer
+Initiative: 17
+Team: 1
+HP: 100
+AP: 9
+Abilities: ['STRIKE', 'HEAL']
+
+Skeleton
+Initiative: 17
+Team: 2
+HP: 0
+AP: 0
+Abilities: ['STRIKE']
+
+Elf Novice Adventurer
+Initiative: 15
+Team: 1
+HP: 100
+AP: 8
+Abilities: ['STRIKE', 'SHOOT']
+
+Dwarf Novice Adventurer
+Initiative: 11
+Team: 1
+HP: 130
+AP: 10
+Abilities: ['STRIKE', 'TAUNT']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 3.232

@@ -1,0 +1,54 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Fay Adventurer
+
+
+
+Round 1
+
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+Fay Adventurer used SHARPEN
+Fay Adventurer enhances their weapon!
+
+Round 2
+
+Human Adventurer used STRIKE
+Human Adventurer hit Fay Adventurer for 96 damage
+Fay Adventurer used SCARE
+Fay Adventurer scares Human Adventurer for 5 rounds!
+
+Round 3
+
+Human Adventurer used STRIKE
+Human Adventurer hit Fay Adventurer for 90 damage
+Fay Adventurer died!
+
+Combat Ended! Team 1 won!
+[14, 12, 11, 9, 3, 11, 8, 19, 14, 10, 8, 16, 18, 9, 19, 10, 4, 3, 18, 11, 16, 13, 14, 14, 13, 15, 15, 15, 7, 7, 12, 17, 10, 18, 3, 15, 6, 9, 7, 12, 3, 10, 17, 7, 12, 17, 16, 18, 4, 18, 13, 7, 9, 22, 9, 12, 14, 5, 13, 10, 11, 21, 11, 15, 15, 11, 15, 8, 8, 13, 16, 13, 10, 17, 17, 17, 15, 14, 4, 8, 11, 15, 16, 13, 14, 11, 13, 18, 3, 13, 15, 7, 13, 18, 10, 18, 10, 15, 14, 12, 3, 14, 8, 16, 8, 6, 15, 16, 13, 18, 13, 6, 6, 14, 18, 12, 8, 11, 3, 16, 9, 10, 8, 8, 8, 10, 3, 9, 23, 10, 15, 12, 14, 16, 3, 4, 9, 3, 11, 3, 3, 14, 17, 11, 3, 6, 12, 12, 18, 13, 19, 19, 14, 13, 19, 14, 11, 12, 20, 16, 12, 17, 15, 19, 14, 16, 12, 3, 14, 8, 9, 21, 14, 3, 15, 11, 3, 9, 21, 11, 7, 14, 17, 10, 10, 12, 15, 17, 9, 15, 13, 7, 17, 12, 10, 12, 19, 8, 8, 14, 12, 11, 8, 10, 17, 9, 3, 21, 13, 19, 15, 20, 9, 16, 19, 10, 10, 13, 18, 14, 3, 14, 3, 13, 16, 8, 10, 17, 8, 14, 20, 10, 10, 10, 15, 12, 14, 24, 10, 12, 14, 18, 7, 9, 3, 15, 9, 11, 13, 10, 23, 15, 17, 8, 9, 16, 13, 13, 21, 22, 13, 16, 16, 16, 15, 9, 11, 3, 13, 16, 10, 16, 7, 26, 15, 11, 18, 18, 11, 12, 3, 16, 3, 14, 11, 10, 13, 12, 5, 9, 4, 8, 5, 10, 11, 9, 8, 18, 3, 14, 8, 16, 3, 15, 7, 11, 19, 7, 19, 11, 6, 3, 14, 4, 18, 10, 16, 8, 11, 13, 16, 14, 15, 12, 14, 15, 14, 10, 6, 8, 8, 18, 15, 19, 10, 9, 14, 3, 18, 20, 3, 16, 14, 12, 10, 20, 10, 9, 13, 12, 12, 7, 18, 4, 6, 16, 20, 12, 13, 20, 13, 14, 11, 11, 4, 23, 12, 15, 8, 11, 4, 11, 4, 9, 19, 13, 10, 15, 20, 11, 3, 12, 16, 12, 12, 6, 3, 15, 8, 14, 17, 18, 17, 8, 14, 12, 9, 12, 15, 15, 3, 18, 15, 14, 15, 10, 12, 14, 8, 19, 10, 3, 13, 12, 25, 18, 10, 10, 3, 17, 4, 9, 8, 14, 12, 13, 17, 18, 16, 5, 20, 12, 3, 14, 3, 14, 16, 12, 10, 14, 15, 14, 16, 9, 8, 9, 17, 12, 19, 8, 11, 11, 22, 7, 8, 3, 8, 18, 14, 26, 17, 15, 12, 14, 16, 13, 9, 8, 16, 19, 11, 13, 11, 7, 10, 10, 23, 3, 10, 14, 14, 3, 15, 19, 9, 9, 17, 8, 13, 9, 20, 14, 14, 12, 13, 9, 11, 7, 13, 3], Average = 12.09
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Human Adventurer
+Initiative: 20
+Team: 1
+HP: 124
+AP: 12
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Fay Adventurer
+Initiative: 11
+Team: 2
+HP: -44
+AP: 11
+Abilities: ['STRIKE', 'SCARE', 'ENCOURAGE', 'HEAL', 'PANIC', 'SHARPEN', 'BLOCK']
+
+Over 500 rounds:
+
+Team 1 has 98.8% winrate
+Team 2 has 1.2% winrate
+The average number of rounds per combat was 12.09

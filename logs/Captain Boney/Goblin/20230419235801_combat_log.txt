@@ -1,0 +1,132 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Goblin Adventurer
+
+
+
+Round 1
+
+Goblin Adventurer used SHARPEN
+Goblin Adventurer enhances their weapon!
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+
+Round 2
+
+Goblin Adventurer used HEADACHE
+Goblin Adventurer inflicted Captain Boney with a painful HEADACHE, causing 10 damage
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+
+Round 3
+
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 20 damage
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 15 damage
+
+Round 4
+
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 30 damage
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 15 damage
+
+Round 5
+
+Goblin Adventurer used HEADACHE
+Goblin Adventurer inflicted Captain Boney with a painful HEADACHE, causing 10 damage
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 15 damage
+
+Round 6
+
+Goblin Adventurer used FIREBALL
+Goblin Adventurer hit Captain Boney for 30 damage
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 45 damage
+
+Round 7
+
+Goblin Adventurer used HEAL 2
+Goblin Adventurer healed Goblin Adventurer for 90!
+Captain Boney takes 10 damage from a HEADACHE
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+
+Round 8
+
+Goblin Adventurer used HEAL 2
+Goblin Adventurer healed Goblin Adventurer for 60!
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 45 damage
+
+Round 9
+
+Goblin Adventurer used HEAL 2
+Goblin Adventurer healed Goblin Adventurer for 90!
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+
+Round 10
+
+Goblin Adventurer used HEAL
+Goblin Adventurer healed Goblin Adventurer for 40!
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 90 damage
+
+Round 11
+
+Goblin Adventurer used STRIKE
+Goblin Adventurer hit Captain Boney for 50 damage
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 15 damage
+
+Round 12
+
+Goblin Adventurer used STRIKE
+Goblin Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Goblin Adventurer
+
+Round 13
+
+Goblin Adventurer used STRIKE
+Goblin Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Goblin Adventurer for 75 damage
+Goblin Adventurer died!
+
+Combat Ended! Team 1 won!
+[7, 15, 5, 6, 4, 7, 5, 4, 16, 13, 3, 3, 4, 18, 3, 15, 3, 4, 4, 2, 8, 15, 13, 5, 4, 4, 2, 8, 15, 7, 3, 3, 10, 2, 18, 8, 20, 4, 3, 4, 5, 5, 4, 2, 5, 10, 6, 3, 7, 4, 18, 4, 3, 5, 5, 2, 15, 6, 13, 4, 2, 2, 15, 2, 4, 2, 16, 19, 12, 5, 16, 4, 6, 4, 8, 2, 4, 26, 7, 10, 6, 6, 12, 4, 6, 5, 16, 20, 4, 20, 3, 2, 6, 25, 6, 4, 4, 8, 6, 5, 4, 4, 4, 36, 5, 17, 7, 3, 4, 5, 13, 12, 13, 18, 15, 19, 9, 15, 3, 17, 3, 11, 5, 18, 4, 3, 16, 26, 17, 6, 4, 4, 20, 2, 2, 2, 3, 6, 6, 2, 16, 3, 20, 2, 2, 4, 4, 4, 18, 5, 2, 4, 3, 3, 4, 19, 2, 5, 4, 2, 12, 5, 7, 18, 16, 5, 5, 8, 19, 6, 23, 3, 6, 3, 21, 10, 18, 16, 4, 17, 7, 6, 4, 5, 8, 17, 16, 9, 4, 3, 11, 3, 7, 13, 5, 15, 8, 6, 3, 5, 4, 5, 4, 11, 9, 3, 15, 2, 11, 14, 8, 7, 4, 4, 2, 3, 16, 7, 3, 3, 14, 13, 4, 7, 15, 4, 3, 19, 5, 3, 5, 3, 16, 2, 4, 17, 16, 9, 30, 20, 8, 19, 7, 3, 4, 4, 2, 5, 3, 5, 5, 24, 4, 12, 3, 4, 16, 3, 12, 2, 5, 7, 6, 15, 6, 3, 7, 12, 14, 16, 5, 13, 3, 13, 3, 18, 5, 4, 9, 4, 3, 5, 17, 4, 6, 12, 3, 11, 7, 15, 20, 19, 7, 17, 16, 2, 7, 10, 7, 26, 3, 17, 7, 17, 4, 16, 5, 8, 20, 7, 13, 3, 18, 6, 18, 19, 7, 2, 18, 5, 2, 6, 4, 4, 5, 2, 8, 12, 4, 4, 4, 18, 3, 19, 7, 5, 19, 25, 18, 3, 4, 4, 5, 17, 11, 20, 7, 15, 3, 17, 3, 16, 14, 17, 6, 4, 6, 2, 2, 4, 2, 4, 17, 2, 3, 4, 2, 13, 5, 2, 4, 5, 9, 6, 4, 7, 13, 18, 25, 17, 4, 17, 13, 4, 5, 4, 11, 2, 6, 16, 2, 2, 8, 6, 2, 8, 26, 27, 4, 17, 16, 3, 18, 12, 14, 2, 3, 15, 3, 18, 3, 14, 5, 4, 3, 4, 4, 13, 7, 8, 3, 3, 12, 2, 2, 3, 3, 5, 3, 3, 6, 3, 8, 7, 3, 4, 6, 3, 4, 3, 7, 4, 3, 16, 6, 2, 18, 16, 2, 5, 5, 11, 4, 3, 18, 2, 18, 4, 3, 27, 3, 2, 16, 7, 6, 2, 7, 14, 9, 3, 15, 4, 24, 6, 5, 12, 5, 2, 2, 18, 2, 7, 6, 4, 14, 17, 15, 16, 23, 5, 16, 4, 8, 5, 3, 2, 15, 12, 7, 13], Average = 8.414
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Goblin Adventurer
+Initiative: 32
+Team: 2
+HP: -59
+AP: 0
+Abilities: ['STRIKE', 'HEAL', 'FIREBALL', 'SHARPEN', 'HEAL 2', 'HEADACHE']
+
+Captain Boney
+Initiative: 19
+Team: 1
+HP: 40
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 99.0% winrate
+Team 2 has 1.0% winrate
+The average number of rounds per combat was 8.414

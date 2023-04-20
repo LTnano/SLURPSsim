@@ -1,0 +1,70 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Troll Adventurer
+
+
+
+Round 1
+
+Troll Adventurer used SHARPEN
+Troll Adventurer enhances their weapon!
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Troll Adventurer used STRIKE
+Troll Adventurer missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer missed Troll Adventurer
+
+Round 3
+
+Troll Adventurer used STRIKE
+Troll Adventurer missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Troll Adventurer for 80 damage
+
+Round 4
+
+Troll Adventurer used STRIKE
+Troll Adventurer missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Troll Adventurer for 32 damage
+
+Round 5
+
+Troll Adventurer used STRIKE
+Troll Adventurer missed Human Adventurer
+Human Adventurer used STRIKE
+Human Adventurer hit Troll Adventurer for 64 damage
+Troll Adventurer died!
+
+Combat Ended! Team 1 won!
+[3, 4, 7, 11, 4, 5, 4, 10, 11, 7, 14, 7, 4, 6, 5, 5, 3, 8, 7, 17, 9, 4, 11, 8, 9, 4, 6, 6, 7, 6, 4, 10, 5, 5, 14, 13, 8, 7, 4, 8, 3, 5, 7, 6, 3, 14, 9, 6, 7, 6, 20, 5, 5, 7, 6, 3, 14, 6, 6, 4, 10, 8, 3, 6, 10, 12, 7, 5, 10, 7, 13, 13, 5, 7, 4, 4, 11, 10, 5, 9, 13, 9, 4, 6, 4, 4, 7, 14, 4, 7, 15, 5, 10, 10, 5, 4, 3, 7, 11, 6, 5, 4, 7, 4, 8, 7, 5, 10, 12, 14, 4, 6, 5, 5, 6, 4, 3, 6, 16, 3, 11, 6, 5, 7, 9, 4, 6, 4, 10, 12, 4, 7, 12, 7, 4, 6, 3, 6, 3, 3, 3, 9, 4, 12, 6, 7, 4, 11, 8, 3, 4, 6, 6, 6, 7, 7, 7, 11, 4, 7, 12, 9, 9, 4, 4, 8, 7, 4, 9, 11, 12, 3, 11, 13, 6, 9, 7, 5, 9, 6, 11, 6, 9, 12, 8, 6, 4, 9, 13, 6, 6, 5, 6, 7, 5, 11, 8, 3, 4, 3, 3, 6, 7, 10, 6, 5, 4, 6, 8, 4, 11, 5, 11, 12, 14, 5, 6, 8, 5, 4, 4, 3, 3, 9, 4, 5, 14, 5, 6, 3, 6, 3, 9, 6, 7, 5, 3, 7, 4, 8, 8, 8, 11, 5, 9, 5, 15, 8, 4, 12, 6, 3, 7, 10, 5, 13, 8, 3, 4, 6, 7, 4, 3, 12, 3, 8, 5, 4, 3, 4, 13, 5, 6, 12, 6, 5, 5, 6, 7, 7, 4, 6, 10, 9, 11, 7, 10, 7, 8, 6, 11, 9, 6, 5, 7, 6, 4, 6, 7, 5, 14, 8, 14, 6, 12, 6, 4, 8, 6, 8, 12, 5, 4, 8, 17, 9, 4, 3, 5, 7, 9, 8, 3, 12, 9, 7, 5, 10, 14, 12, 7, 6, 8, 3, 7, 8, 5, 13, 6, 7, 4, 6, 5, 5, 5, 5, 13, 5, 7, 4, 5, 5, 10, 10, 10, 4, 10, 6, 8, 7, 7, 4, 15, 12, 3, 5, 5, 6, 4, 3, 3, 4, 5, 10, 5, 4, 10, 3, 6, 4, 4, 6, 14, 8, 4, 5, 9, 4, 7, 6, 10, 8, 5, 11, 4, 4, 4, 8, 6, 9, 5, 4, 3, 7, 8, 5, 9, 6, 5, 4, 7, 7, 7, 12, 6, 5, 8, 6, 7, 4, 6, 9, 6, 6, 4, 8, 4, 6, 20, 4, 6, 4, 12, 9, 4, 4, 14, 8, 3, 15, 13, 12, 6, 15, 6, 5, 7, 10, 4, 9, 7, 12, 4, 4, 6, 11, 5, 5, 10, 10, 9, 4, 5, 10, 5, 15, 6, 6, 10, 6, 14, 5, 7, 11, 5, 10, 12, 7, 5, 4, 5, 8, 4, 11, 5, 14, 3, 12, 6, 10, 5, 5, 5, 13, 10, 4, 7, 6, 6, 5], Average = 7.104
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Troll Adventurer
+Initiative: 29
+Team: 2
+HP: -40
+AP: 12
+Abilities: ['STRIKE', 'STUN', 'SCARE', 'HEAL', 'KNOCK OVER', 'SHARPEN', 'STUN 2', 'BLOCK']
+
+Human Adventurer
+Initiative: 19
+Team: 1
+HP: 134
+AP: 12
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 61.4% winrate
+Team 2 has 38.6% winrate
+The average number of rounds per combat was 7.104

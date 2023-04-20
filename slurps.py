@@ -258,7 +258,7 @@ class Creature():
         if self.target is None:
             self.target = random.choice(primedList)
         if opposition in simState.aliveList:
-            if all(tar.isStunned for tar in primedList if tar.TEAM == opposition):
+            if all(tar.isStunned for tar in primedList if tar.TEAM == opposition and tar.isAlive):
                 stunnedTargets = [tar for tar in primedList if tar.isStunned and tar.TEAM == opposition]
                 if stunnedTargets:
                     self.target = random.choice(stunnedTargets)

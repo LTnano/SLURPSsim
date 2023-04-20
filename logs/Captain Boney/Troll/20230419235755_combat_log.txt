@@ -1,0 +1,128 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Troll Adventurer
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney hit Troll Adventurer for 30 damage
+Troll Adventurer used SHARPEN
+Troll Adventurer enhances their weapon!
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney missed Troll Adventurer
+Troll Adventurer used STUN 2
+Troll Adventurer hit and stunned Captain Boney for 6 rounds
+
+Round 3
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STUN 2
+Troll Adventurer missed Captain Boney
+
+Round 4
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STUN 2
+Troll Adventurer hit and stunned Captain Boney for 4 rounds
+
+Round 5
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STUN 2
+Troll Adventurer hit and stunned Captain Boney for 5 rounds
+
+Round 6
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STUN 2
+Troll Adventurer hit and stunned Captain Boney for 6 rounds
+
+Round 7
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STUN 2
+Troll Adventurer hit and stunned Captain Boney for 5 rounds
+
+Round 8
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STRIKE
+Troll Adventurer missed Captain Boney
+
+Round 9
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STRIKE
+Troll Adventurer missed Captain Boney
+
+Round 10
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STRIKE
+Troll Adventurer missed Captain Boney
+
+Round 11
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STRIKE
+Troll Adventurer missed Captain Boney
+
+Round 12
+
+Captain Boney stumbles around stunned taking no actions.
+Troll Adventurer used STRIKE
+Troll Adventurer missed Captain Boney
+
+Round 13
+
+Captain Boney used STRIKE
+Captain Boney missed Troll Adventurer
+Troll Adventurer used STRIKE
+Troll Adventurer missed Captain Boney
+
+Round 14
+
+Captain Boney used STRIKE
+Captain Boney hit Troll Adventurer for 60 damage
+Troll Adventurer used STRIKE
+Troll Adventurer missed Captain Boney
+
+Round 15
+
+Captain Boney used STRIKE
+Captain Boney hit Troll Adventurer for 75 damage
+Troll Adventurer died!
+
+Combat Ended! Team 1 won!
+[15, 11, 24, 26, 12, 12, 9, 14, 10, 11, 17, 11, 24, 15, 25, 15, 28, 22, 15, 11, 14, 11, 26, 12, 3, 4, 26, 15, 2, 12, 10, 31, 3, 19, 16, 12, 20, 16, 11, 23, 12, 14, 23, 2, 14, 4, 2, 14, 15, 19, 10, 25, 12, 3, 16, 14, 11, 29, 24, 21, 12, 14, 29, 22, 14, 23, 11, 25, 11, 4, 3, 12, 12, 23, 12, 30, 27, 12, 24, 11, 3, 27, 9, 13, 13, 25, 13, 15, 21, 14, 2, 11, 5, 12, 16, 27, 26, 15, 4, 3, 13, 18, 3, 30, 27, 11, 5, 11, 28, 17, 28, 3, 24, 12, 25, 11, 26, 25, 11, 13, 12, 11, 17, 13, 13, 17, 22, 2, 8, 23, 10, 23, 12, 32, 16, 2, 2, 33, 22, 20, 11, 18, 3, 15, 26, 14, 26, 32, 14, 27, 26, 17, 2, 16, 13, 13, 11, 13, 17, 14, 26, 13, 27, 14, 30, 15, 25, 27, 25, 14, 26, 31, 2, 10, 16, 30, 23, 13, 15, 13, 11, 30, 30, 15, 10, 14, 24, 13, 12, 4, 30, 3, 10, 13, 25, 17, 10, 16, 3, 15, 16, 10, 16, 14, 18, 10, 12, 11, 12, 24, 17, 2, 26, 15, 14, 10, 15, 2, 28, 26, 29, 14, 13, 14, 16, 4, 11, 12, 9, 3, 4, 14, 10, 29, 16, 14, 9, 26, 13, 28, 3, 27, 18, 13, 2, 29, 25, 13, 11, 14, 3, 6, 14, 3, 25, 25, 16, 10, 11, 4, 20, 12, 14, 2, 29, 26, 10, 15, 27, 26, 22, 4, 12, 11, 19, 28, 12, 15, 27, 13, 10, 29, 25, 10, 2, 15, 25, 12, 11, 22, 16, 14, 11, 27, 13, 11, 12, 22, 5, 16, 4, 10, 23, 3, 17, 14, 22, 25, 17, 14, 14, 3, 11, 12, 28, 2, 10, 10, 12, 24, 12, 16, 30, 15, 13, 25, 4, 12, 5, 26, 15, 11, 15, 29, 2, 12, 4, 4, 26, 25, 25, 27, 12, 3, 12, 3, 13, 24, 15, 22, 14, 29, 12, 29, 11, 11, 25, 3, 14, 2, 14, 25, 27, 3, 14, 4, 10, 28, 13, 13, 26, 25, 14, 9, 24, 11, 22, 14, 28, 23, 26, 27, 9, 30, 14, 4, 14, 26, 3, 13, 15, 13, 15, 14, 8, 20, 5, 13, 12, 4, 3, 14, 4, 13, 9, 25, 2, 11, 24, 12, 22, 11, 2, 4, 25, 12, 13, 13, 18, 25, 13, 2, 6, 15, 3, 22, 23, 19, 9, 11, 11, 19, 15, 10, 13, 12, 10, 13, 23, 4, 5, 10, 2, 2, 24, 3, 6, 12, 3, 3, 4, 10, 15, 31, 30, 25, 14, 12, 31, 2, 30, 9, 18, 21, 26, 2, 17, 24, 3, 12, 21, 12, 14, 13, 3, 2, 9, 12, 2, 4, 15, 25, 26, 11, 3, 23, 13, 27, 27, 4, 22, 4, 10, 10, 16, 22, 27, 23, 10, 15], Average = 15.102
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 19
+Team: 1
+HP: 250
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Troll Adventurer
+Initiative: 11
+Team: 2
+HP: -29
+AP: 0
+Abilities: ['STRIKE', 'STUN', 'SCARE', 'HEAL', 'KNOCK OVER', 'SHARPEN', 'STUN 2', 'BLOCK']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 15.102

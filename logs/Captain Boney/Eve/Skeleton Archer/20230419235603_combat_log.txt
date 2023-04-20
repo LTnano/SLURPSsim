@@ -1,0 +1,68 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Skeleton Archer
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney missed Skeleton Archer
+Skeleton Archer used SHOOT
+Skeleton Archer missed Captain Boney
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney hit Skeleton Archer for 90 damage
+Skeleton Archer used SHOOT
+Skeleton Archer missed Captain Boney
+
+Round 3
+
+Captain Boney used STRIKE
+Captain Boney missed Skeleton Archer
+Skeleton Archer used SHOOT
+Skeleton Archer missed Captain Boney
+
+Round 4
+
+Captain Boney used STRIKE
+Captain Boney missed Skeleton Archer
+Skeleton Archer used SHOOT
+Skeleton Archer shot Captain Boney for 16 damage
+
+Round 5
+
+Captain Boney used STRIKE
+Captain Boney hit Skeleton Archer for 30 damage
+Skeleton Archer died!
+
+Combat Ended! Team 1 won!
+[6, 3, 6, 3, 4, 4, 4, 8, 2, 2, 4, 3, 3, 2, 5, 3, 7, 5, 4, 2, 4, 4, 4, 3, 5, 2, 6, 7, 4, 4, 5, 4, 2, 3, 5, 3, 7, 3, 2, 3, 2, 7, 2, 4, 5, 3, 2, 6, 3, 2, 3, 2, 2, 4, 6, 4, 3, 3, 5, 3, 2, 4, 5, 4, 4, 8, 4, 3, 7, 5, 3, 4, 2, 3, 2, 7, 4, 3, 2, 2, 5, 7, 2, 2, 5, 6, 6, 8, 4, 4, 3, 3, 5, 3, 5, 4, 2, 7, 3, 6, 2, 4, 3, 2, 6, 4, 2, 3, 2, 2, 2, 4, 4, 3, 5, 5, 2, 6, 3, 4, 4, 5, 4, 2, 3, 4, 3, 5, 3, 3, 3, 2, 3, 2, 2, 3, 4, 5, 3, 4, 3, 4, 5, 4, 3, 6, 3, 6, 3, 3, 2, 6, 2, 2, 3, 2, 5, 5, 5, 3, 2, 3, 5, 4, 4, 3, 3, 2, 4, 5, 5, 4, 5, 4, 2, 4, 4, 5, 4, 2, 5, 4, 4, 4, 6, 3, 2, 4, 7, 2, 4, 3, 3, 4, 7, 2, 4, 4, 2, 2, 3, 5, 2, 2, 4, 4, 3, 4, 5, 4, 2, 4, 3, 4, 7, 3, 4, 3, 4, 4, 3, 3, 8, 4, 4, 2, 6, 3, 2, 4, 2, 5, 7, 4, 3, 3, 3, 4, 4, 3, 5, 2, 5, 4, 5, 4, 3, 5, 4, 6, 3, 5, 2, 2, 5, 6, 5, 4, 2, 3, 2, 3, 2, 2, 4, 5, 2, 4, 4, 9, 6, 3, 4, 2, 5, 4, 3, 2, 2, 6, 5, 2, 4, 7, 7, 6, 5, 8, 5, 7, 3, 4, 2, 6, 7, 5, 3, 2, 4, 9, 9, 3, 2, 6, 2, 3, 7, 3, 6, 2, 7, 2, 4, 5, 4, 4, 6, 5, 7, 3, 5, 3, 4, 6, 6, 4, 3, 6, 4, 6, 2, 6, 5, 9, 5, 3, 5, 3, 3, 2, 2, 2, 9, 3, 2, 5, 4, 6, 3, 3, 6, 3, 2, 6, 5, 3, 5, 3, 3, 3, 5, 4, 5, 2, 2, 3, 2, 5, 4, 4, 3, 3, 5, 2, 9, 4, 2, 4, 4, 7, 5, 5, 3, 5, 4, 3, 2, 3, 4, 7, 5, 3, 3, 3, 3, 6, 6, 4, 4, 2, 4, 2, 3, 2, 2, 5, 4, 4, 3, 5, 7, 2, 5, 6, 4, 6, 5, 3, 5, 4, 3, 4, 2, 3, 5, 5, 2, 4, 3, 2, 6, 3, 2, 5, 4, 5, 4, 3, 9, 2, 2, 2, 3, 4, 2, 6, 4, 6, 5, 3, 2, 3, 5, 4, 4, 3, 2, 6, 2, 4, 4, 2, 4, 4, 3, 3, 2, 2, 2, 2, 5, 2, 3, 4, 4, 4, 3, 3, 6, 4, 2, 4, 7, 2, 3, 2, 2, 4, 2, 4, 2, 4, 7, 5, 3, 5, 3, 3, 3, 5], Average = 3.898
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 32
+Team: 1
+HP: 234
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Skeleton Archer
+Initiative: 26
+Team: 2
+HP: -10
+AP: 3
+Abilities: ['SHOOT']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 3.898

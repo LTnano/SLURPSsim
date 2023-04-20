@@ -1,0 +1,139 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Human Adventurer
+
+
+
+Round 1
+
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+
+Round 2
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+
+Round 3
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+
+Round 4
+
+Human Adventurer used STUN
+Human Adventurer hit and stunned Captain Boney for 5 rounds
+Captain Boney stumbles around stunned taking no actions.
+
+Round 5
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney stumbles around stunned taking no actions.
+
+Round 6
+
+Human Adventurer used STUN
+Human Adventurer hit and stunned Captain Boney for 3 rounds
+Captain Boney stumbles around stunned taking no actions.
+
+Round 7
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney stumbles around stunned taking no actions.
+
+Round 8
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney stumbles around stunned taking no actions.
+
+Round 9
+
+Human Adventurer used STUN
+Human Adventurer hit and stunned Captain Boney for 3 rounds
+Captain Boney stumbles around stunned taking no actions.
+
+Round 10
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney stumbles around stunned taking no actions.
+
+Round 11
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney stumbles around stunned taking no actions.
+
+Round 12
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+
+Round 13
+
+Human Adventurer used STUN
+Human Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+
+Round 14
+
+Human Adventurer used STRIKE
+Human Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Human Adventurer for 90 damage
+
+Round 15
+
+Human Adventurer used STRIKE
+Human Adventurer missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+
+Round 16
+
+Human Adventurer used STRIKE
+Human Adventurer hit Captain Boney for 48 damage
+Captain Boney used STRIKE
+Captain Boney hit Human Adventurer for 75 damage
+Human Adventurer died!
+
+Combat Ended! Team 1 won!
+[4, 6, 19, 17, 18, 20, 2, 19, 17, 13, 2, 18, 19, 3, 15, 22, 26, 5, 8, 4, 16, 14, 16, 3, 4, 7, 11, 16, 13, 17, 10, 2, 22, 16, 5, 5, 8, 6, 14, 25, 4, 15, 19, 3, 17, 3, 9, 3, 7, 2, 16, 5, 7, 6, 2, 18, 13, 19, 18, 2, 19, 17, 8, 16, 11, 9, 17, 4, 10, 11, 4, 19, 23, 11, 9, 18, 14, 9, 19, 18, 20, 17, 11, 20, 18, 2, 18, 12, 19, 8, 2, 3, 19, 21, 13, 16, 18, 17, 21, 12, 22, 9, 18, 8, 20, 18, 14, 12, 12, 22, 14, 15, 20, 17, 18, 12, 18, 4, 9, 11, 6, 3, 8, 18, 18, 14, 13, 17, 18, 15, 17, 15, 17, 16, 19, 2, 18, 4, 13, 17, 4, 20, 16, 22, 13, 3, 6, 7, 13, 21, 3, 19, 14, 3, 5, 17, 16, 16, 21, 16, 5, 13, 16, 17, 4, 12, 3, 20, 6, 9, 2, 15, 2, 8, 3, 10, 24, 20, 13, 20, 13, 7, 15, 2, 16, 2, 14, 3, 9, 3, 18, 19, 4, 3, 22, 4, 17, 8, 6, 17, 7, 3, 20, 7, 7, 15, 19, 11, 16, 2, 16, 21, 18, 12, 9, 5, 16, 6, 7, 19, 21, 13, 3, 5, 14, 10, 16, 18, 3, 6, 14, 3, 2, 2, 15, 6, 9, 5, 2, 13, 4, 20, 17, 20, 16, 17, 2, 7, 13, 14, 3, 11, 25, 8, 5, 15, 11, 2, 22, 10, 12, 3, 26, 20, 4, 3, 15, 8, 11, 3, 15, 15, 6, 15, 5, 19, 2, 14, 13, 19, 7, 24, 11, 8, 14, 15, 3, 3, 15, 11, 4, 21, 12, 21, 4, 19, 17, 5, 17, 12, 17, 14, 6, 13, 8, 17, 2, 26, 7, 15, 21, 22, 18, 2, 7, 4, 20, 15, 20, 25, 6, 14, 2, 4, 4, 14, 10, 7, 14, 8, 9, 19, 18, 18, 19, 23, 2, 10, 22, 23, 20, 2, 23, 5, 25, 26, 4, 16, 14, 20, 17, 13, 2, 3, 17, 22, 2, 8, 19, 23, 14, 2, 18, 18, 10, 13, 14, 23, 7, 6, 4, 4, 18, 20, 3, 8, 3, 5, 20, 15, 3, 11, 19, 3, 9, 4, 8, 16, 4, 2, 8, 13, 7, 3, 3, 3, 12, 14, 3, 22, 2, 17, 22, 15, 14, 7, 3, 7, 12, 9, 10, 6, 15, 2, 3, 7, 5, 16, 14, 22, 14, 14, 21, 14, 11, 19, 2, 18, 22, 16, 18, 13, 11, 16, 21, 19, 2, 24, 19, 3, 24, 3, 6, 3, 2, 13, 15, 7, 16, 11, 8, 4, 7, 18, 12, 13, 18, 7, 2, 17, 2, 10, 7, 2, 2, 7, 22, 7, 17, 14, 6, 17, 8, 10, 14, 22, 20, 18, 22, 19, 2, 8, 17, 2, 13, 19, 23, 3, 11, 12, 15, 18, 10, 18, 18, 8, 16, 20, 15, 16], Average = 12.032
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Human Adventurer
+Initiative: 24
+Team: 2
+HP: -31
+AP: 0
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Captain Boney
+Initiative: 16
+Team: 1
+HP: 202
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 99.2% winrate
+Team 2 has 0.8% winrate
+The average number of rounds per combat was 12.032

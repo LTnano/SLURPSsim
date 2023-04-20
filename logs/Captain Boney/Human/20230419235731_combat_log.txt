@@ -1,0 +1,75 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Human Adventurer
+
+
+
+Round 1
+
+Captain Boney used STRIKE
+Captain Boney hit Human Adventurer for 30 damage
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Captain Boney used STRIKE
+Captain Boney hit Human Adventurer for 60 damage
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer failed to cast DEAD MAN WALKING
+
+Round 3
+
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer failed to cast DEAD MAN WALKING
+
+Round 4
+
+Captain Boney used STRIKE
+Captain Boney missed Human Adventurer
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer failed to cast DEAD MAN WALKING
+
+Round 5
+
+Captain Boney used STRIKE
+Captain Boney hit Human Adventurer for 15 damage
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 4 rounds!
+
+Round 6
+
+Captain Boney used STRIKE
+Captain Boney hit Human Adventurer for 60 damage
+Human Adventurer died!
+
+Combat Ended! Team 1 won!
+[19, 23, 3, 18, 5, 2, 12, 19, 16, 20, 18, 12, 23, 12, 14, 7, 16, 4, 4, 19, 17, 3, 18, 15, 17, 3, 19, 14, 14, 3, 9, 2, 22, 12, 5, 12, 22, 8, 19, 9, 13, 4, 2, 6, 4, 8, 21, 7, 3, 17, 24, 13, 12, 7, 8, 23, 16, 9, 19, 11, 4, 19, 2, 5, 18, 15, 13, 20, 20, 13, 17, 3, 3, 12, 14, 20, 4, 20, 4, 9, 12, 5, 8, 4, 7, 16, 4, 14, 15, 4, 13, 3, 17, 21, 17, 16, 8, 17, 10, 14, 17, 12, 22, 17, 9, 14, 4, 2, 12, 7, 6, 12, 3, 18, 20, 14, 19, 21, 5, 19, 10, 3, 20, 17, 18, 8, 11, 25, 2, 2, 9, 3, 8, 17, 9, 5, 18, 4, 7, 3, 16, 19, 18, 15, 7, 11, 4, 13, 15, 20, 8, 2, 19, 18, 13, 6, 11, 2, 14, 4, 17, 15, 20, 3, 20, 2, 3, 22, 16, 14, 9, 7, 2, 2, 12, 2, 21, 23, 17, 12, 18, 7, 3, 14, 21, 17, 24, 2, 4, 19, 6, 24, 15, 20, 8, 9, 14, 18, 18, 15, 8, 12, 15, 20, 11, 5, 3, 3, 16, 13, 19, 2, 3, 2, 18, 24, 10, 25, 17, 4, 17, 16, 5, 17, 15, 5, 17, 23, 2, 11, 14, 3, 18, 5, 22, 12, 15, 3, 19, 22, 11, 6, 21, 13, 6, 28, 3, 17, 2, 18, 19, 22, 8, 17, 17, 9, 3, 4, 2, 3, 4, 8, 5, 14, 18, 19, 4, 17, 4, 18, 20, 6, 18, 14, 6, 19, 20, 2, 14, 6, 16, 19, 2, 4, 18, 8, 3, 2, 11, 8, 24, 5, 19, 10, 3, 2, 12, 4, 11, 27, 20, 26, 3, 6, 19, 22, 10, 19, 3, 22, 23, 17, 19, 15, 8, 17, 14, 11, 17, 6, 10, 22, 18, 11, 7, 15, 3, 18, 5, 5, 13, 13, 22, 7, 16, 17, 20, 16, 19, 11, 2, 3, 8, 20, 3, 7, 17, 13, 14, 16, 21, 17, 5, 16, 3, 19, 2, 14, 4, 20, 17, 2, 9, 2, 19, 10, 16, 15, 9, 23, 3, 4, 6, 20, 5, 2, 9, 28, 13, 13, 3, 19, 10, 18, 5, 17, 2, 9, 17, 23, 17, 17, 4, 16, 10, 13, 12, 3, 2, 3, 20, 2, 21, 14, 8, 10, 12, 29, 11, 14, 20, 17, 5, 19, 11, 5, 7, 17, 7, 19, 4, 15, 18, 15, 16, 7, 9, 3, 2, 18, 14, 2, 6, 20, 23, 3, 21, 3, 18, 2, 15, 7, 4, 16, 22, 24, 24, 7, 3, 20, 16, 2, 6, 19, 2, 8, 17, 15, 16, 2, 26, 18, 11, 11, 18, 13, 18, 20, 6, 15, 19, 21, 2, 3, 3, 7, 12, 19, 3, 4, 15, 14, 15, 19, 20, 3, 15, 3, 21, 6, 5, 15, 2, 3, 18, 5, 7, 6, 16, 6], Average = 11.982
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Captain Boney
+Initiative: 17
+Team: 1
+HP: 250
+AP: 12
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Human Adventurer
+Initiative: 13
+Team: 2
+HP: -11
+AP: 4
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 99.2% winrate
+Team 2 has 0.8% winrate
+The average number of rounds per combat was 11.982

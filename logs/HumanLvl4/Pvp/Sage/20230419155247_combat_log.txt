@@ -1,0 +1,61 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Sage Adventurer
+
+
+
+Round 1
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Human Adventurer for 52 damage
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+
+Round 2
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Human Adventurer for 26 damage
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 3 rounds!
+
+Round 3
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Human Adventurer for 26 damage
+Human Adventurer used STRIKE
+Human Adventurer hit Sage Adventurer for 48 damage
+
+Round 4
+
+Sage Adventurer used FIREBALL 2
+Sage Adventurer hit Human Adventurer for 52 damage
+Human Adventurer died!
+
+Combat Ended! Team 2 won!
+[4, 4, 5, 5, 4, 3, 2, 4, 4, 4, 4, 5, 5, 5, 4, 4, 3, 3, 3, 5, 2, 2, 4, 5, 4, 4, 4, 3, 3, 3, 4, 4, 3, 5, 2, 3, 2, 5, 4, 3, 4, 4, 4, 5, 3, 3, 3, 3, 3, 3, 4, 4, 3, 4, 3, 4, 2, 3, 5, 5, 3, 3, 3, 4, 3, 3, 4, 3, 4, 6, 3, 3, 3, 5, 4, 3, 5, 3, 6, 3, 4, 3, 4, 4, 4, 3, 3, 6, 5, 3, 4, 5, 4, 3, 5, 5, 12, 4, 5, 3, 3, 4, 4, 4, 4, 4, 3, 5, 3, 4, 3, 4, 2, 3, 3, 3, 4, 5, 4, 4, 4, 3, 3, 4, 4, 3, 3, 4, 2, 2, 4, 5, 5, 4, 3, 3, 4, 2, 3, 2, 4, 4, 4, 3, 4, 4, 4, 4, 3, 5, 3, 3, 4, 3, 4, 2, 4, 3, 3, 4, 3, 4, 6, 5, 5, 5, 4, 6, 5, 3, 4, 4, 5, 3, 3, 3, 5, 4, 3, 3, 3, 3, 4, 3, 5, 4, 3, 3, 3, 3, 4, 4, 3, 4, 4, 3, 3, 4, 3, 6, 4, 4, 5, 5, 3, 6, 3, 4, 3, 3, 5, 4, 3, 4, 5, 3, 3, 4, 4, 3, 3, 5, 4, 3, 4, 3, 3, 4, 4, 5, 4, 6, 3, 5, 4, 5, 3, 5, 3, 4, 3, 3, 4, 4, 2, 4, 3, 3, 5, 4, 4, 4, 2, 4, 4, 3, 2, 4, 4, 3, 4, 5, 6, 4, 3, 5, 4, 5, 3, 4, 3, 4, 4, 3, 3, 3, 2, 3, 2, 5, 5, 5, 4, 4, 4, 3, 2, 4, 4, 4, 5, 4, 5, 5, 4, 4, 3, 3, 3, 2, 6, 4, 3, 3, 4, 3, 4, 3, 3, 4, 4, 4, 3, 3, 2, 3, 3, 3, 4, 4, 3, 4, 5, 4, 4, 3, 5, 3, 3, 2, 3, 4, 3, 5, 6, 4, 3, 2, 3, 5, 4, 4, 3, 3, 3, 4, 3, 3, 5, 4, 3, 3, 3, 3, 4, 3, 6, 4, 3, 5, 4, 5, 4, 3, 5, 4, 5, 4, 2, 4, 3, 4, 2, 4, 4, 4, 6, 3, 5, 4, 3, 3, 5, 3, 3, 5, 4, 2, 3, 4, 3, 2, 3, 4, 5, 4, 5, 6, 4, 3, 5, 3, 3, 4, 6, 3, 3, 3, 2, 4, 3, 3, 3, 5, 5, 5, 4, 2, 4, 4, 2, 3, 3, 4, 6, 4, 4, 5, 4, 5, 3, 5, 3, 5, 5, 3, 5, 4, 3, 4, 3, 2, 4, 3, 5, 4, 4, 3, 3, 4, 4, 4, 3, 5, 3, 5, 3, 4, 5, 5, 4, 4, 3, 6, 3, 2, 3, 3, 5, 4, 3, 3, 3, 5, 5, 3, 6, 3, 6, 4, 7, 4, 3, 5, 6, 2, 3, 4, 4, 6, 4, 5, 4, 3, 3, 4, 4, 4, 4, 4], Average = 3.782
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Sage Adventurer
+Initiative: 26
+Team: 2
+HP: 82
+AP: 6
+Abilities: ['STRIKE', 'FIREBALL', 'HEADACHE', 'SCARE', 'FIREBALL 2']
+
+Human Adventurer
+Initiative: 16
+Team: 1
+HP: -2
+AP: 10
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Over 500 rounds:
+
+Team 1 has 6.399999999999995% winrate
+Team 2 has 93.60000000000001% winrate
+The average number of rounds per combat was 3.782

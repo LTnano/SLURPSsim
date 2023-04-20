@@ -1,0 +1,77 @@
+Team 1:
+Human Adventurer
+
+Team 2:
+Dwarf Adventurer
+
+
+
+Round 1
+
+Human Adventurer used SHARPEN
+Human Adventurer enhances their weapon!
+Dwarf Adventurer used SHARPEN
+Dwarf Adventurer enhances their weapon!
+
+Round 2
+
+Human Adventurer used STRIKE
+Human Adventurer missed Dwarf Adventurer
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer hit Human Adventurer for 60 damage
+
+Round 3
+
+Human Adventurer used DEAD MAN WALKING
+Human Adventurer is a dead man walking for 5 rounds!
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer hit Human Adventurer for 45 damage
+
+Round 4
+
+Human Adventurer used STRIKE
+Human Adventurer missed Dwarf Adventurer
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Human Adventurer
+
+Round 5
+
+Human Adventurer used STRIKE
+Human Adventurer missed Dwarf Adventurer
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer missed Human Adventurer
+
+Round 6
+
+Human Adventurer used STRIKE
+Human Adventurer missed Dwarf Adventurer
+Dwarf Adventurer used STRIKE
+Dwarf Adventurer hit Human Adventurer for 75 damage
+Human Adventurer died!
+
+Combat Ended! Team 2 won!
+[10, 4, 9, 8, 9, 13, 12, 7, 12, 12, 15, 11, 16, 14, 11, 16, 4, 6, 10, 16, 5, 7, 6, 7, 8, 10, 3, 14, 10, 17, 7, 15, 15, 5, 9, 6, 8, 7, 5, 9, 6, 3, 8, 13, 12, 5, 10, 6, 10, 7, 13, 7, 9, 5, 11, 5, 11, 9, 6, 7, 6, 17, 7, 6, 11, 12, 8, 15, 10, 14, 7, 3, 3, 10, 7, 4, 3, 8, 15, 12, 5, 11, 9, 9, 8, 5, 4, 10, 14, 6, 12, 8, 3, 9, 10, 12, 6, 4, 12, 7, 6, 16, 14, 8, 6, 9, 5, 14, 7, 9, 11, 8, 4, 10, 8, 12, 9, 5, 9, 12, 3, 16, 14, 3, 5, 5, 4, 5, 9, 9, 6, 4, 8, 8, 6, 13, 5, 8, 7, 9, 14, 6, 10, 9, 6, 10, 10, 13, 9, 7, 7, 10, 5, 8, 4, 4, 8, 9, 4, 12, 4, 9, 9, 5, 13, 8, 7, 13, 6, 12, 8, 3, 14, 5, 15, 10, 9, 13, 4, 5, 15, 14, 6, 9, 3, 4, 12, 5, 11, 13, 7, 7, 7, 4, 19, 12, 7, 5, 7, 15, 12, 15, 6, 5, 11, 13, 3, 5, 6, 4, 9, 7, 19, 9, 9, 8, 14, 14, 6, 12, 5, 9, 4, 6, 13, 6, 10, 8, 14, 7, 4, 15, 5, 4, 9, 15, 8, 17, 16, 8, 14, 5, 3, 14, 11, 12, 10, 7, 12, 7, 6, 10, 8, 7, 5, 7, 11, 15, 14, 16, 14, 13, 11, 4, 9, 6, 8, 13, 5, 7, 9, 9, 7, 6, 11, 10, 9, 3, 5, 17, 7, 13, 10, 9, 12, 10, 4, 10, 10, 6, 8, 13, 12, 10, 11, 3, 8, 5, 8, 12, 6, 19, 11, 4, 7, 11, 9, 7, 12, 14, 7, 4, 6, 9, 6, 6, 16, 26, 11, 5, 13, 5, 11, 4, 3, 16, 6, 7, 10, 9, 6, 4, 4, 8, 15, 7, 9, 16, 9, 9, 5, 9, 16, 12, 4, 4, 11, 11, 11, 12, 11, 11, 9, 7, 11, 15, 8, 9, 15, 9, 6, 3, 12, 6, 7, 3, 12, 14, 3, 10, 4, 7, 11, 9, 7, 7, 7, 9, 11, 6, 9, 6, 8, 11, 4, 12, 7, 10, 13, 13, 7, 7, 12, 11, 8, 5, 3, 16, 5, 8, 11, 8, 7, 5, 7, 8, 9, 7, 14, 8, 6, 11, 4, 8, 8, 8, 8, 15, 7, 5, 17, 12, 10, 12, 6, 11, 13, 9, 7, 9, 11, 13, 13, 7, 6, 11, 6, 13, 6, 12, 9, 5, 5, 15, 3, 5, 15, 5, 5, 5, 20, 6, 13, 9, 16, 10, 7, 3, 5, 8, 13, 8, 11, 5, 5, 9, 4, 7, 6, 7, 6, 10, 11, 6, 7, 14, 8, 11, 16, 11, 4, 13, 14, 11, 5, 5, 9, 19, 12, 5, 10, 12, 5, 13, 8, 14, 14, 10, 6, 6], Average = 8.93
+ Winning Team: 2
+
+
+Monster status after final round:
+
+Human Adventurer
+Initiative: 29
+Team: 1
+HP: -26
+AP: 10
+Abilities: ['STRIKE', 'HEAL', 'ENCOURAGE', 'SHARPEN', 'KNOCK OVER', 'DEAD MAN WALKING', 'HEAL 2', 'STUN']
+
+Dwarf Adventurer
+Initiative: 17
+Team: 2
+HP: 153
+AP: 12
+Abilities: ['STRIKE', 'BLOCK', 'HEAL', 'DEAD MAN WALKING', 'SHARPEN', 'ENCOURAGE']
+
+Over 500 rounds:
+
+Team 1 has 41.800000000000004% winrate
+Team 2 has 58.199999999999996% winrate
+The average number of rounds per combat was 8.93

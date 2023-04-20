@@ -1,0 +1,175 @@
+Team 1:
+Captain Boney
+
+Team 2:
+Skeleton
+
+
+
+Round 1
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Skeleton
+
+Round 2
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Skeleton for 45 damage
+
+Round 3
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Skeleton
+
+Round 4
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Skeleton
+
+Round 5
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Skeleton
+
+Round 6
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Skeleton for 90 damage
+
+Round 7
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 48!
+
+Round 8
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 36!
+
+Round 9
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 10
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 11
+
+Skeleton used STRIKE
+Skeleton hit Captain Boney for 44 damage
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 36!
+
+Round 12
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 24!
+
+Round 13
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 14
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 15
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 16
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 24!
+
+Round 17
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney failed to cast HEAL
+
+Round 18
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used HEAL
+Captain Boney healed Captain Boney for 72!
+
+Round 19
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney missed Skeleton
+
+Round 20
+
+Skeleton used STRIKE
+Skeleton missed Captain Boney
+Captain Boney used STRIKE
+Captain Boney hit Skeleton for 90 damage
+Skeleton died!
+
+Combat Ended! Team 1 won!
+[4, 5, 2, 16, 7, 5, 11, 19, 4, 7, 4, 4, 6, 18, 5, 3, 24, 16, 8, 17, 2, 17, 20, 5, 4, 6, 15, 5, 4, 2, 10, 5, 3, 4, 20, 2, 3, 4, 5, 6, 16, 4, 18, 6, 9, 25, 8, 17, 2, 16, 17, 9, 4, 2, 18, 7, 2, 16, 17, 4, 5, 5, 8, 5, 7, 7, 6, 16, 3, 5, 2, 2, 6, 2, 4, 2, 6, 4, 5, 6, 4, 3, 5, 20, 4, 20, 3, 3, 4, 16, 5, 5, 3, 10, 2, 7, 4, 18, 9, 3, 6, 6, 6, 4, 19, 4, 9, 3, 18, 3, 19, 7, 2, 4, 3, 5, 2, 18, 4, 3, 4, 5, 10, 4, 6, 16, 4, 17, 4, 6, 17, 5, 3, 4, 6, 16, 3, 4, 10, 7, 6, 19, 4, 2, 17, 19, 4, 4, 5, 5, 7, 6, 6, 2, 2, 17, 6, 7, 3, 4, 3, 3, 19, 2, 6, 17, 18, 4, 2, 7, 19, 16, 4, 7, 7, 11, 4, 16, 18, 20, 19, 5, 19, 7, 7, 7, 11, 15, 7, 16, 5, 2, 5, 4, 7, 4, 17, 5, 15, 16, 3, 6, 3, 6, 6, 15, 5, 4, 4, 16, 18, 4, 6, 16, 8, 2, 6, 20, 7, 3, 2, 5, 8, 4, 6, 4, 20, 4, 4, 6, 4, 5, 11, 5, 16, 4, 6, 3, 4, 18, 7, 5, 19, 8, 11, 4, 5, 9, 6, 2, 2, 16, 4, 23, 19, 7, 5, 5, 10, 8, 4, 6, 3, 5, 4, 3, 7, 24, 5, 5, 16, 3, 12, 6, 11, 7, 4, 22, 3, 8, 7, 4, 4, 3, 3, 16, 22, 3, 5, 20, 7, 8, 3, 25, 17, 16, 5, 6, 12, 18, 2, 6, 19, 4, 16, 21, 15, 3, 5, 18, 19, 3, 2, 4, 20, 6, 6, 19, 6, 7, 18, 3, 5, 3, 6, 3, 6, 18, 5, 20, 5, 9, 5, 2, 4, 3, 7, 20, 16, 5, 6, 5, 3, 13, 5, 5, 18, 4, 4, 19, 3, 5, 17, 18, 16, 3, 7, 6, 7, 10, 17, 4, 6, 7, 19, 6, 18, 16, 19, 16, 11, 3, 18, 5, 20, 23, 16, 8, 4, 2, 16, 9, 3, 5, 17, 19, 6, 16, 7, 21, 6, 8, 4, 17, 17, 18, 3, 5, 15, 4, 18, 9, 8, 19, 2, 6, 4, 18, 4, 4, 16, 22, 18, 2, 6, 6, 24, 8, 15, 4, 3, 18, 2, 4, 18, 19, 3, 6, 17, 19, 2, 4, 5, 25, 17, 4, 18, 4, 3, 4, 5, 21, 2, 6, 18, 3, 17, 5, 15, 21, 7, 5, 24, 9, 6, 24, 6, 3, 18, 6, 2, 9, 3, 4, 6, 3, 17, 3, 9, 5, 15, 3, 19, 4, 5, 4, 17, 7, 5, 3, 5, 3, 7, 4, 7, 3, 4, 21, 19, 17, 5, 7, 3, 4, 3, 17, 2, 8, 10, 20], Average = 8.804
+ Winning Team: 1
+
+
+Monster status after final round:
+
+Skeleton
+Initiative: 20
+Team: 2
+HP: -85
+AP: 0
+Abilities: ['STRIKE']
+
+Captain Boney
+Initiative: 16
+Team: 1
+HP: 250
+AP: 0
+Abilities: ['STRIKE', 'FIREBALL', 'HEAL']
+
+Over 500 rounds:
+
+Team 1 has 100.0% winrate
+Team 2 has 0.0% winrate
+The average number of rounds per combat was 8.804
